@@ -22,7 +22,7 @@ main(role="main" ref="root")
           span
             h1.page-home__title Memento Mori 12
           .page-home__cta
-            p 1° ANIVERSARIO
+            p Jurisdiccionada a la Noble, Leal y Centenaria Gran Logia "Cosmos" del Estado de Chihuahua
   </template>
 
 <script setup>
