@@ -18,11 +18,11 @@ main(role="main" ref="root")
       .vertical-align
         .vertical-align-item
           span
-            p.page-home__slogan Ben:. y Cent:. Resp:. Log:. Simb:.
+            p.page-home__slogan Resp:. Log:. Simb:.
           span
-            h1.page-home__title Perseverancia y Lealtad 12
+            h1.page-home__title Memento Mori 12
           .page-home__cta
-            p 117° ANIVERSARIO
+            p 1° ANIVERSARIO
   </template>
 
 <script setup>

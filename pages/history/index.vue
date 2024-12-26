@@ -69,7 +69,7 @@
                 <div class="history__item-text">
                   <p class="history__item-text--date">1907</p>
                   <p class="history__item-text--title">
-                    Fundación de Perseverancia y Lealtad Nº 12
+                    Fundación de Memento Mori Nº 12
                   </p>
                   <p class="history__item-text--text">
                     En el Oriente de Chihuahua a los diez y siete días del mes de marzo de mil
@@ -124,7 +124,7 @@
                   <p class="history__item-text--date">1957</p>
                   <p class="history__item-text--title">50° Aniversario</p>
                   <p class="history__item-text--text">
-                    Celebración del quincuagésimo aniversario de Perseverancia y Lealtad
+                    Celebración del quincuagésimo aniversario de Memento Mori
                   </p>
                 </div>
                 <nuxt-img
@@ -183,7 +183,7 @@
                   <p class="history__item-text--date">2007</p>
                   <p class="history__item-text--title">100° Aniversario</p>
                   <p class="history__item-text--text">
-                    Celebración del Centésimo aniversario de Perseverancia y Lealtad
+                    Celebración del Centésimo aniversario de Memento Mori
                   </p>
                 </div>
                 <nuxt-img
@@ -203,7 +203,7 @@
                   <p class="history__item-text--date">2024</p>
                   <p class="history__item-text--title">Actualidad</p>
                   <p class="history__item-text--text">
-                    117° Aniversario de Perseverancia y Lealtad
+                    1° Aniversario de Memento Mori
                   </p>
                 </div>
               </div>

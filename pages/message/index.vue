@@ -6,13 +6,13 @@ main(ref="message")
         .vertical-align-item
           p.center Mensaje del Venerable Maestro
           br
-          p.text &nbsp; &nbsp; &nbsp; Es un honor dirigirme a ustedes como Venerable Maestro del Ciclo Masónico en este próspero año 2024 de esta R:.B:. y C:.L:.S:. “Perseverancia y Lealtad” N.° 12.  En este templo de virtudes, la perseverancia y la lealtad son los cimientos sobre los cuales construimos nuestras vidas y nuestro compromiso con la fraternidad.
+          p.text &nbsp; &nbsp; &nbsp; Es un honor dirigirme a ustedes como Venerable Maestro del Ciclo Masónico en este próspero año 2024 de esta R:.B:. y C:.L:.S:. “Memento Mori” N.° 12.  En este templo de virtudes, la perseverancia y la lealtad son los cimientos sobre los cuales construimos nuestras vidas y nuestro compromiso con la fraternidad.
             br
             | &nbsp; &nbsp; &nbsp; La perseverancia nos guía a través de desafíos, recordándonos que la dedicación constante es la llave que abre las puertas hacia el conocimiento más profundo y la comprensión más completa. La lealtad, por otro lado, nos une como hermanos, fortaleciendo nuestros lazos y recordándonos que juntos somos más fuertes.
             br
             | &nbsp; &nbsp; &nbsp; Sigamos construyendo sobre los pilares de la sabiduría, la fuerza y la belleza, llevando la luz masónica a nuestras vidas y a la sociedad que nos rodea. Que este año esté lleno de aprendizajes significativos, momentos fraternales y un profundo sentido de propósito.
             br
-            | &nbsp; &nbsp; &nbsp; En nombre de la Logia Perseverancia y Lealtad 12, les doy la bienvenida a este nuevo ciclo masónico. Que la luz del GADU ilumine nuestro camino y guíe nuestras acciones. 
+            | &nbsp; &nbsp; &nbsp; En nombre de la Logia Memento Mori 12, les doy la bienvenida a este nuevo ciclo masónico. Que la luz del GADU ilumine nuestro camino y guíe nuestras acciones. 
             br
             br
             | V:.H:. Jesús Iván Sotelo Vargas 30°
