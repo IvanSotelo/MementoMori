@@ -1,0 +1,194 @@
+@font-face {
+  font-family: msd;
+  src: url('../fonts/MrsSaintDelafield-Regular.eot');
+  src:
+    url('../fonts/MrsSaintDelafield-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MrsSaintDelafield-Regular.woff') format('woff'),
+    url('../fonts/MrsSaintDelafield-Regular.ttf') format('truetype'),
+    url('../fonts/MrsSaintDelafield-Regular.svg#2304235a1a7c60c9c516ba7e261e1c25') format('svg');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: NewBaskervilleExpOdC;
+  src: url('../fonts/NewBaskervilleExpOdC-Italic.eot');
+  src:
+    url('../fonts/NewBaskervilleExpOdC-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NewBaskervilleExpOdC-Italic.woff') format('woff'),
+    url('../fonts/NewBaskervilleExpOdC-Italic.ttf') format('truetype'),
+    url('../fonts/NewBaskervilleExpOdC-Italic.svg#9c5b87f0edcae51cb8e5ae87df6ff0f7') format('svg');
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: NewBaskervilleExpOdC;
+  src: url('../fonts/NewBaskervilleExpOdC-BdIt.eot');
+  src:
+    url('../fonts/NewBaskervilleExpOdC-BdIt.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NewBaskervilleExpOdC-BdIt.woff') format('woff'),
+    url('../fonts/NewBaskervilleExpOdC-BdIt.ttf') format('truetype'),
+    url('../fonts/NewBaskervilleExpOdC-BdIt.svg#28308f021e5f782277b6f6a1f44aceae') format('svg');
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: NewBaskervilleC;
+  src: url('../fonts/NewBaskervilleC-Italic.eot');
+  src:
+    url('../fonts/NewBaskervilleC-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NewBaskervilleC-Italic.woff') format('woff'),
+    url('../fonts/NewBaskervilleC-Italic.ttf') format('truetype'),
+    url('../fonts/NewBaskervilleC-Italic.svg#cb6b620338fcd104acd2183fe1a8ba3c') format('svg');
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: NewBaskervilleC;
+  src: url('../fonts/NewBaskervilleC-BoldItalic.eot');
+  src:
+    url('../fonts/NewBaskervilleC-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NewBaskervilleC-BoldItalic.woff') format('woff'),
+    url('../fonts/NewBaskervilleC-BoldItalic.ttf') format('truetype'),
+    url('../fonts/NewBaskervilleC-BoldItalic.svg#8fc3a1d264a2d2807436eeb8b5f8885e') format('svg');
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: NewBaskervilleC;
+  src: url('../fonts/NewBaskervilleC-Bold.eot');
+  src:
+    url('../fonts/NewBaskervilleC-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NewBaskervilleC-Bold.woff') format('woff'),
+    url('../fonts/NewBaskervilleC-Bold.ttf') format('truetype'),
+    url('../fonts/NewBaskervilleC-Bold.svg#8d139bc31c8f53b5de8ea4a72168d0fc') format('svg');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: NewBaskervilleC;
+  src: url('../fonts/NewBaskervilleC.eot');
+  src:
+    url('../fonts/NewBaskervilleC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NewBaskervilleC.woff') format('woff'),
+    url('../fonts/NewBaskervilleC.ttf') format('truetype'),
+    url('../fonts/NewBaskervilleC.svg#73435eb8f048b37f67c9919dc9f017bd') format('svg');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: NewBaskervilleExpScC;
+  src: url('../fonts/NewBaskervilleExpScC.eot');
+  src:
+    url('../fonts/NewBaskervilleExpScC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NewBaskervilleExpScC.woff') format('woff'),
+    url('../fonts/NewBaskervilleExpScC.ttf') format('truetype'),
+    url('../fonts/NewBaskervilleExpScC.svg#007726405ffb897de98fbe7d361559b8') format('svg');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: NewBaskervilleExpOdC;
+  src: url('../fonts/NewBaskervilleExpOdC.eot');
+  src:
+    url('../fonts/NewBaskervilleExpOdC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NewBaskervilleExpOdC.woff') format('woff'),
+    url('../fonts/NewBaskervilleExpOdC.ttf') format('truetype'),
+    url('../fonts/NewBaskervilleExpOdC.svg#8fb73ed20d73c7d7961cbe729bbf254f') format('svg');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Italic.eot');
+  src:
+    url('../fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PlayfairDisplay-Italic.woff') format('woff'),
+    url('../fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+    url('../fonts/PlayfairDisplay-Italic.svg#2bd500c7d53fe4ac5f23770a611a3ab6') format('svg');
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Regular.eot');
+  src:
+    url('../fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PlayfairDisplay-Regular.woff') format('woff'),
+    url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+    url('../fonts/PlayfairDisplay-Regular.svg#04b27ca05cc09e86c39c371295e381ad') format('svg');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: PTSerifPro-BookItalic;
+  src: url('../fonts/PTSerifProBookItalic.eot');
+  src:
+    url('../fonts/PTSerifProBookItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PTSerifProBookItalic.woff') format('woff'),
+    url('../fonts/PTSerifProBookItalic.ttf') format('truetype'),
+    url('../fonts/PTSerifProBookItalic.svg#58e86747171b4812544a1cb7030cc435') format('svg');
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: PTSerifPro-Book;
+  src: url('../fonts/PTSerifProBook.eot');
+  src:
+    url('../fonts/PTSerifProBook.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PTSerifProBook.woff') format('woff'),
+    url('../fonts/PTSerifProBook.ttf') format('truetype'),
+    url('../fonts/PTSerifProBook.svg#df346655a68224dfd32dc3ea4d88ff39') format('svg');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: PTSerifPro-NarrowBook;
+  src: url('../fonts/PTSerifProNarrowBook.eot');
+  src:
+    url('../fonts/PTSerifProNarrowBook.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PTSerifProNarrowBook.woff') format('woff'),
+    url('../fonts/PTSerifProNarrowBook.ttf') format('truetype'),
+    url('../fonts/PTSerifProNarrowBook.svg#d6ed49e17dc9669db8aba851fab901d6') format('svg');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Deskode;
+  src: url('../fonts/Deskode.eot?y0qguw');
+  src:
+    url('../fonts/Deskode.eot?y0qguw#iefix') format('embedded-opentype'),
+    url('../fonts/Deskode.ttf?y0qguw') format('truetype'),
+    url('../fonts/Deskode.woff?y0qguw') format('woff'),
+    url('../fonts/Deskode.svg?y0qguw#Deskode') format('svg');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}

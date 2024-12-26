@@ -1,0 +1,10 @@
+{
+  "globals": {
+    "defineNuxtConfig": "readonly",
+    "useHead": "readonly",
+    "useNuxt": "readonly",
+    "useSeoMeta": "readonly",
+    "NuxtPage": "readonly",
+    "NuxtLayout": "readonly"
+  }
+} 

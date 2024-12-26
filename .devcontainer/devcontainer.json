@@ -1,0 +1,44 @@
+/* cSpell:disable */
+{
+  "name": "Memento Mori",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vue.volar",
+        "streetsidesoftware.code-spell-checker",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "DavidAnson.vscode-markdownlint"
+      ]
+    }
+  },
+  "forwardPorts": [3000, 9229, 9230],
+  "portsAttributes": {
+    "3000": {
+      "label": "Application Port",
+      "onAutoForward": "notify"
+    },
+    "9229": {
+      "label": "Debug Port",
+      "onAutoForward": "silent"
+    },
+    "9230": {
+      "label": "Debug Port",
+      "onAutoForward": "silent"
+    }
+  },
+  "postCreateCommand": "pnpm config set store-dir /home/node/.local/share/pnpm/store, pnpm install",
+  "remoteUser": "node",
+  "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/home/node/.ssh,type=bind",
+    "source=${localEnv:HOME}/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached"
+  ]
+  //   "mounts": [
+  //     "source=${localEnv:HOME}/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached"
+  // ]
+}
