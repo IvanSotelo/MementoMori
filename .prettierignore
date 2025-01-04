@@ -95,3 +95,10 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# SVG files
+*.svg
+public/*.svg
+
+# Prettier ignore itself
+.prettierignore
