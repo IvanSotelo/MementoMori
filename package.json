@@ -45,7 +45,7 @@
     "@types/howler": "^2.2.12",
     "@types/locomotive-scroll": "^4.1.4",
     "husky": "^9.1.7",
-    "lint-staged": "^15.4.2",
+    "lint-staged": "^15.4.3",
     "pug": "^3.0.3",
     "pug-plain-loader": "^1.1.0",
     "sass": "^1.83.4",
