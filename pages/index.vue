@@ -20,9 +20,9 @@ main(role="main" ref="root")
           span
             p.page-home__slogan Resp:. Log:. Simb:.
           span
-            h1.page-home__title Memento Mori 12
+            h1.page-home__title Memento Mori BD
           .page-home__cta
-            p Jurisdiccionada a la Noble, Leal y Centenaria Gran Logia "Cosmos" del Estado de Chihuahua
+            nuxt-link(to="https://granlogiacosmos.mx/") p Jurisdiccionada a la Noble, Leal y Centenaria Gran Logia "Cosmos" del Estado de Chihuahua
   </template>
 
 <script setup>
