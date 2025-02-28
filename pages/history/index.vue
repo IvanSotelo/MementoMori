@@ -479,7 +479,7 @@ onMounted(() => {
           .history__item-text--text,
           .history__item-text--title {
             letter-spacing: 0;
-            max-width: 25vw;
+            max-width: 35vw;
             white-space: nowrap;
             white-space: initial;
             @media only screen and (max-width: 768px) {
