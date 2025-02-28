@@ -83,6 +83,7 @@ El Tesorero, Zahid Daniel Vela Juárez, administra con prudencia los bienes de l
 Entre los oficiales encargados de la seguridad y el orden, destacan el Primer Experto Héctor Felipe Moreno Nevárez, el Segundo Experto Diego Alejandro Balderrama Gallegos, y el Guarda Templo Interior Raúl Palacios Perches.
 <br>
 El puesto de Ecónomo, desempeñado por el hermano Rafael Alberto Márquez Pérez, es fundamental para la administración de los recursos y la provisión de las necesidades materiales de la logia, asegurando su correcto funcionamiento.
+                  </p>
                 </div>
                 <div class="history__item-aside--right bottom-10">
                  <p class="history__item-text--text">
