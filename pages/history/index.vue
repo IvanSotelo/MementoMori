@@ -67,34 +67,31 @@
             <div class="history__item" data-scroll-section>
               <div class="history__item-wrapper space">
                 <div class="history__item-text">
-                  <p class="history__item-text--date">1907</p>
+                  <p class="history__item-text--date">2025</p>
                   <p class="history__item-text--title">
                     Fundación de Memento Mori Nº 12
                   </p>
                   <p class="history__item-text--text">
-                    En el Oriente de Chihuahua a los diez y siete días del mes de marzo de mil
-                    novecientos siete de la E:.V:. un pequeño grupo se reunieron, los hermanos
-                    Maestros Masones en pleno uso de sus derechos: Filemón Terrazas, Luis B. Torres,
-                    Ramón O. Rocabado, Reinaldo Lozano, Pablo Márquez, Gumersindo Balderrama, el
-                    Aprendiz Práxedis Gómez y José Griego Maestro Masón. El objeto de la reunión era
-                    establecer en el barrio del Santo Niño de esta localidad, una nueva Logia bajo
-                    la jurisdicción de la Gran Logia Independiente de Estado “Cosmos”. Fue el primer
-                    paso elegir presidente y secretario, a los hermanos Luis B. Torres y Ramón O.
-                    Rocabado, puestos en posesión de sus respectivos cargos, el primero abrió la
-                    sesión. Se acordó que la nueva Logia lleve el nombre de “Perseverancia y
-                    Lealtad” y por sello uno cuya descripción es la siguiente: “Perseverancia y
-                    Lealtad” (Resp:. Log:.) Chihuahua, Chih. En el Centro un Compás y una Escuadra.
-                    Su forma será Circular. En seguida el presidente dispuso que se procediera a
-                    designar los funcionarios y la votación secreta dio el siguiente resultado:
-                    Venerable Maestro Luis B. Torres, Primer Vigilante Ramón O. Rocabado, Segundo
-                    Vigilante Gumersindo Balderrama, Secretario Reinaldo Lozano y Tesorero Pablo
-                    Márquez, los cuales aceptaron sus respectivos cargos. Se acordó pedir la Carta
-                    de Dispensa a la Muy Respetable Gran Logia y se fijaron los días sábados de cada
-                    mes para celebrar las sesiones del nuevo Taller.
+                    En el espíritu de la fraternidad y el compromiso con los valores masónicos, se constituyó la Respetable Logia Simbólica Memento Mori, un taller dedicado a la búsqueda del conocimiento, la reflexión filosófica y el perfeccionamiento del individuo dentro de los principios de la masonería.
+
+Bajo la dirección de su Venerable Maestro, Salomón Dozal Suárez, la logia se estableció con un cuadro logial compuesto por hermanos comprometidos con la enseñanza y práctica de la tradición masónica. Entre ellos, el Primer Vigilante Jesús Iván Sotelo Vargas y el Segundo Vigilante Heriberto Solis Rivas, quienes velan por el desarrollo de los trabajos y la formación de los aprendices.
+
+El Secretario, Aquilino Ramírez Lorenzo, tiene la responsabilidad de registrar la historia y la evolución de la logia, mientras que el Orador, Jesús Nevárez Rascón, se encarga de velar por la pureza de los principios y la aplicación de la ley masónica.
+
+El Tesorero, Zahid Daniel Vela Juárez, administra con prudencia los bienes de la logia, y el Maestro de Ceremonias, José Ángel Salas Granados, dirige con solemnidad los rituales y trabajos simbólicos. Asimismo, el Hospitalario, Rafael González Jurado, vela por la solidaridad y el bienestar de los hermanos.
+
+Entre los oficiales encargados de la seguridad y el orden, destacan el Primer Experto Héctor Felipe Moreno Nevárez, el Segundo Experto Diego Alejandro Balderrama Gallegos, y el Guarda Templo Interior Raúl Palacios Perches.
+
+El puesto de Ecónomo, desempeñado por el hermano Rafael Alberto Márquez Pérez, es fundamental para la administración de los recursos y la provisión de las necesidades materiales de la logia, asegurando su correcto funcionamiento.
+
+La fundación de Memento Mori representa no solo el nacimiento de un nuevo espacio de estudio y reflexión, sino también el compromiso de sus miembros con la transmisión del conocimiento, el fortalecimiento de los lazos fraternos y el perfeccionamiento moral e intelectual.
+
+Siguiendo el significado profundo de su nombre, Memento Mori, esta logia recuerda constantemente a sus integrantes la importancia de la humildad, la trascendencia de la vida y la necesidad de obrar con virtud en cada acción..
                   </p>
                 </div>
               </div>
             </div>
+            <!--
             <div class="history__item" data-scroll-section>
               <div class="history__item-wrapper space">
                 <div class="history__item-text">
@@ -150,6 +147,7 @@
                 </div>
               </div>
             </div>
+            <!---
             <div class="history__item margin-0" data-scroll-section>
               <div class="history__item-wrapper space">
                 <div class="history__item-text">
@@ -208,6 +206,7 @@
                 </div>
               </div>
             </div>
+            -->
           </smooth-scroll>
         </div>
       </div>
