@@ -64,7 +64,7 @@
                 </div>
               </div>
             </div>
-            <div class="history__item" data-scroll-section>
+            <div class="history__item margin-0" data-scroll-section>
               <div class="history__item-wrapper space">
                 <div class="history__item-text">
                   <p class="history__item-text--date">2025</p>
@@ -85,15 +85,14 @@ Entre los oficiales encargados de la seguridad y el orden, destacan el Primer Ex
 El puesto de Ecónomo, desempeñado por el hermano Rafael Alberto Márquez Pérez, es fundamental para la administración de los recursos y la provisión de las necesidades materiales de la logia, asegurando su correcto funcionamiento.
                   </p>
                 </div>
-
-              </div>
-                              <div class="history__item-wrapper space">
+                <div class="history__item-aside--right bottom-10">
                  <p class="history__item-text--text">
 La fundación de Memento Mori representa no solo el nacimiento de un nuevo espacio de estudio y reflexión, sino también el compromiso de sus miembros con la transmisión del conocimiento, el fortalecimiento de los lazos fraternos y el perfeccionamiento moral e intelectual.
 <br>
 Siguiendo el significado profundo de su nombre, Memento Mori, esta logia recuerda constantemente a sus integrantes la importancia de la humildad, la trascendencia de la vida y la necesidad de obrar con virtud en cada acción..
                   </p>
                 </div>
+              </div>
             </div>
             <!--
             <div class="history__item" data-scroll-section>
