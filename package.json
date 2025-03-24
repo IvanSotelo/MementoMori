@@ -23,7 +23,7 @@
   "dependencies": {
     "@nuxt/eslint": "1.2.0",
     "@nuxt/image": "1.10.0",
-    "@nuxtjs/i18n": "9.3.3",
+    "@nuxtjs/i18n": "9.3.4",
     "@nuxtjs/seo": "^3.0.1",
     "@pinia/nuxt": "^0.10.1",
     "dom-classes": "^1.0.0",
