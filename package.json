@@ -53,6 +53,6 @@
     "stylelint-config-standard": "^38.0.0",
     "stylelint-prettier": "^5.0.3",
     "typescript": "^5.8.3",
-    "vue-tsc": "^2.2.8"
+    "vue-tsc": "^2.2.10"
   }
 }
