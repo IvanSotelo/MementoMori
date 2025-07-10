@@ -21,7 +21,7 @@
     "*.**": "prettier --write"
   },
   "dependencies": {
-    "@nuxt/eslint": "1.4.1",
+    "@nuxt/eslint": "1.5.2",
     "@nuxt/image": "1.10.0",
     "@nuxtjs/i18n": "9.5.6",
     "@nuxtjs/seo": "^3.1.0",
