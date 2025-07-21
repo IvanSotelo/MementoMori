@@ -31,7 +31,7 @@
     "howler": "^2.2.4",
     "isotope-layout": "^3.0.6",
     "locomotive-scroll": "^4.1.4",
-    "nuxt": "^3.17.6",
+    "nuxt": "^4.0.1",
     "nuxt-gtag": "^3.0.3",
     "pinia": "^3.0.3",
     "swiper": "^11.2.10",
