@@ -48,7 +48,7 @@
     "lint-staged": "^16.1.5",
     "pug": "^3.0.3",
     "pug-plain-loader": "^1.1.0",
-    "sass": "^1.90.0",
+    "sass": "^1.91.0",
     "stylelint": "^16.23.1",
     "stylelint-config-standard": "^39.0.0",
     "stylelint-prettier": "^5.0.3",
