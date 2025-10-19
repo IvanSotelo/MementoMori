@@ -20,7 +20,7 @@ main(role="main" ref="root")
           span
             p.page-home__slogan Resp:. Log:. Simb:.
           span
-            h1.page-home__title Memento Mori BD
+            h1.page-home__title Memento Mori No.107
           .page-home__cta
             nuxt-link(to="https://granlogiacosmos.mx/") Jurisdiccionada a la Noble, Leal y Centenaria Gran Logia "Cosmos" del Estado de Chihuahua
   </template>
