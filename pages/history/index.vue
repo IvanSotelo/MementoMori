@@ -69,7 +69,7 @@
                 <div class="history__item-text">
                   <p class="history__item-text--date">2025</p>
                   <p class="history__item-text--title">
-                    Fundación de Memento Mori Nº 12
+                    Fundación de Memento Mori Nº 107
                   </p>
                   <p class="history__item-text--text">
                     En el espíritu de la fraternidad y el compromiso con los valores masónicos, se constituyó la <b>Respetable Logia Simbólica Memento Mori</b>, un taller dedicado a la búsqueda del conocimiento, la reflexión filosófica y el perfeccionamiento del individuo dentro de los principios de la masonería.
