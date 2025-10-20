@@ -21,7 +21,7 @@
                 <p>{{ $t('credits.archive_materials') }}</p>
               </div>
               <div class="col-6">
-                <p>Secretaria - Memento Mori</p>
+                <p>Secretaria - Memento Mori No.107</p>
                 <p>
                   <a href="https://granlogiacosmos.mx/" target="_blank">
                     Archivo Historico. - Noble Leal y Centenaria Muy Respetable Gran Logia Cosmos
