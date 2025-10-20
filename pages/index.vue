@@ -18,7 +18,7 @@ main(role="main" ref="root")
       .vertical-align
         .vertical-align-item
           span
-            p.page-home__slogan Resp:. Log:. Simb:.
+            p.page-home__slogan Resp∴ Log∴ Simb∴
           span
             h1.page-home__title Memento Mori No.107
           .page-home__cta
