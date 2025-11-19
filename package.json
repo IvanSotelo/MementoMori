@@ -25,7 +25,7 @@
     "@nuxt/image": "2.0.0",
     "@nuxtjs/i18n": "10.0.3",
     "@nuxtjs/seo": "^3.2.2",
-    "@pinia/nuxt": "^0.11.2",
+    "@pinia/nuxt": "^0.11.3",
     "dom-classes": "^1.0.0",
     "eslint": "^9.39.1",
     "howler": "^2.2.4",
