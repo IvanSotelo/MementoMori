@@ -6,13 +6,13 @@ main(ref="message")
         .vertical-align-item
           p.center Mensaje del Venerable Maestro
           br
-          p.text &nbsp; &nbsp; &nbsp; Es un honor dirigirme a ustedes como Venerable Maestro del Ciclo Masónico en este próspero año 2024 de esta R∴L∴S∴ “Memento Mori” N.° 107.  En este templo de virtudes, la perseverancia y la lealtad son los cimientos sobre los cuales construimos nuestras vidas y nuestro compromiso con la fraternidad.
+          p.text &nbsp; &nbsp; &nbsp; Es un honor dirigirme a ustedes como Venerable Maestro del Ciclo Masónico 2026 de la Respetable Logia Simbólica “Memento Mori” N.° 107. Damos inicio a este nuevo ciclo reafirmando nuestro compromiso con la reflexión consciente, el trabajo interior y la responsabilidad que implica formar parte de una institución dedicada al desarrollo humano y moral.
             br
-            | &nbsp; &nbsp; &nbsp; La perseverancia nos guía a través de desafíos, recordándonos que la dedicación constante es la llave que abre las puertas hacia el conocimiento más profundo y la comprensión más completa. La lealtad, por otro lado, nos une como hermanos, fortaleciendo nuestros lazos y recordándonos que juntos somos más fuertes.
+            | &nbsp; &nbsp; &nbsp; El nombre de nuestra Logia, Memento Mori, encierra un significado profundo: recordar la finitud de la vida como una invitación a vivir con propósito, actuar con rectitud y valorar el tiempo como un recurso invaluable. Esta reflexión constante nos orienta a priorizar lo esencial, a fortalecer el carácter y a dejar una huella positiva a través de nuestras acciones.
             br
-            | &nbsp; &nbsp; &nbsp; Sigamos construyendo sobre los pilares de la sabiduría, la fuerza y la belleza, llevando la luz masónica a nuestras vidas y a la sociedad que nos rodea. Que este año esté lleno de aprendizajes significativos, momentos fraternales y un profundo sentido de propósito.
+            | &nbsp; &nbsp; &nbsp; Sigamos edificando sobre los principios universales de la sabiduría, la fuerza y la belleza, integrándolos en nuestra vida cotidiana y proyectándolos como valores que contribuyan al bienestar común. Que este ciclo masónico sea un periodo de aprendizaje significativo, reflexión profunda y acción coherente.
             br
-            | &nbsp; &nbsp; &nbsp; En nombre de la Logia Memento Mori 107, les doy la bienvenida a este nuevo ciclo masónico. Que la luz del GADU ilumine nuestro camino y guíe nuestras acciones. 
+            | &nbsp; &nbsp; &nbsp; En nombre de la R∴L∴S∴ “Memento Mori” N.° 107, les doy la más cordial bienvenida a este nuevo ciclo masónico, con el firme deseo de que el compromiso, la conciencia y el servicio guíen nuestro caminar.
             br
             br
             | V:.H:. Jesús Iván Sotelo Vargas 30°
