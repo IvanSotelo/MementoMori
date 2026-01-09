@@ -103,26 +103,26 @@ onMounted(() => {
     .word:nth-of-type(23),
     .word:nth-of-type(24),
     .word:nth-of-type(25),
-    .word:nth-of-type(26),
   
-    .word:nth-of-type(63),
-    .word:nth-of-type(64),
+    .word:nth-of-type(66),
+    .word:nth-of-type(67),
+
   
-    .word:nth-of-type(38),
-    .word:nth-of-type(39),
-    .word:nth-of-type(40),
-    .word:nth-of-type(90),
-    .word:nth-of-type(97),
+    .word:nth-of-type(130),
+    .word:nth-of-type(131),
+    .word:nth-of-type(132),
+    .word:nth-of-type(133),
+    .word:nth-of-type(134),
+    .word:nth-of-type(135),
+    .word:nth-of-type(136),
   
-    .word:nth-of-type(126),
-    .word:nth-of-type(127),
+    .word:nth-of-type(170),
+    .word:nth-of-type(171),
+    .word:nth-of-type(172),
+    .word:nth-of-type(173),
+    .word:nth-of-type(174),
   
-    .word:nth-of-type(161),
-    .word:nth-of-type(162),
-    .word:nth-of-type(163),
-    .word:nth-of-type(164),
-    .word:nth-of-type(165),
-    .word:nth-of-type(179),
+    .word:nth-of-type(205),
     .word:nth-of-type(206),
     .word:nth-of-type(207),
     .word:nth-of-type(208),
@@ -132,9 +132,8 @@ onMounted(() => {
     .word:nth-of-type(212),
     .word:nth-of-type(213),
     .word:nth-of-type(214),
-    .word:nth-of-type(216),
-    .word:nth-of-type(217),
-    .word:nth-of-type(218) {
+    .word:nth-of-type(215),
+    .word:nth-of-type(216) {
       color: #fff;
     }
     @media only screen and (max-width: 768px) {
