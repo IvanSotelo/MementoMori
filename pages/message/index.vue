@@ -116,11 +116,11 @@ onMounted(() => {
     .word:nth-of-type(135),
     .word:nth-of-type(136),
   
-    .word:nth-of-type(170),
-    .word:nth-of-type(171),
-    .word:nth-of-type(172),
     .word:nth-of-type(173),
     .word:nth-of-type(174),
+    .word:nth-of-type(175),
+    .word:nth-of-type(176),
+    .word:nth-of-type(177),
   
     .word:nth-of-type(205),
     .word:nth-of-type(206),
