@@ -121,7 +121,6 @@
             <div id="vm2025" class="history__item" data-scroll-section>
               <div class="history__item-wrapper space">
                 <div class="history__item-text">
-                  <p class="history__item-text--date">2025</p>
                   <p class="history__item-text--title">Venerable Maestro Salomón Dozal Suárez</p>
                   <p class="history__item-text--text">
                     Bajo la dirección del <b>Venerable Maestro Salomón Dozal Suárez</b>, la
@@ -130,20 +129,14 @@
                     de sus miembros conforme a los principios de la masonería.
                   </p>
                 </div>
-                <div class="history__item-aside--right bottom-10">
-                  <nuxt-img
-                    provider="cloudinary"
-                    src="v1766432034/memento-mori/vm-2025.jpg"
-                    alt="Salomón Dozal Suárez - Venerable Maestro 2025"
-                    placeholder
-                    format="webp"
-                    loading="lazy"
-                  />
-                  <span>
-                    <p>Salomón Dozal Suárez</p>
-                    <p>Venerable Maestro 2025</p>
-                  </span>
-                </div>
+                <nuxt-img
+                  provider="cloudinary"
+                  src="v1766432034/memento-mori/vm-2025.jpg"
+                  alt="Salomón Dozal Suárez - Venerable Maestro 2025"
+                  placeholder
+                  format="webp"
+                  loading="lazy"
+                />
               </div>
             </div>
             <!--
