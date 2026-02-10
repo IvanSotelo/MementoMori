@@ -118,7 +118,7 @@
                 </div>
               </div>
             </div>
-            <div id="vm2025" class="history__item" data-scroll-section>
+            <div id="ciclo2025" class="history__item" data-scroll-section>
               <div class="history__item-wrapper space">
                 <div class="history__item-aside--bottom">
                   <nuxt-img
@@ -132,6 +132,37 @@
                   <span>
                     <p>Salomón Dozal Suárez</p>
                     <p>Venerable Maestro 2025</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div id="ciclo2026" class="history__item" data-scroll-section>
+              <div class="history__item-wrapper space">
+                <div class="history__item-text">
+                  <p class="history__item-text--date">2026</p>
+                  <p class="history__item-text--title">Cuadro logial 2026</p>
+                  <p class="history__item-text--text">
+                    Bajo la dirección del <b>Venerable Maestro Jesús Iván Sotelo Vargas</b>, con el
+                    <b>Primer Vigilante Aquilino Ramírez Lorenzo</b> y el
+                    <b>Segundo Vigilante Jesús Nevárez Rascón</b>.
+                    <br />
+                    El Secretario <b>Ángel Salas Granados</b>, el Orador <b>Rafael Márquez</b>, el
+                    Maestro de Ceremonias <b>Diego Balderrama</b> y el Hospitalario
+                    <b>Daniel Trevizo</b> completan el cuadro de oficiales.
+                  </p>
+                </div>
+                <div class="history__item-aside--bottom">
+                  <nuxt-img
+                    provider="cloudinary"
+                    src="v1766432034/memento-mori/vm-2026.jpg"
+                    alt="Jesús Iván Sotelo Vargas - Venerable Maestro 2026"
+                    placeholder
+                    format="webp"
+                    loading="lazy"
+                  />
+                  <span>
+                    <p>Jesús Iván Sotelo Vargas</p>
+                    <p>Venerable Maestro 2026</p>
                   </span>
                 </div>
               </div>
@@ -298,19 +329,24 @@ const chapters = ref([
     mobile: 'I'
   },
   {
-    title: '#vm2025',
-    text: 'Venerable Maestro 2025',
+    title: '#ciclo2025',
+    text: 'Ciclo masónico 2025',
     mobile: 'II'
+  },
+  {
+    title: '#ciclo2026',
+    text: 'Ciclo masónico 2026',
+    mobile: 'III'
   },
   {
     title: '#fifty',
     text: 'Quincuagésimo Aniversario',
-    mobile: 'III'
+    mobile: 'IV'
   },
   {
     title: '#hundred',
     text: 'Centésimo Aniversario',
-    mobile: 'IV'
+    mobile: 'V'
   }
 ])
 
