@@ -67,7 +67,7 @@
     },
     "placeholders": {
       "name": "Your name",
-      "email": "email@example.com",
+      "email": "email{'@'}example.com",
       "phone": "Optional",
       "message": "Write your message here..."
     },
@@ -79,7 +79,7 @@
     },
     "submit": "Submit application",
     "sending": "Sending...",
-    "note": "Submitting will open your email client with secretaria@memento-mori.mx. Send the message to complete your application."
+    "note": "Submitting will open your email client with secretaria{'@'}memento-mori.mx. Send the message to complete your application."
   },
   "contact": {
     "contact-us": "Contact us",

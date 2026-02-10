@@ -67,7 +67,7 @@
     },
     "placeholders": {
       "name": "Su nombre",
-      "email": "correo@ejemplo.com",
+      "email": "correo{'@'}ejemplo.com",
       "phone": "Opcional",
       "message": "Escriba aquí su mensaje..."
     },
@@ -79,7 +79,7 @@
     },
     "submit": "Enviar solicitud",
     "sending": "Enviando...",
-    "note": "Al enviar se abrirá su cliente de correo con la dirección secretaria@memento-mori.mx. Envíe el mensaje para completar la solicitud."
+    "note": "Al enviar se abrirá su cliente de correo con la dirección secretaria{'@'}memento-mori.mx. Envíe el mensaje para completar la solicitud."
   },
   "credits": {
     "contact_us": "Contáctanos",
