@@ -12,7 +12,7 @@ main(ref="slug")
             span.js-line2
             p.js-category Perseverancia
         .single__image(@click="closeBox")
-          nuxt-img(provider="cloudinary" format="webp" cover placeholder preload :src="'v1661741839/perseverancia/'+$route.params.slug+'.jpg'")
+          nuxt-img(provider="cloudinary" format="webp" cover placeholder preload :src="image?.src || ('v1766431449/memento-mori/'+$route.params.slug+'.jpg')")
         .single__mobile-info(@click="boxHandler")
           p i
       .slider
@@ -20,7 +20,7 @@ main(ref="slug")
           p.js-slider-trigger(@click="sliderHandler") View All Gallery
         .slider__container
           .slider__container--wrapper.swiper-wrapper
-            nuxt-img.swiper-slide(v-for="image in images" :key="image.url" provider="cloudinary" preload format="webp" cover :src="'v1661741839/perseverancia/'+image.url+'.jpg'" width="200" @click="clickImage(image.url)")
+            nuxt-img.swiper-slide(v-for="image in images" :key="image.url" provider="cloudinary" preload format="webp" cover :src="image.src || ('v1766431449/memento-mori/'+image.url+'.jpg')" width="200" @click="clickImage(image.url)")
 </template>
 
 <script setup lang="ts">
@@ -32,6 +32,7 @@ interface Image {
   year: string
   title: string
   class: string
+  src?: string
 }
 
 const swiper: Ref<Swiper | null> = ref(null)
@@ -46,10 +47,39 @@ if (typeof window !== 'undefined' && typeof navigator !== 'undefined') {
 }
 const images: Ref<Image[]> = ref([
   {
-    url: '2024-2',
-    year: '2024',
-    title: 'Iniciación',
-    class: 'lodge'
+    url: 'carta-bajo-dispensa-2025',
+    year: '2025',
+    title: 'Carta bajo dispensa 2025',
+    class: 'lodge',
+    src: 'v1766431449/memento-mori/fundacion.jpg'
+  },
+  {
+    url: 'aumento-de-salario-2025',
+    year: '2025',
+    title: 'Aumento de salario 2025',
+    class: 'lodge',
+    src: 'v1766431839/memento-mori/aumento%20de%20salario%202025.jpg'
+  },
+  {
+    url: 'iniciacion-2025',
+    year: '2025',
+    title: 'Iniciación 2025',
+    class: 'lodge',
+    src: 'v1766431913/memento-mori/iniciacion-2025.jpg'
+  },
+  {
+    url: 'otorgamiento-carta-patente-2025',
+    year: '2025',
+    title: 'Otorgamiento carta patente 2025',
+    class: 'lodge',
+    src: 'v1766431979/memento-mori/otorgamiento%20carta%20patente%202025.jpg'
+  },
+  {
+    url: 'solsticio-de-invierno-2025',
+    year: '2025',
+    title: 'Solsticio de invierno 2025',
+    class: 'sky',
+    src: 'v1766432002/memento-mori/solsticio%20de%20invierno%202025.jpg'
   }
 ])
 

@@ -58,7 +58,7 @@
                   preload
                   cover
                   placeholder
-                  :src="'v1661741839/perseverancia/' + image.url + '.jpg'"
+                  :src="image.src || 'v1766431449/memento-mori/' + image.url + '.jpg'"
                   width="300"
                 />
               </div>
@@ -76,7 +76,7 @@ const { $locomotiveScroll } = useNuxtApp()
 const gallery = ref<HTMLElement | null>(null)
 const gridContainer = ref<HTMLElement | null>(null)
 let grid: unknown
-let scroll: LocomotiveScroll 
+let scroll: LocomotiveScroll
 
 const asideActive = ref(false)
 const currentFilter = ref('*')
@@ -87,15 +87,44 @@ const filters = [
   { title: 'Aniversarios', class: '.aniversary' },
   { title: 'En Logia', class: '.lodge' },
   { title: 'Gran Logia', class: '.grandlodge' },
-  { title: 'Bajo la bóveda', class: '.sky' }
+  { title: 'Solsticios', class: '.sky' }
 ]
 
 const images = [
   {
-    url: '2024-2',
-    year: '2024',
-    title: 'Iniciación',
-    class: 'lodge'
+    url: 'carta-bajo-dispensa-2025',
+    year: '2025',
+    title: 'Carta bajo dispensa 2025',
+    class: 'lodge',
+    src: 'v1766431449/memento-mori/fundacion.jpg'
+  },
+  {
+    url: 'aumento-de-salario-2025',
+    year: '2025',
+    title: 'Aumento de salario 2025',
+    class: 'lodge',
+    src: 'v1766431839/memento-mori/aumento%20de%20salario%202025.jpg'
+  },
+  {
+    url: 'iniciacion-2025',
+    year: '2025',
+    title: 'Iniciación 2025',
+    class: 'lodge',
+    src: 'v1766431913/memento-mori/iniciacion-2025.jpg'
+  },
+  {
+    url: 'otorgamiento-carta-patente-2025',
+    year: '2025',
+    title: 'Otorgamiento carta patente 2025',
+    class: 'lodge',
+    src: 'v1766431979/memento-mori/otorgamiento%20carta%20patente%202025.jpg'
+  },
+  {
+    url: 'solsticio-de-invierno-2025',
+    year: '2025',
+    title: 'Solsticio de invierno 2025',
+    class: 'sky',
+    src: 'v1766432002/memento-mori/solsticio%20de%20invierno%202025.jpg'
   }
 ]
 
