@@ -6,18 +6,18 @@ main(ref="message")
         .vertical-align-item
           p.center Mensaje del Venerable Maestro
           br
-          p.text &nbsp; &nbsp; &nbsp; Es un honor dirigirme a ustedes como Venerable Maestro del Ciclo Masónico en este próspero año 2024 de esta R:.B:. y C:.L:.S:. “Memento Mori” N.° 12.  En este templo de virtudes, la perseverancia y la lealtad son los cimientos sobre los cuales construimos nuestras vidas y nuestro compromiso con la fraternidad.
+          p.text &nbsp; &nbsp; &nbsp; Es un honor dirigirme a ustedes como Venerable Maestro del Ciclo Masónico 2026 de la Respetable Logia Simbólica “Memento Mori” N.° 107. Damos inicio a este nuevo ciclo reafirmando nuestro compromiso con la reflexión consciente, el trabajo interior y la responsabilidad que implica formar parte de una institución dedicada al desarrollo humano y moral.
             br
-            | &nbsp; &nbsp; &nbsp; La perseverancia nos guía a través de desafíos, recordándonos que la dedicación constante es la llave que abre las puertas hacia el conocimiento más profundo y la comprensión más completa. La lealtad, por otro lado, nos une como hermanos, fortaleciendo nuestros lazos y recordándonos que juntos somos más fuertes.
+            | &nbsp; &nbsp; &nbsp; El nombre de nuestra Logia, Memento Mori, encierra un significado profundo: recordar la finitud de la vida como una invitación a vivir con propósito, actuar con rectitud y valorar el tiempo como un recurso invaluable. Esta reflexión constante nos orienta a priorizar lo esencial, a fortalecer el carácter y a dejar una huella positiva a través de nuestras acciones.
             br
-            | &nbsp; &nbsp; &nbsp; Sigamos construyendo sobre los pilares de la sabiduría, la fuerza y la belleza, llevando la luz masónica a nuestras vidas y a la sociedad que nos rodea. Que este año esté lleno de aprendizajes significativos, momentos fraternales y un profundo sentido de propósito.
+            | &nbsp; &nbsp; &nbsp; Sigamos edificando sobre los principios universales de la sabiduría, la fuerza y la belleza, integrándolos en nuestra vida cotidiana y proyectándolos como valores que contribuyan al bienestar común. Que este ciclo masónico sea un periodo de aprendizaje significativo, reflexión profunda y acción coherente.
             br
-            | &nbsp; &nbsp; &nbsp; En nombre de la Logia Memento Mori 12, les doy la bienvenida a este nuevo ciclo masónico. Que la luz del GADU ilumine nuestro camino y guíe nuestras acciones. 
+            | &nbsp; &nbsp; &nbsp; En nombre de la R∴L∴S∴ “Memento Mori” N.° 107, les doy la más cordial bienvenida a este nuevo ciclo masónico, con el firme deseo de que el compromiso, la conciencia y el servicio guíen nuestro caminar.
             br
             br
             | V:.H:. Jesús Iván Sotelo Vargas 30°
             br
-            | Venerable Maestro del Ciclo Masónico 2024
+            | Venerable Maestro del Ciclo Masónico 2026
 </template>
 
 <script setup>
@@ -96,42 +96,44 @@ onMounted(() => {
     }
     .word:nth-of-type(11),
     .word:nth-of-type(12),
+    .word:nth-of-type(19),
     .word:nth-of-type(20),
+    .word:nth-of-type(21),
+    .word:nth-of-type(22),
     .word:nth-of-type(23),
     .word:nth-of-type(24),
     .word:nth-of-type(25),
-    .word:nth-of-type(26),
-    .word:nth-of-type(27),
-    .word:nth-of-type(28),
-    .word:nth-of-type(29),
-    .word:nth-of-type(30),
-    .word:nth-of-type(37),
-    .word:nth-of-type(38),
-    .word:nth-of-type(39),
-    .word:nth-of-type(40),
-    .word:nth-of-type(60),
-    .word:nth-of-type(90),
-    .word:nth-of-type(97),
-    .word:nth-of-type(126),
-    .word:nth-of-type(127),
-    .word:nth-of-type(161),
-    .word:nth-of-type(162),
-    .word:nth-of-type(163),
-    .word:nth-of-type(164),
-    .word:nth-of-type(165),
-    .word:nth-of-type(179),
-    .word:nth-of-type(188),
-    .word:nth-of-type(189),
-    .word:nth-of-type(190),
-    .word:nth-of-type(191),
-    .word:nth-of-type(192),
-    .word:nth-of-type(193),
-    .word:nth-of-type(194),
-    .word:nth-of-type(195),
-    .word:nth-of-type(196),
-    .word:nth-of-type(197),
-    .word:nth-of-type(198),
-    .word:nth-of-type(199) {
+  
+    .word:nth-of-type(66),
+    .word:nth-of-type(67),
+
+  
+    .word:nth-of-type(130),
+    .word:nth-of-type(131),
+    .word:nth-of-type(132),
+    .word:nth-of-type(133),
+    .word:nth-of-type(134),
+    .word:nth-of-type(135),
+    .word:nth-of-type(136),
+  
+    .word:nth-of-type(173),
+    .word:nth-of-type(174),
+    .word:nth-of-type(175),
+    .word:nth-of-type(176),
+    .word:nth-of-type(177),
+  
+    .word:nth-of-type(205),
+    .word:nth-of-type(206),
+    .word:nth-of-type(207),
+    .word:nth-of-type(208),
+    .word:nth-of-type(209),
+    .word:nth-of-type(210),
+    .word:nth-of-type(211),
+    .word:nth-of-type(212),
+    .word:nth-of-type(213),
+    .word:nth-of-type(214),
+    .word:nth-of-type(215),
+    .word:nth-of-type(216) {
       color: #fff;
     }
     @media only screen and (max-width: 768px) {

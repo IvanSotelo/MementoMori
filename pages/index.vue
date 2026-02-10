@@ -18,11 +18,11 @@ main(role="main" ref="root")
       .vertical-align
         .vertical-align-item
           span
-            p.page-home__slogan Resp:. Log:. Simb:.
+            p.page-home__slogan Resp∴ Log∴ Simb∴
           span
-            h1.page-home__title Memento Mori 12
+            h1.page-home__title Memento Mori No.107
           .page-home__cta
-            p Jurisdiccionada a la Noble, Leal y Centenaria Gran Logia "Cosmos" del Estado de Chihuahua
+            nuxt-link(to="https://granlogiacosmos.mx/") Jurisdiccionada a la Noble, Leal y Centenaria Gran Logia "Cosmos" del Estado de Chihuahua
   </template>
 
 <script setup>
@@ -359,7 +359,7 @@ onMounted(() => {
           position: relative;
           top: 35vw;
         }
-        p {
+        a {
           color: rgba(255, 255, 255, 1);
           transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
           &:hover {
