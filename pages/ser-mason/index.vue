@@ -57,7 +57,7 @@ main(ref="serMason")
               template(v-if="sending") {{ $t('ser-mason.sending') }}
               template(v-else) {{ $t('ser-mason.submit') }}
 
-        p.page-ser-mason__note {{ $t('ser-mason.note') }}
+        p.page-ser-mason__note {{ $t('ser-mason.noteBefore') }}@{{ $t('ser-mason.noteAfter') }}
 </template>
 
 <script setup lang="ts">
