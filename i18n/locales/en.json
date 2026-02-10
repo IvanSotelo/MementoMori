@@ -4,6 +4,7 @@
     "history___en": "History",
     "message___en": "Message",
     "moral-code___en": "Masonic Moral Code",
+    "ser-mason___en": "Becoming a Freemason",
     "gallery___en": "Gallery",
     "gallery-slug___en": "Gallery",
     "index_es5": "Lodges",
@@ -55,6 +56,31 @@
     "Be content all, by all and everything.",
     "Do not judge lightly the actions of men, not less reproaches and blades; While prior attempts to probe hearts to appreciate his works."
   ],
+  "ser-mason": {
+    "title": "Membership application",
+    "intro": "Fill out the form to submit your application to the Respetable Logia Simbólica Memento Mori N.° 107. The secretary will review your information and get in touch.",
+    "fields": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message or reason for your application"
+    },
+    "placeholders": {
+      "name": "Your name",
+      "email": "email@example.com",
+      "phone": "Optional",
+      "message": "Write your message here..."
+    },
+    "validation": {
+      "name-required": "Name is required",
+      "email-required": "Email is required",
+      "email-invalid": "Please enter a valid email",
+      "message-required": "Message is required"
+    },
+    "submit": "Submit application",
+    "sending": "Sending...",
+    "note": "Submitting will open your email client with secretaria@memento-mori.mx. Send the message to complete your application."
+  },
   "contact": {
     "contact-us": "Contact us",
     "archive-materials": "Archive materials",

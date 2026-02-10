@@ -4,6 +4,7 @@
     "history___es": "Historia",
     "message___es": "Mensaje",
     "moral-code___es": "Código moral masónico",
+    "ser-mason___es": "Ser Masón",
     "gallery___es": "Galería",
     "gallery-slug___es": "Galería",
     "index_es5": "Logias",
@@ -55,6 +56,31 @@
     "Sé siempre contento para todo, con todo y de todo.",
     "Jamás juzgues ligeramente las acciones de los hombres. Perdónalas y no las condenes. El Gran Arquitecto del Universo es el que sondea nuestros corazones. Es él, sólo, quien puede apreciar su obra."
   ],
+  "ser-mason": {
+    "title": "Solicitud de ingreso",
+    "intro": "Complete el formulario para enviar su solicitud a la Respetable Logia Simbólica Memento Mori N.° 107. La secretaría revisará su información y se pondrá en contacto.",
+    "fields": {
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "message": "Mensaje o motivo de su solicitud"
+    },
+    "placeholders": {
+      "name": "Su nombre",
+      "email": "correo@ejemplo.com",
+      "phone": "Opcional",
+      "message": "Escriba aquí su mensaje..."
+    },
+    "validation": {
+      "name-required": "El nombre es obligatorio",
+      "email-required": "El correo es obligatorio",
+      "email-invalid": "Introduzca un correo válido",
+      "message-required": "El mensaje es obligatorio"
+    },
+    "submit": "Enviar solicitud",
+    "sending": "Enviando...",
+    "note": "Al enviar se abrirá su cliente de correo con la dirección secretaria@memento-mori.mx. Envíe el mensaje para completar la solicitud."
+  },
   "credits": {
     "contact_us": "Contáctanos",
     "archive_materials": "Materiales de archivo",

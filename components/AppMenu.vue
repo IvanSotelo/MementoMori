@@ -24,7 +24,7 @@
       </nuxt-link>
     </div>
     <div class="_col site-menu__item" role="listitem" @click="menuStore.toggleMenu">
-      <nuxt-link :to="localePath('/')">
+      <nuxt-link :to="localePath('ser-mason')">
         <p class="site-menu__item--title">
           {{ $t('site-menu.item-becoming-freemason') }}
         </p>
