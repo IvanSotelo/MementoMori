@@ -120,7 +120,7 @@
             </div>
             <div id="vm2025" class="history__item" data-scroll-section>
               <div class="history__item-wrapper space">
-                <div class="history__item-aside--right bottom-10">
+                <div class="history__item-aside--bottom">
                   <nuxt-img
                     provider="cloudinary"
                     src="v1766432034/memento-mori/vm-2025.jpg"

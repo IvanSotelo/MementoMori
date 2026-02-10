@@ -61,6 +61,13 @@ const images: Ref<Image[]> = ref([
     src: 'v1766431839/memento-mori/aumento%20de%20salario%202025.jpg'
   },
   {
+    url: 'solsticio-de-verano-2025',
+    year: '2025',
+    title: 'Solsticio de Verano 2025',
+    class: 'sky',
+    src: 'v1766431849/memento-mori/solsticio%20de%20verano%202025.jpg'
+  },
+  {
     url: 'iniciacion-2025',
     year: '2025',
     title: 'Iniciación 2025',
