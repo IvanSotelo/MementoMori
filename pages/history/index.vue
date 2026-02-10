@@ -120,24 +120,20 @@
             </div>
             <div id="vm2025" class="history__item" data-scroll-section>
               <div class="history__item-wrapper space">
-                <div class="history__item-text">
-                  <p class="history__item-text--title">Venerable Maestro Salomón Dozal Suárez</p>
-                  <p class="history__item-text--text">
-                    Bajo la dirección del <b>Venerable Maestro Salomón Dozal Suárez</b>, la
-                    Respetable Logia Simbólica Memento Mori Nº 107 inicia sus trabajos en 2025,
-                    guiando al taller en la búsqueda del conocimiento y el perfeccionamiento de sus
-                    miembros conforme a los principios de la masonería.
-                  </p>
+                <div class="history__item-aside--right bottom-10">
+                  <nuxt-img
+                    provider="cloudinary"
+                    src="v1766432034/memento-mori/vm-2025.jpg"
+                    alt="Salomón Dozal Suárez - Venerable Maestro 2025"
+                    placeholder
+                    format="webp"
+                    loading="lazy"
+                  />
+                  <span>
+                    <p>Salomón Dozal Suárez</p>
+                    <p>Venerable Maestro 2025</p>
+                  </span>
                 </div>
-                <nuxt-img
-                  class="history__item-image"
-                  provider="cloudinary"
-                  src="v1766432034/memento-mori/vm-2025.jpg"
-                  alt="Salomón Dozal Suárez - Venerable Maestro 2025"
-                  placeholder
-                  format="webp"
-                  loading="lazy"
-                />
               </div>
             </div>
             <!--
