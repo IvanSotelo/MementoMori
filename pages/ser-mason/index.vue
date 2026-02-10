@@ -3,65 +3,127 @@ main(ref="serMason")
   section#page-ser-mason.page.page-ser-mason
     .vertical-align
       .vertical-align-item
-        h2.page-ser-mason__title {{ $t('ser-mason.title') }}
-        p.page-ser-mason__intro {{ $t('ser-mason.intro') }}
+        h2.page-ser-mason__title {{ copy.title }}
+        p.page-ser-mason__intro {{ copy.intro }}
 
         form.page-ser-mason__form(
           @submit.prevent="handleSubmit"
           novalidate
         )
           .form-group
-            label(for="nombre") {{ $t('ser-mason.fields.name') }} *
+            label(for="nombre") {{ copy.fields.name }} *
             input#nombre(
               v-model="form.nombre"
               type="text"
               name="nombre"
               required
-              :placeholder="$t('ser-mason.placeholders.name')"
+              :placeholder="copy.placeholders.name"
             )
             span.form-error(v-if="errors.nombre") {{ errors.nombre }}
 
           .form-group
-            label(for="email") {{ $t('ser-mason.fields.email') }} *
+            label(for="email") {{ copy.fields.email }} *
             input#email(
               v-model="form.email"
               type="email"
               name="email"
               required
-              :placeholder="$t('ser-mason.placeholders.email')"
+              :placeholder="copy.placeholders.email"
             )
             span.form-error(v-if="errors.email") {{ errors.email }}
 
           .form-group
-            label(for="telefono") {{ $t('ser-mason.fields.phone') }}
+            label(for="telefono") {{ copy.fields.phone }}
             input#telefono(
               v-model="form.telefono"
               type="tel"
               name="telefono"
-              :placeholder="$t('ser-mason.placeholders.phone')"
+              :placeholder="copy.placeholders.phone"
             )
 
           .form-group
-            label(for="mensaje") {{ $t('ser-mason.fields.message') }} *
+            label(for="mensaje") {{ copy.fields.message }} *
             textarea#mensaje(
               v-model="form.mensaje"
               name="mensaje"
               rows="5"
               required
-              :placeholder="$t('ser-mason.placeholders.message')"
+              :placeholder="copy.placeholders.message"
             )
             span.form-error(v-if="errors.mensaje") {{ errors.mensaje }}
 
           .form-actions
             button.page-ser-mason__submit(type="submit" :disabled="sending")
-              template(v-if="sending") {{ $t('ser-mason.sending') }}
-              template(v-else) {{ $t('ser-mason.submit') }}
+              template(v-if="sending") {{ copy.sending }}
+              template(v-else) {{ copy.submit }}
 
-        p.page-ser-mason__note {{ $t('ser-mason.noteBefore') }}@{{ $t('ser-mason.noteAfter') }}
+        p.page-ser-mason__note {{ copy.noteBefore }}@{{ copy.noteAfter }}
 </template>
 
 <script setup lang="ts">
 const EMAIL_TO = 'secretaria@memento-mori.mx'
+
+const SER_MASON_COPY = {
+  es: {
+    title: 'Solicitud de ingreso',
+    intro:
+      'Complete el formulario para enviar su solicitud a la Respetable Logia Simbólica Memento Mori N.° 107. La secretaría revisará su información y se pondrá en contacto.',
+    fields: {
+      name: 'Nombre completo',
+      email: 'Correo electrónico',
+      phone: 'Teléfono',
+      message: 'Mensaje o motivo de su solicitud'
+    },
+    placeholders: {
+      name: 'Su nombre',
+      email: 'ejemplo: nombre en dominio.com',
+      phone: 'Opcional',
+      message: 'Escriba aquí su mensaje...'
+    },
+    validation: {
+      nameRequired: 'El nombre es obligatorio',
+      emailRequired: 'El correo es obligatorio',
+      emailInvalid: 'Introduzca un correo válido',
+      messageRequired: 'El mensaje es obligatorio'
+    },
+    submit: 'Enviar solicitud',
+    sending: 'Enviando...',
+    noteBefore: 'Al enviar se abrirá su cliente de correo con la dirección secretaria',
+    noteAfter: 'memento-mori.mx. Envíe el mensaje para completar la solicitud.'
+  },
+  en: {
+    title: 'Membership application',
+    intro:
+      'Fill out the form to submit your application to the Respetable Logia Simbólica Memento Mori N.° 107. The secretary will review your information and get in touch.',
+    fields: {
+      name: 'Full name',
+      email: 'Email',
+      phone: 'Phone',
+      message: 'Message or reason for your application'
+    },
+    placeholders: {
+      name: 'Your name',
+      email: 'e.g. name at domain.com',
+      phone: 'Optional',
+      message: 'Write your message here...'
+    },
+    validation: {
+      nameRequired: 'Name is required',
+      emailRequired: 'Email is required',
+      emailInvalid: 'Please enter a valid email',
+      messageRequired: 'Message is required'
+    },
+    submit: 'Submit application',
+    sending: 'Sending...',
+    noteBefore: 'Submitting will open your email client with secretaria',
+    noteAfter: 'memento-mori.mx. Send the message to complete your application.'
+  }
+} as const
+
+const { locale } = useI18n()
+const copy = computed(
+  () => SER_MASON_COPY[locale.value as keyof typeof SER_MASON_COPY] ?? SER_MASON_COPY.es
+)
 
 const form = reactive({
   nombre: '',
@@ -84,24 +146,24 @@ function validate(): boolean {
   errors.email = ''
   errors.mensaje = ''
 
-  const { t } = useI18n()
+  const c = copy.value
   let valid = true
 
   if (!form.nombre?.trim()) {
-    errors.nombre = t('ser-mason.validation.name-required')
+    errors.nombre = c.validation.nameRequired
     valid = false
   }
 
   if (!form.email?.trim()) {
-    errors.email = t('ser-mason.validation.email-required')
+    errors.email = c.validation.emailRequired
     valid = false
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
-    errors.email = t('ser-mason.validation.email-invalid')
+    errors.email = c.validation.emailInvalid
     valid = false
   }
 
   if (!form.mensaje?.trim()) {
-    errors.mensaje = t('ser-mason.validation.message-required')
+    errors.mensaje = c.validation.messageRequired
     valid = false
   }
 
