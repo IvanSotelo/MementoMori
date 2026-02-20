@@ -29,7 +29,7 @@
     "eslint": "^9.39.2",
     "howler": "^2.2.4",
     "isotope-layout": "^3.0.6",
-    "locomotive-scroll": "^4.1.4",
+    "locomotive-scroll": "^5.0.1",
     "nuxt": "^3.17.6",
     "nuxt-gtag": "^4.1.0",
     "pinia": "^3.0.4",
