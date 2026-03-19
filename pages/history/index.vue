@@ -123,7 +123,7 @@
                 <div class="history__item-aside--bottom">
                   <nuxt-img
                     provider="cloudinary"
-                    src="v1766432034/memento-mori/vm-2025.jpg"
+                    src="v1773957790/memento-mori/vm-2025.jpg"
                     alt="Salomón Dozal Suárez - Venerable Maestro 2025"
                     placeholder
                     format="webp"
