@@ -64,7 +64,7 @@
                 </div>
               </div>
             </div>
-            <div class="history__item margin-0" data-scroll-section>
+            <div id="ciclo2025" class="history__item margin-0" data-scroll-section>
               <div class="history__item-wrapper space">
                 <div class="history__item-text">
                   <p class="history__item-text--date">2025</p>
@@ -118,7 +118,7 @@
                 </div>
               </div>
             </div>
-            <div id="ciclo2025" class="history__item" data-scroll-section>
+            <div class="history__item" data-scroll-section>
               <div class="history__item-wrapper space">
                 <div class="history__item-aside--bottom">
                   <nuxt-img
@@ -151,6 +151,10 @@
                     <b>Daniel Trevizo</b> completan el cuadro de oficiales.
                   </p>
                 </div>
+              </div>
+            </div>
+            <div class="history__item" data-scroll-section>
+              <div class="history__item-wrapper space">
                 <div class="history__item-aside--bottom">
                   <nuxt-img
                     provider="cloudinary"
