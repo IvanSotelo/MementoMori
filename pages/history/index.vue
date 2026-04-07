@@ -154,7 +154,7 @@
                 <div class="history__item-aside--bottom">
                   <nuxt-img
                     provider="cloudinary"
-                    src="v1766432034/memento-mori/vm-2026.jpg"
+                    src="v1775583937/memento-mori/vm-2026.png"
                     alt="Jesús Iván Sotelo Vargas - Venerable Maestro 2026"
                     placeholder
                     format="webp"
