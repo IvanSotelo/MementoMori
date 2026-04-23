@@ -68,52 +68,31 @@
               <div class="history__item-wrapper space">
                 <div class="history__item-text">
                   <p class="history__item-text--date">2025</p>
-                  <p class="history__item-text--title">Fundación de Memento Mori Nº 107</p>
+                  <p class="history__item-text--title">Ciclo masónico 2025</p>
                   <p class="history__item-text--text">
-                    En el espíritu de la fraternidad y el compromiso con los valores masónicos, se
-                    constituyó la <b>Respetable Logia Simbólica Memento Mori</b>, un taller dedicado
-                    a la búsqueda del conocimiento, la reflexión filosófica y el perfeccionamiento
-                    del individuo dentro de los principios de la masonería.
+                    En el espíritu de la fraternidad y el compromiso con los valores masónicos se
+                    constituyó la <b>Respetable Logia Simbólica Memento Mori</b> N.º 107, taller
+                    dedicado a la búsqueda del conocimiento, la reflexión filosófica y el
+                    perfeccionamiento del individuo dentro de los principios de la masonería.
                     <br />
-                    Bajo la dirección de su <b>Venerable Maestro, Salomón Dozal Suárez</b>, la logia
-                    se estableció con un cuadro logial compuesto por hermanos comprometidos con la
-                    enseñanza y práctica de la tradición masónica. Entre ellos, el
-                    <b
-                      >Primer Vigilante Jesús Iván Sotelo Vargas y el Segundo Vigilante Heriberto
-                      Solis Rivas</b
-                    >, quienes velan por el desarrollo de los trabajos y la formación de los
-                    aprendices.
                     <br />
-                    El Secretario, <b>Aquilino Ramírez Lorenzo</b>, tiene la responsabilidad de
-                    registrar la historia y la evolución de la logia, mientras que el Orador,
-                    <b>Jesús Nevárez Rascón</b>, se encarga de velar por la pureza de los principios
-                    y la aplicación de la ley masónica.
-                    <br />
-                    El Tesorero, <b>Zahid Daniel Vela Juárez</b>, administra con prudencia los
-                    bienes de la logia, y el Maestro de Ceremonias,
-                    <b>José Ángel Salas Granados</b>, dirige con solemnidad los rituales y trabajos
-                    simbólicos. Asimismo, el Hospitalario, <b>Rafael González Jurado</b>, vela por
-                    la solidaridad y el bienestar de los hermanos.
-                    <br />
-                    Entre los oficiales encargados de la seguridad y el orden, destacan el Primer
-                    Experto <b>Héctor Felipe Moreno Nevárez</b>, el Segundo Experto
-                    <b>Diego Alejandro Balderrama Gallegos</b>, y el Guarda Templo Interior
-                    <b>Raúl Palacios Perches</b>.
-                    <br />
-                    El puesto de Ecónomo, desempeñado por el hermano
-                    <b>Rafael Alberto Márquez Pérez</b>, es fundamental para la administración de
-                    los recursos y la provisión de las necesidades materiales de la logia,
-                    asegurando su correcto funcionamiento.
+                    Bajo la dirección del <b>Venerable Maestro Salomón Dozal Suárez</b>, con el
+                    <b>Primer Vigilante Jesús Iván Sotelo Vargas</b> y el
+                    <b>Segundo Vigilante Heriberto Solis Rivas</b>. El Secretario
+                    <b>Aquilino Ramírez Lorenzo</b>, el Orador <b>Jesús Nevárez Rascón</b>, el
+                    Tesorero <b>Zahid Daniel Vela Juárez</b>, el Maestro de Ceremonias
+                    <b>José Ángel Salas Granados</b>, el Hospitalario <b>Rafael González Jurado</b>,
+                    el Primer Experto <b>Héctor Felipe Moreno Nevárez</b>, el Segundo Experto
+                    <b>Diego Alejandro Balderrama Gallegos</b>, el Guarda Templo Interior
+                    <b>Raúl Palacios Perches</b> y el Ecónomo <b>Rafael Alberto Márquez Pérez</b>
+                    integraron el cuadro fundador.
                   </p>
                   <p class="history__item-text--text">
-                    La fundación de <b>Memento Mori</b> representa no solo el nacimiento de un nuevo
-                    espacio de estudio y reflexión, sino también el compromiso de sus miembros con
-                    la transmisión del conocimiento, el fortalecimiento de los lazos fraternos y el
-                    perfeccionamiento moral e intelectual.
-                    <br />
-                    Siguiendo el significado profundo de su nombre, <b>Memento Mori</b>, esta logia
-                    recuerda constantemente a sus integrantes la importancia de la humildad, la
-                    trascendencia de la vida y la necesidad de obrar con virtud en cada acción..
+                    La fundación de <b>Memento Mori</b> representa el nacimiento de un espacio de
+                    estudio y reflexión, el compromiso de sus miembros con la transmisión del
+                    conocimiento y el fortalecimiento de los lazos fraternos. Como recuerda su
+                    nombre, la logia invita a la humildad, a la trascendencia de la vida y a obrar
+                    con virtud en cada acción.
                   </p>
                 </div>
               </div>
@@ -140,15 +119,18 @@
               <div class="history__item-wrapper space">
                 <div class="history__item-text">
                   <p class="history__item-text--date">2026</p>
-                  <p class="history__item-text--title">Cuadro logial 2026</p>
+                  <p class="history__item-text--title">Ciclo masónico 2026</p>
                   <p class="history__item-text--text">
                     Bajo la dirección del <b>Venerable Maestro Jesús Iván Sotelo Vargas</b>, con el
                     <b>Primer Vigilante Aquilino Ramírez Lorenzo</b> y el
-                    <b>Segundo Vigilante Jesús Nevárez Rascón</b>.
-                    <br />
-                    El Secretario <b>Ángel Salas Granados</b>, el Orador <b>Rafael Márquez</b>, el
-                    Maestro de Ceremonias <b>Diego Balderrama</b> y el Hospitalario
-                    <b>Daniel Trevizo</b> completan el cuadro de oficiales.
+                    <b>Segundo Vigilante Jesús Nevárez Rascón</b>. El Secretario
+                    <b>José Ángel Salas Granados</b>, el Orador <b>Rafael Alberto Márquez Pérez</b>,
+                    el Maestro de Ceremonias <b>Diego Alejandro Balderrama Gallegos</b> y el
+                    Hospitalario <b>Daniel Trevizo</b> integran el cuadro de oficiales.
+                  </p>
+                  <p class="history__item-text--text">
+                    El ciclo 2026 continúa la labor de estudio y reflexión de la logia, reafirmando
+                    el compromiso con los principios que dan sentido a <b>Memento Mori</b>.
                   </p>
                 </div>
               </div>
