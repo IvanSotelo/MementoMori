@@ -102,3 +102,8 @@ public/*.svg
 
 # Prettier ignore itself
 .prettierignore
+
+# No parser (binary / plain text without Prettier support)
+public/og.png
+public/_robots.txt
+/og.png
