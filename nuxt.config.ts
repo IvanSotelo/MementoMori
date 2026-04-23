@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     url: 'https://memento-mori.mx',
     name: 'Memento Mori No.107',
     description:
-      'Respetable Logia Simbolica Memento Mori N.° 107 jurisdiccionada a la Noble Leal y Centenaria Muy Respetable Gran Logia Cosmos del estado de Chihuahua',
+      'Respetable Logia Simbólica Memento Mori N.° 107 en la ciudad de Chihuahua, Chih. Jurisdiccionada a la Noble, Leal y Centenaria Gran Logia Cosmos. Fraternidad masónica, valores y solicitud de ingreso para quienes desean iniciar el camino en Chihuahua.',
     defaultLocale: 'es'
   },
   modules: [

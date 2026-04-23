@@ -67,7 +67,7 @@ const SER_MASON_COPY = {
   es: {
     title: 'Solicitud de ingreso',
     intro:
-      'Complete el formulario para enviar su solicitud a la Respetable Logia Simbólica Memento Mori N.° 107. La secretaría revisará su información y se pondrá en contacto.',
+      'Si vive en Chihuahua o desea iniciar su camino en la ciudad de Chihuahua, complete el formulario para enviar su solicitud a la Respetable Logia Simbólica Memento Mori N.° 107. La secretaría revisará su información y se pondrá en contacto.',
     fields: {
       name: 'Nombre completo',
       email: 'Correo electrónico',
@@ -94,7 +94,7 @@ const SER_MASON_COPY = {
   en: {
     title: 'Membership application',
     intro:
-      'Fill out the form to submit your application to the Respetable Logia Simbólica Memento Mori N.° 107. The secretary will review your information and get in touch.',
+      'If you live in Chihuahua or wish to begin your journey in Chihuahua City, fill out the form to submit your application to the Respectable Symbolic Lodge Memento Mori No. 107. The secretary will review your information and get in touch.',
     fields: {
       name: 'Full name',
       email: 'Email',
@@ -124,6 +124,64 @@ const { locale } = useI18n()
 const copy = computed(
   () => SER_MASON_COPY[locale.value as keyof typeof SER_MASON_COPY] ?? SER_MASON_COPY.es
 )
+
+const pageTitle = computed(() =>
+  locale.value === 'en'
+    ? 'Join Freemasonry in Chihuahua — membership application'
+    : 'Ser masón en Chihuahua — solicitud de ingreso'
+)
+
+const pageOgTitle = computed(() =>
+  locale.value === 'en'
+    ? 'Join Freemasonry in Chihuahua | Memento Mori No. 107 — membership'
+    : 'Ser masón en Chihuahua | Memento Mori N.° 107 — solicitud de ingreso'
+)
+
+const pageDescription = computed(() =>
+  locale.value === 'en'
+    ? 'Apply to the Respectable Symbolic Lodge Memento Mori No. 107 in Chihuahua City, Mexico (Grand Lodge Cosmos). The secretary receives requests from prospective members in Chihuahua and the region.'
+    : 'Solicite su ingreso a la Respetable Logia Simbólica Memento Mori N.° 107 en la ciudad de Chihuahua, México (Gran Logia Cosmos). La secretaría atiende solicitudes de aspirantes en Chihuahua y la región.'
+)
+
+useSeoMeta({
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: pageOgTitle,
+  ogDescription: pageDescription,
+  ogType: 'website',
+  twitterTitle: pageOgTitle,
+  twitterDescription: pageDescription
+})
+
+const organizationJsonLd = computed(() => ({
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Respetable Logia Simbólica Memento Mori N.° 107',
+  alternateName: ['Memento Mori No. 107', 'R∴L∴S∴ Memento Mori 107'],
+  url: 'https://memento-mori.mx',
+  description:
+    'Logia masónica simbólica en la ciudad de Chihuahua, jurisdiccionada a la Gran Logia Cosmos del estado de Chihuahua.',
+  areaServed: {
+    '@type': 'Place',
+    name: 'Ciudad de Chihuahua',
+    description: 'Capital del estado de Chihuahua, México'
+  },
+  parentOrganization: {
+    '@type': 'Organization',
+    name: 'Gran Logia Cosmos del Estado de Chihuahua',
+    url: 'https://granlogiacosmos.mx/'
+  }
+}))
+
+useHead({
+  script: computed(() => [
+    {
+      key: 'jsonld-memento-mori-org',
+      type: 'application/ld+json',
+      children: JSON.stringify(organizationJsonLd.value)
+    }
+  ])
+})
 
 const form = reactive({
   nombre: '',

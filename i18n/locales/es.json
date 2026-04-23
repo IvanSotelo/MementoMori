@@ -58,7 +58,7 @@
   ],
   "ser-mason": {
     "title": "Solicitud de ingreso",
-    "intro": "Complete el formulario para enviar su solicitud a la Respetable Logia Simbólica Memento Mori N.° 107. La secretaría revisará su información y se pondrá en contacto.",
+    "intro": "Si vive en Chihuahua o desea iniciar su camino en la ciudad de Chihuahua, complete el formulario para enviar su solicitud a la Respetable Logia Simbólica Memento Mori N.° 107. La secretaría revisará su información y se pondrá en contacto.",
     "fields": {
       "name": "Nombre completo",
       "email": "Correo electrónico",

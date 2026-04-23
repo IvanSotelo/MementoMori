@@ -7,10 +7,10 @@ main(role="main" ref="root")
         .js-overlay.page-home__overlay--first
       .page-home__chapter.is-active
         .page-home__chapter-background
-          nuxt-img.page-home__chapter-background--image2(provider="cloudinary" format="webp" cover src="v1661278329/perseverancia/blue_y3u5at.jpg" fit="fill" alt="Memento Mori No.107")
+          nuxt-img.page-home__chapter-background--image2(provider="cloudinary" format="webp" cover src="v1661278329/perseverancia/blue_y3u5at.jpg" fit="fill" :alt="heroAlt")
       .page-home__chapter
         .page-home__chapter-background
-          nuxt-img.page-home__chapter-background--image(provider="cloudinary" format="webp" cover src="v1661278333/perseverancia/bg_mb6eok.png" fit="fill" alt="Memento Mori No.107" preload)
+          nuxt-img.page-home__chapter-background--image(provider="cloudinary" format="webp" cover src="v1661278333/perseverancia/bg_mb6eok.png" fit="fill" :alt="heroAlt" preload)
       .page-home__transition
         canvas.page-home__transition-main
         img.page-home__transition-sprite(src="/sprite_test5.png" data-src="/sprite_test5.png" alt="")
@@ -26,6 +26,42 @@ main(role="main" ref="root")
   </template>
 
 <script setup>
+const { locale } = useI18n()
+
+const heroAlt = computed(() =>
+  locale.value === 'en'
+    ? 'Respectable Symbolic Lodge Memento Mori No. 107 — Freemasonry in Chihuahua City, Mexico'
+    : 'Respetable Logia Simbólica Memento Mori N.° 107 — masonería en la ciudad de Chihuahua, México'
+)
+
+const indexTitle = computed(() =>
+  locale.value === 'en'
+    ? 'Masonic lodge in Chihuahua — Grand Lodge Cosmos'
+    : 'Logia masónica en Chihuahua — Gran Logia Cosmos'
+)
+
+const indexOgTitle = computed(() =>
+  locale.value === 'en'
+    ? 'Masonic lodge in Chihuahua | Memento Mori No. 107 — Grand Lodge Cosmos'
+    : 'Logia masónica en Chihuahua | Memento Mori N.° 107 — Gran Logia Cosmos'
+)
+
+const indexDescription = computed(() =>
+  locale.value === 'en'
+    ? 'Respectable Symbolic Lodge Memento Mori No. 107 in Chihuahua City, under the Grand Lodge Cosmos. Universal fraternity, philosophical work and path for those seeking to join Freemasonry in Chihuahua.'
+    : 'Respetable Logia Simbólica Memento Mori N.° 107 en la ciudad de Chihuahua, bajo la Gran Logia Cosmos. Fraternidad universal, trabajo filosófico y camino para quienes buscan unirse a la masonería en Chihuahua.'
+)
+
+useSeoMeta({
+  title: indexTitle,
+  description: indexDescription,
+  ogTitle: indexOgTitle,
+  ogDescription: indexDescription,
+  ogType: 'website',
+  twitterTitle: indexOgTitle,
+  twitterDescription: indexDescription
+})
+
 const root = ref(null)
 const bgFrameWidth = 480
 const bgFrameHeight = 270
