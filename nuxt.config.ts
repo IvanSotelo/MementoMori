@@ -3,10 +3,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   site: {
-    url: 'https://mementomori12.com',
-    name: 'Memento Mori N°12',
+    url: 'https://memento-mori.mx',
+    name: 'Memento Mori No.107',
     description:
-      'Respetable Logia Simbolica Memento Mori N°12 jurisdiccionada a la Noble Leal y Centenaria Muy Respetable Gran Logia Cosmos del estado de Chihuahua',
+      'Respetable Logia Simbolica Memento Mori N.° 107 jurisdiccionada a la Noble Leal y Centenaria Muy Respetable Gran Logia Cosmos del estado de Chihuahua',
     defaultLocale: 'es'
   },
   modules: [

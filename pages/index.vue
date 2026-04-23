@@ -7,10 +7,10 @@ main(role="main" ref="root")
         .js-overlay.page-home__overlay--first
       .page-home__chapter.is-active
         .page-home__chapter-background
-          nuxt-img.page-home__chapter-background--image2(provider="cloudinary" format="webp" cover src="v1661278329/perseverancia/blue_y3u5at.jpg" fit="fill" alt="Perseverancia y Lealtad 12")
+          nuxt-img.page-home__chapter-background--image2(provider="cloudinary" format="webp" cover src="v1661278329/perseverancia/blue_y3u5at.jpg" fit="fill" alt="Memento Mori No.107")
       .page-home__chapter
         .page-home__chapter-background
-          nuxt-img.page-home__chapter-background--image(provider="cloudinary" format="webp" cover src="v1661278333/perseverancia/bg_mb6eok.png" fit="fill" alt="Perseverancia y Lealtad 12" preload)
+          nuxt-img.page-home__chapter-background--image(provider="cloudinary" format="webp" cover src="v1661278333/perseverancia/bg_mb6eok.png" fit="fill" alt="Memento Mori No.107" preload)
       .page-home__transition
         canvas.page-home__transition-main
         img.page-home__transition-sprite(src="/sprite_test5.png" data-src="/sprite_test5.png" alt="")

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
-Sitemap: https://tu-sitio.com/sitemap.xml
+Sitemap: https://memento-mori.mx/sitemap.xml

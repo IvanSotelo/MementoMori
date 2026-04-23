@@ -10,7 +10,7 @@ main(ref="slug")
             p.js-title {{ image.title }}
           .single__box--category.js-box-category
             span.js-line2
-            p.js-category Perseverancia
+            p.js-category Memento Mori N.° 107
         .single__image(@click="closeBox")
           nuxt-img(provider="cloudinary" format="webp" cover placeholder preload :src="image?.src || ('v1766431449/memento-mori/'+$route.params.slug+'.jpg')")
         .single__mobile-info(@click="boxHandler")

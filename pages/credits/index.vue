@@ -35,7 +35,7 @@
               </div>
               <div class="col-6">
                 <p>
-                  <a href="http://www.johannjohannsson.com" target="_blank">
+                  <a href="https://www.johannjohannsson.com" target="_blank">
                     Jóhann Jóhannsson - McCanick
                   </a>
                 </p>

@@ -7,14 +7,12 @@
 
 <script lang="ts" setup>
 useSeoMeta({
-  ogImage:
-    'https://res.cloudinary.com/controlla/image/upload/v1674860740/perseverancia/Perseverancia_share.png',
-  twitterTitle: 'Memento Mori N° 12',
+  ogImage: 'https://memento-mori.mx/og.png',
+  twitterTitle: 'Memento Mori No.107',
   twitterDescription:
-    'Respetable Logia Simbolica Memento Mori N°12 jurisdiccionada a la Noble Leal y Centenaria Muy Respetable Gran Logia Cosmos del estado de Chihuahua',
-  twitterImage:
-    'https://res.cloudinary.com/controlla/image/upload/v1674860740/perseverancia/Perseverancia_share.png',
-  twitterCard: 'summary'
+    'Respetable Logia Simbolica Memento Mori N.° 107 jurisdiccionada a la Noble Leal y Centenaria Muy Respetable Gran Logia Cosmos del estado de Chihuahua',
+  twitterImage: 'https://memento-mori.mx/og.png',
+  twitterCard: 'summary_large_image'
 })
 
 useHead({
