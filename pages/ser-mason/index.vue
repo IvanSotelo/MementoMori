@@ -6,6 +6,13 @@ main(ref="serMason")
         h2.page-ser-mason__title {{ copy.title }}
         p.page-ser-mason__intro {{ copy.intro }}
 
+        section.page-ser-mason__faq(:aria-label="copy.faqAriaLabel")
+          h3.page-ser-mason__faq-heading {{ copy.faqHeading }}
+          dl.page-ser-mason__faq-list
+            template(v-for="(item, i) in copy.faqItems" :key="i")
+              dt.page-ser-mason__faq-q {{ item.q }}
+              dd.page-ser-mason__faq-a {{ item.a }}
+
         form.page-ser-mason__form(
           @submit.prevent="handleSubmit"
           novalidate
@@ -65,9 +72,21 @@ const EMAIL_TO = 'secretaria@memento-mori.mx'
 
 const SER_MASON_COPY = {
   es: {
-    title: 'Solicitud de ingreso',
+    title: 'Quiero ser masón en Chihuahua — solicitud de ingreso',
     intro:
-      'Si vive en Chihuahua o desea iniciar su camino en la ciudad de Chihuahua, complete el formulario para enviar su solicitud a la Respetable Logia Simbólica Memento Mori N.° 107. La secretaría revisará su información y se pondrá en contacto.',
+      'Muchas personas buscan “quiero ser masón en Chihuahua” o “logias masoneras en Chihuahua”: aquí puede dar el primer paso. Complete el formulario y la secretaría de la Respetable Logia Simbólica Memento Mori N.° 107 revisará su mensaje y se pondrá en contacto.',
+    faqHeading: 'Sobre el trámite en Chihuahua',
+    faqAriaLabel: 'Preguntas frecuentes sobre ser masón en Chihuahua',
+    faqItems: [
+      {
+        q: 'Quiero ser masón en Chihuahua. ¿Este formulario es el canal correcto?',
+        a: 'Sí. Es el medio oficial de primer contacto con la secretaría de la R∴L∴S∴ Memento Mori N.° 107. No sustituye entrevistas ni requisitos posteriores, pero permite iniciar la conversación.'
+      },
+      {
+        q: '¿Todas las logias masónicas en Chihuahua usan el mismo proceso?',
+        a: 'Las logias regulares del estado suelen depender de la Gran Logia Cosmos; cada taller puede tener matices. Esta solicitud es específica para Memento Mori N.° 107 en la ciudad de Chihuahua.'
+      }
+    ],
     fields: {
       name: 'Nombre completo',
       email: 'Correo electrónico',
@@ -92,9 +111,21 @@ const SER_MASON_COPY = {
     noteAfter: 'memento-mori.mx. Envíe el mensaje para completar la solicitud.'
   },
   en: {
-    title: 'Membership application',
+    title: 'I want to become a Freemason in Chihuahua — application',
     intro:
-      'If you live in Chihuahua or wish to begin your journey in Chihuahua City, fill out the form to submit your application to the Respectable Symbolic Lodge Memento Mori No. 107. The secretary will review your information and get in touch.',
+      'If you are searching for how to become a Freemason in Chihuahua or for Masonic lodges in Chihuahua, this page is your first step. Submit the form and the secretary of Respectable Symbolic Lodge Memento Mori No. 107 will review your message and follow up.',
+    faqHeading: 'About the process in Chihuahua',
+    faqAriaLabel: 'Frequently asked questions about becoming a Freemason in Chihuahua',
+    faqItems: [
+      {
+        q: 'I want to become a Freemason in Chihuahua. Is this form the right first step?',
+        a: 'Yes. It is the official first contact with the secretary of R∴L∴S∴ Memento Mori No. 107. It does not replace later interviews or requirements, but it starts the conversation.'
+      },
+      {
+        q: 'Do all Masonic lodges in Chihuahua follow the same process?',
+        a: 'Regular lodges in the state generally fall under the Grand Lodge Cosmos; each lodge may differ in detail. This application is specific to Memento Mori No. 107 in Chihuahua City.'
+      }
+    ],
     fields: {
       name: 'Full name',
       email: 'Email',
@@ -127,20 +158,20 @@ const copy = computed(
 
 const pageTitle = computed(() =>
   locale.value === 'en'
-    ? 'Join Freemasonry in Chihuahua — membership application'
-    : 'Ser masón en Chihuahua — solicitud de ingreso'
+    ? 'Become a Freemason in Chihuahua — apply'
+    : 'Quiero ser masón en Chihuahua — solicitud'
 )
 
 const pageOgTitle = computed(() =>
   locale.value === 'en'
-    ? 'Join Freemasonry in Chihuahua | Memento Mori No. 107 — membership'
-    : 'Ser masón en Chihuahua | Memento Mori N.° 107 — solicitud de ingreso'
+    ? 'I want to be a Freemason in Chihuahua | Memento Mori No. 107 — application'
+    : 'Quiero ser masón en Chihuahua | Memento Mori N.° 107 — solicitud de ingreso'
 )
 
 const pageDescription = computed(() =>
   locale.value === 'en'
-    ? 'Apply to the Respectable Symbolic Lodge Memento Mori No. 107 in Chihuahua City, Mexico (Grand Lodge Cosmos). The secretary receives requests from prospective members in Chihuahua and the region.'
-    : 'Solicite su ingreso a la Respetable Logia Simbólica Memento Mori N.° 107 en la ciudad de Chihuahua, México (Gran Logia Cosmos). La secretaría atiende solicitudes de aspirantes en Chihuahua y la región.'
+    ? 'Official first step if you want to become a Freemason in Chihuahua: apply to Respectable Symbolic Lodge Memento Mori No. 107 (Grand Lodge Cosmos). For searches like Masonic lodges in Chihuahua or joining Freemasonry in Chihuahua City.'
+    : 'Primer paso si quiere ser masón en Chihuahua: solicitud a la R∴L∴S∴ Memento Mori N.° 107 (Gran Logia Cosmos). Para búsquedas como logias masónicas en Chihuahua o logias masoneras en la capital.'
 )
 
 useSeoMeta({
@@ -153,32 +184,52 @@ useSeoMeta({
   twitterDescription: pageDescription
 })
 
-const organizationJsonLd = computed(() => ({
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'Respetable Logia Simbólica Memento Mori N.° 107',
-  alternateName: ['Memento Mori No. 107', 'R∴L∴S∴ Memento Mori 107'],
-  url: 'https://memento-mori.mx',
-  description:
-    'Logia masónica simbólica en la ciudad de Chihuahua, jurisdiccionada a la Gran Logia Cosmos del estado de Chihuahua.',
-  areaServed: {
-    '@type': 'Place',
-    name: 'Ciudad de Chihuahua',
-    description: 'Capital del estado de Chihuahua, México'
-  },
-  parentOrganization: {
+const serMasonGraphJsonLd = computed(() => {
+  const copyVal = SER_MASON_COPY[locale.value as keyof typeof SER_MASON_COPY] ?? SER_MASON_COPY.es
+  const orgDescription =
+    locale.value === 'en'
+      ? 'Symbolic Masonic lodge in Chihuahua City under the Grand Lodge Cosmos; membership applications for those who want to become Freemasons in Chihuahua.'
+      : 'Logia masónica simbólica en Chihuahua entre las logias del estado bajo la Gran Logia Cosmos; solicitud de ingreso para quien quiere ser masón en Chihuahua.'
+  const org = {
     '@type': 'Organization',
-    name: 'Gran Logia Cosmos del Estado de Chihuahua',
-    url: 'https://granlogiacosmos.mx/'
+    name: 'Respetable Logia Simbólica Memento Mori N.° 107',
+    alternateName: ['Memento Mori No. 107', 'R∴L∴S∴ Memento Mori 107'],
+    url: 'https://memento-mori.mx',
+    description: orgDescription,
+    areaServed: {
+      '@type': 'Place',
+      name: 'Ciudad de Chihuahua',
+      description: 'Capital del estado de Chihuahua, México'
+    },
+    parentOrganization: {
+      '@type': 'Organization',
+      name: 'Gran Logia Cosmos del Estado de Chihuahua',
+      url: 'https://granlogiacosmos.mx/'
+    }
   }
-}))
+  const faq = {
+    '@type': 'FAQPage',
+    mainEntity: copyVal.faqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.a
+      }
+    }))
+  }
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [org, faq]
+  }
+})
 
 useHead({
   script: computed(() => [
     {
-      key: 'jsonld-memento-mori-org',
+      key: 'jsonld-ser-mason-graph',
       type: 'application/ld+json',
-      children: JSON.stringify(organizationJsonLd.value)
+      children: JSON.stringify(serMasonGraphJsonLd.value)
     }
   ])
 })
@@ -301,7 +352,45 @@ onMounted(() => {
     color: #8e8e9e;
     font-size: 0.95rem;
     line-height: 1.5;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.75rem;
+  }
+
+  &__faq {
+    margin-bottom: 2rem;
+    padding: 1.25rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  &__faq-heading {
+    margin: 0 0 1rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  &__faq-list {
+    margin: 0;
+  }
+
+  &__faq-q {
+    margin: 0.85rem 0 0.35rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  &__faq-a {
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: #8e8e9e;
   }
 
   &__form {
