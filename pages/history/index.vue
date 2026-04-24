@@ -634,6 +634,16 @@ onMounted(() => {
               }
             }
           }
+          .history__item-aside--bottom {
+            img {
+              @media only screen and (max-width: 768px) {
+                width: 100% !important;
+                height: auto !important;
+                max-height: 78vh !important;
+                object-fit: contain;
+              }
+            }
+          }
           .history__item-aside--left {
             span {
               float: left;
