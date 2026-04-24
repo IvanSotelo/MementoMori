@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     url: 'https://memento-mori.mx',
     name: 'Memento Mori No.107',
     description:
-      'Logias masónicas en Chihuahua: la Respetable Logia Simbólica Memento Mori N.° 107 en la capital chihuahuense, bajo la Gran Logia Cosmos. Información para quien busca logias masoneras en Chihuahua o quiere ser masón en Chihuahua.',
+      'Respetable Logia Simbólica Memento Mori N.° 107 en la ciudad de Chihuahua, Chih. Jurisdiccionada a la Noble, Leal y Centenaria Gran Logia Cosmos. Fraternidad masónica, valores y solicitud de ingreso para quienes desean iniciar el camino en Chihuahua.',
     defaultLocale: 'es'
   },
   modules: [

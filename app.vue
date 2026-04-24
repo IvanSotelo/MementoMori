@@ -6,7 +6,8 @@
 </template>
 
 <script lang="ts" setup>
-const siteTitleFallback = 'Memento Mori N.° 107 | Logias masónicas en Chihuahua — Gran Logia Cosmos'
+const siteTitleFallback =
+  'Memento Mori N.° 107 | Logia masónica en Chihuahua, México — Gran Logia Cosmos'
 
 useSeoMeta({
   ogSiteName: 'Memento Mori N.° 107',
@@ -14,7 +15,7 @@ useSeoMeta({
   ogLocale: 'es_MX',
   twitterTitle: 'Memento Mori N.° 107 | Chihuahua',
   twitterDescription:
-    'Logias masónicas en Chihuahua y solicitud de ingreso: Memento Mori N.° 107, Gran Logia Cosmos. Para quien quiere ser masón en Chihuahua.',
+    'Respetable Logia Simbólica Memento Mori N.° 107 en Chihuahua. Gran Logia Cosmos. Información y solicitud de ingreso para nuevos miembros en la ciudad de Chihuahua.',
   twitterImage: 'https://memento-mori.mx/og.png',
   twitterCard: 'summary_large_image'
 })
