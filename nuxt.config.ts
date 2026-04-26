@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   site: {
     url: 'https://memento-mori.mx',
-    name: 'Memento Mori No.107',
+    name: 'Memento Mori N.° 107',
     description:
       'Respetable Logia Simbólica Memento Mori N.° 107 en la ciudad de Chihuahua, Chih. Jurisdiccionada a la Noble, Leal y Centenaria Gran Logia Cosmos. Fraternidad masónica, valores y solicitud de ingreso para quienes desean iniciar el camino en Chihuahua.',
     defaultLocale: 'es'
@@ -29,10 +29,12 @@ export default defineNuxtConfig({
     locales: [
       {
         code: 'en',
+        language: 'en-US',
         file: 'en.json'
       },
       {
         code: 'es',
+        language: 'es-MX',
         file: 'es.json'
       }
     ],

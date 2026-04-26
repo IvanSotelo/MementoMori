@@ -5,7 +5,7 @@
         <div class="nav__menu">
           <p class="nav__menu--open" @click="menuStore.toggleMenu">Menu</p>
         </div>
-        <div class="nav__pagination" itemprop="breadcrumb">
+        <div class="nav__pagination">
           <nuxt-link :to="localePath('/')">{{ $t('navigation.home') }}</nuxt-link>
           <p class="nav__pagination--crumb">&nbsp;•&nbsp;{{ $t(routeName) }}</p>
         </div>
@@ -51,9 +51,6 @@ onMounted(() => {
     autoAlpha: 1,
     delay: 2
   })
-  audioStore.initializeSound(
-    'https://res.cloudinary.com/controlla/video/upload/v1662314937/perseverancia/McCanick_320kbps_qtukua.mp3'
-  )
 })
 </script>
 

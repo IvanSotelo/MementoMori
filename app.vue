@@ -9,10 +9,13 @@
 const siteTitleFallback =
   'Memento Mori N.° 107 | Logia masónica en Chihuahua, México — Gran Logia Cosmos'
 
+const { locale } = useI18n()
+const ogLocale = computed(() => (locale.value === 'en' ? 'en_US' : 'es_MX'))
+
 useSeoMeta({
   ogSiteName: 'Memento Mori N.° 107',
   ogImage: 'https://memento-mori.mx/og.png',
-  ogLocale: 'es_MX',
+  ogLocale: ogLocale,
   twitterTitle: 'Memento Mori N.° 107 | Chihuahua',
   twitterDescription:
     'Respetable Logia Simbólica Memento Mori N.° 107 en Chihuahua. Gran Logia Cosmos. Información y solicitud de ingreso para nuevos miembros en la ciudad de Chihuahua.',
@@ -24,7 +27,7 @@ useHead({
   titleTemplate: (titleChunk?: string) =>
     titleChunk ? `${titleChunk} | Memento Mori N.° 107 · Chihuahua, México` : siteTitleFallback,
   htmlAttrs: {
-    lang: 'es'
+    lang: locale
   },
   link: [
     {

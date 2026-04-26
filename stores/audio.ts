@@ -1,6 +1,9 @@
 import { defineStore } from 'pinia'
 import { Howl } from 'howler'
 
+const AUDIO_SRC =
+  'https://res.cloudinary.com/controlla/video/upload/v1662314937/perseverancia/McCanick_320kbps_qtukua.mp3'
+
 export const useAudioStore = defineStore('audio', {
   state: () => {
     const playAudioCookie = useCookie('playAudio', { default: () => 'true' })
@@ -12,16 +15,14 @@ export const useAudioStore = defineStore('audio', {
     }
   },
   actions: {
-    initializeSound(src: string) {
+    initializeSound() {
+      if (this.sound) return
       this.sound = new Howl({
-        src: [src],
+        src: [AUDIO_SRC],
         loop: true,
         autoplay: false,
         volume: 0.5
       })
-      if (this.playAudio) {
-        this.playAudioAfterUserGesture()
-      }
     },
     playAudioAfterUserGesture() {
       if (this.sound && this.playAudio) {
@@ -33,6 +34,7 @@ export const useAudioStore = defineStore('audio', {
       useCookie('playAudio').value = this.playAudio.toString()
 
       if (this.playAudio) {
+        this.initializeSound()
         this.playAudioAfterUserGesture()
       } else {
         this.sound?.stop()

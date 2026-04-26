@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home / Inicio -->
+  <url>
+    <loc>https://memento-mori.mx/</loc>
+    <lastmod>2026-04-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/"/>
+  </url>
+
+  <!-- Home EN -->
+  <url>
+    <loc>https://memento-mori.mx/en</loc>
+    <lastmod>2026-04-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/"/>
+  </url>
+
+  <!-- History / Historia -->
+  <url>
+    <loc>https://memento-mori.mx/history</loc>
+    <lastmod>2026-04-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/history"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/history"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/history"/>
+  </url>
+
+  <!-- History EN -->
+  <url>
+    <loc>https://memento-mori.mx/en/history</loc>
+    <lastmod>2026-04-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/history"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/history"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/history"/>
+  </url>
+
+  <!-- Message / Mensaje -->
+  <url>
+    <loc>https://memento-mori.mx/message</loc>
+    <lastmod>2024-12-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/message"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/message"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/message"/>
+  </url>
+
+  <!-- Message EN -->
+  <url>
+    <loc>https://memento-mori.mx/en/message</loc>
+    <lastmod>2024-12-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/message"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/message"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/message"/>
+  </url>
+
+  <!-- Moral Code / Código Moral -->
+  <url>
+    <loc>https://memento-mori.mx/moral-code</loc>
+    <lastmod>2026-01-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/moral-code"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/moral-code"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/moral-code"/>
+  </url>
+
+  <!-- Moral Code EN -->
+  <url>
+    <loc>https://memento-mori.mx/en/moral-code</loc>
+    <lastmod>2026-01-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/moral-code"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/moral-code"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/moral-code"/>
+  </url>
+
+  <!-- Ser Mason / Join -->
+  <url>
+    <loc>https://memento-mori.mx/ser-mason</loc>
+    <lastmod>2026-04-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/ser-mason"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/ser-mason"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/ser-mason"/>
+  </url>
+
+  <!-- Ser Mason EN -->
+  <url>
+    <loc>https://memento-mori.mx/en/ser-mason</loc>
+    <lastmod>2026-04-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/ser-mason"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/ser-mason"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/ser-mason"/>
+  </url>
+
+  <!-- Gallery / Galería -->
+  <url>
+    <loc>https://memento-mori.mx/gallery</loc>
+    <lastmod>2026-02-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/gallery"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/gallery"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/gallery"/>
+  </url>
+
+  <!-- Gallery EN -->
+  <url>
+    <loc>https://memento-mori.mx/en/gallery</loc>
+    <lastmod>2026-02-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/gallery"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/gallery"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/gallery"/>
+  </url>
+
+  <!-- Credits / Créditos -->
+  <url>
+    <loc>https://memento-mori.mx/credits</loc>
+    <lastmod>2026-04-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/credits"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/credits"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/credits"/>
+  </url>
+
+  <!-- Credits EN -->
+  <url>
+    <loc>https://memento-mori.mx/en/credits</loc>
+    <lastmod>2026-04-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/credits"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/credits"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/credits"/>
+  </url>
+
+</urlset>
