@@ -10,6 +10,25 @@ main(ref="moral")
 </template>
 
 <script setup lang="ts">
+const { locale } = useI18n()
+
+const moralCodeTitle = computed(() =>
+  locale.value === 'en'
+    ? 'Masonic Moral Code | Memento Mori No. 107'
+    : 'Código Moral Masónico | Memento Mori N.° 107'
+)
+const moralCodeDescription = computed(() =>
+  locale.value === 'en'
+    ? 'The 18 precepts of the Masonic Moral Code practiced by Respectable Symbolic Lodge Memento Mori No. 107 in Chihuahua, Mexico.'
+    : 'Los 18 preceptos del Código Moral Masónico practicados por la Respetable Logia Simbólica Memento Mori N.° 107 en Chihuahua, México.'
+)
+useSeoMeta({
+  title: moralCodeTitle,
+  description: moralCodeDescription,
+  ogTitle: moralCodeTitle,
+  ogDescription: moralCodeDescription
+})
+
 const moral = ref<HTMLElement | null>(null)
 const { $locomotiveScroll } = useNuxtApp()
 

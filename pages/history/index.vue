@@ -293,6 +293,23 @@
 </template>
 
 <script setup>
+const { locale } = useI18n()
+
+const historyTitle = computed(() =>
+  locale.value === 'en' ? 'History | Memento Mori No. 107' : 'Historia | Memento Mori N.° 107'
+)
+const historyDescription = computed(() =>
+  locale.value === 'en'
+    ? 'History of Respectable Symbolic Lodge Memento Mori No. 107 in Chihuahua — from the founding of Gran Logia Cosmos in 1893 to the 2026 Masonic cycle.'
+    : 'Historia de la Respetable Logia Simbólica Memento Mori N.° 107 en Chihuahua — desde la fundación de la Gran Logia Cosmos en 1893 hasta el ciclo masónico 2026.'
+)
+useSeoMeta({
+  title: historyTitle,
+  description: historyDescription,
+  ogTitle: historyTitle,
+  ogDescription: historyDescription
+})
+
 const { $locomotiveScroll, $onScroll } = useNuxtApp()
 const isActive = ref(false)
 const state = reactive({
@@ -323,16 +340,6 @@ const chapters = ref([
     title: '#ciclo2026',
     text: 'Ciclo masónico 2026',
     mobile: 'III'
-  },
-  {
-    title: '#fifty',
-    text: 'Quincuagésimo Aniversario',
-    mobile: 'IV'
-  },
-  {
-    title: '#hundred',
-    text: 'Centésimo Aniversario',
-    mobile: 'V'
   }
 ])
 

@@ -7,10 +7,10 @@ main(role="main" ref="root")
         .js-overlay.page-home__overlay--first
       .page-home__chapter.is-active
         .page-home__chapter-background
-          nuxt-img.page-home__chapter-background--image2(provider="cloudinary" format="webp" cover src="v1661278329/perseverancia/blue_y3u5at.jpg" fit="fill" :alt="heroAlt")
+          nuxt-img.page-home__chapter-background--image2(provider="cloudinary" format="webp" cover src="v1661278329/perseverancia/blue_y3u5at.jpg" fit="fill" :alt="heroAlt" preload fetchpriority="high")
       .page-home__chapter
         .page-home__chapter-background
-          nuxt-img.page-home__chapter-background--image(provider="cloudinary" format="webp" cover src="v1661278333/perseverancia/bg_mb6eok.png" fit="fill" :alt="heroAlt" preload)
+          nuxt-img.page-home__chapter-background--image(provider="cloudinary" format="webp" cover src="v1661278333/perseverancia/bg_mb6eok.png" fit="fill" :alt="heroAlt")
       .page-home__transition
         canvas.page-home__transition-main
         img.page-home__transition-sprite(src="/sprite_test5.png" data-src="/sprite_test5.png" alt="")
@@ -20,7 +20,7 @@ main(role="main" ref="root")
           span
             p.page-home__slogan Resp∴ Log∴ Simb∴
           span
-            h1.page-home__title Memento Mori No.107
+            h1.page-home__title Memento Mori N.° 107
           .page-home__cta
             nuxt-link(to="https://granlogiacosmos.mx/") Jurisdiccionada a la Noble, Leal y Centenaria Gran Logia "Cosmos" del Estado de Chihuahua
   </template>
@@ -60,6 +60,61 @@ useSeoMeta({
   ogType: 'website',
   twitterTitle: indexOgTitle,
   twitterDescription: indexDescription
+})
+
+const organizationJsonLd = computed(() =>
+  JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': 'https://memento-mori.mx/#organization',
+    name: 'Respetable Logia Simbólica Memento Mori N.° 107',
+    alternateName: ['Memento Mori No. 107', 'R∴L∴S∴ Memento Mori 107'],
+    url: 'https://memento-mori.mx',
+    logo: 'https://memento-mori.mx/favicon.png',
+    image: 'https://memento-mori.mx/og.png',
+    foundingDate: '2025',
+    email: 'secretaria@memento-mori.mx',
+    description:
+      locale.value === 'en'
+        ? 'Respectable Symbolic Lodge Memento Mori No. 107 in Chihuahua, Mexico. Affiliated with Gran Logia Cosmos. Masonic fraternity dedicated to philosophical work, knowledge and moral development.'
+        : 'Respetable Logia Simbólica Memento Mori N.° 107 en Chihuahua, México. Jurisdiccionada a la Gran Logia Cosmos. Fraternidad masónica dedicada a la reflexión filosófica, el conocimiento y el perfeccionamiento moral.',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Chihuahua',
+      addressRegion: 'Chihuahua',
+      addressCountry: 'MX'
+    },
+    areaServed: { '@type': 'City', name: 'Chihuahua' },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'membership',
+      email: 'secretaria@memento-mori.mx',
+      url: 'https://memento-mori.mx/ser-mason'
+    },
+    parentOrganization: {
+      '@type': 'Organization',
+      '@id': 'https://granlogiacosmos.mx/#organization',
+      name: 'Gran Logia Cosmos del Estado de Chihuahua',
+      url: 'https://granlogiacosmos.mx/'
+    }
+  })
+)
+
+const websiteJsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': 'https://memento-mori.mx/#website',
+  name: 'Memento Mori N.° 107',
+  url: 'https://memento-mori.mx',
+  publisher: { '@id': 'https://memento-mori.mx/#organization' },
+  inLanguage: ['es-MX', 'en']
+})
+
+useHead({
+  script: [
+    { type: 'application/ld+json', children: organizationJsonLd },
+    { type: 'application/ld+json', children: websiteJsonLd }
+  ]
 })
 
 const root = ref(null)

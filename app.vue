@@ -30,11 +30,9 @@ useHead({
     lang: locale
   },
   link: [
-    {
-      rel: 'icon',
-      type: 'image/png',
-      href: '/favicon.png'
-    }
+    { rel: 'preconnect', href: 'https://res.cloudinary.com', crossorigin: '' },
+    { rel: 'dns-prefetch', href: 'https://res.cloudinary.com' },
+    { rel: 'icon', type: 'image/png', href: '/favicon.png' }
   ]
 })
 </script>

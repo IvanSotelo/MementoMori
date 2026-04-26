@@ -72,6 +72,23 @@
 
 <script setup lang="ts">
 import type { LocomotiveScroll } from 'locomotive-scroll'
+const { locale } = useI18n()
+
+const galleryTitle = computed(() =>
+  locale.value === 'en' ? 'Gallery | Memento Mori No. 107' : 'Galería | Memento Mori N.° 107'
+)
+const galleryDescription = computed(() =>
+  locale.value === 'en'
+    ? 'Photo gallery of Respectable Symbolic Lodge Memento Mori No. 107 — moments from the Masonic cycle in Chihuahua, Mexico.'
+    : 'Galería fotográfica de la Respetable Logia Simbólica Memento Mori N.° 107 — momentos del ciclo masónico en Chihuahua, México.'
+)
+useSeoMeta({
+  title: galleryTitle,
+  description: galleryDescription,
+  ogTitle: galleryTitle,
+  ogDescription: galleryDescription
+})
+
 const { $locomotiveScroll } = useNuxtApp()
 const gallery = ref<HTMLElement | null>(null)
 const gridContainer = ref<HTMLElement | null>(null)

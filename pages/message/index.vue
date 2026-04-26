@@ -22,6 +22,25 @@ main(ref="message")
 
 <script setup>
 import classes from 'dom-classes'
+const { locale } = useI18n()
+
+const messageTitle = computed(() =>
+  locale.value === 'en'
+    ? 'Message from the Worshipful Master | Memento Mori No. 107'
+    : 'Mensaje del Venerable Maestro | Memento Mori N.° 107'
+)
+const messageDescription = computed(() =>
+  locale.value === 'en'
+    ? 'Message from the Worshipful Master of the 2026 Masonic Cycle of Respectable Symbolic Lodge Memento Mori No. 107 in Chihuahua, Mexico.'
+    : 'Mensaje del Venerable Maestro del Ciclo Masónico 2026 de la Respetable Logia Simbólica Memento Mori N.° 107 en Chihuahua, México.'
+)
+useSeoMeta({
+  title: messageTitle,
+  description: messageDescription,
+  ogTitle: messageTitle,
+  ogDescription: messageDescription
+})
+
 const { $splitText } = useNuxtApp()
 const message = ref(null)
 onMounted(() => {
@@ -103,11 +122,8 @@ onMounted(() => {
     .word:nth-of-type(23),
     .word:nth-of-type(24),
     .word:nth-of-type(25),
-  
     .word:nth-of-type(66),
     .word:nth-of-type(67),
-
-  
     .word:nth-of-type(130),
     .word:nth-of-type(131),
     .word:nth-of-type(132),
@@ -115,13 +131,11 @@ onMounted(() => {
     .word:nth-of-type(134),
     .word:nth-of-type(135),
     .word:nth-of-type(136),
-  
     .word:nth-of-type(173),
     .word:nth-of-type(174),
     .word:nth-of-type(175),
     .word:nth-of-type(176),
     .word:nth-of-type(177),
-  
     .word:nth-of-type(205),
     .word:nth-of-type(206),
     .word:nth-of-type(207),
