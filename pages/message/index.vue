@@ -41,6 +41,31 @@ useSeoMeta({
   ogDescription: messageDescription
 })
 
+const messageBreadcrumb = computed(() =>
+  JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: locale.value === 'en' ? 'Home' : 'Inicio',
+        item: locale.value === 'en' ? 'https://memento-mori.mx/en' : 'https://memento-mori.mx/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: locale.value === 'en' ? 'Message' : 'Mensaje',
+        item:
+          locale.value === 'en'
+            ? 'https://memento-mori.mx/en/message'
+            : 'https://memento-mori.mx/message'
+      }
+    ]
+  })
+)
+useHead({ script: [{ type: 'application/ld+json', children: messageBreadcrumb }] })
+
 const { $splitText } = useNuxtApp()
 const message = ref(null)
 onMounted(() => {

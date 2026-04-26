@@ -310,6 +310,31 @@ useSeoMeta({
   ogDescription: historyDescription
 })
 
+const historyBreadcrumb = computed(() =>
+  JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: locale.value === 'en' ? 'Home' : 'Inicio',
+        item: locale.value === 'en' ? 'https://memento-mori.mx/en' : 'https://memento-mori.mx/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: locale.value === 'en' ? 'History' : 'Historia',
+        item:
+          locale.value === 'en'
+            ? 'https://memento-mori.mx/en/history'
+            : 'https://memento-mori.mx/history'
+      }
+    ]
+  })
+)
+useHead({ script: [{ type: 'application/ld+json', children: historyBreadcrumb }] })
+
 const { $locomotiveScroll, $onScroll } = useNuxtApp()
 const isActive = ref(false)
 const state = reactive({

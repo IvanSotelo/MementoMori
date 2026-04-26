@@ -67,6 +67,48 @@
 </template>
 
 <script setup lang="ts">
+const { locale } = useI18n()
+
+const creditsTitle = computed(() =>
+  locale.value === 'en' ? 'Credits | Memento Mori No. 107' : 'Créditos | Memento Mori N.° 107'
+)
+const creditsDescription = computed(() =>
+  locale.value === 'en'
+    ? 'Credits and acknowledgements for Respectable Symbolic Lodge Memento Mori No. 107 in Chihuahua, Mexico.'
+    : 'Créditos y reconocimientos de la Respetable Logia Simbólica Memento Mori N.° 107 en Chihuahua, México.'
+)
+useSeoMeta({
+  title: creditsTitle,
+  description: creditsDescription,
+  ogTitle: creditsTitle,
+  ogDescription: creditsDescription
+})
+
+const creditsBreadcrumb = computed(() =>
+  JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: locale.value === 'en' ? 'Home' : 'Inicio',
+        item: locale.value === 'en' ? 'https://memento-mori.mx/en' : 'https://memento-mori.mx/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: locale.value === 'en' ? 'Credits' : 'Créditos',
+        item:
+          locale.value === 'en'
+            ? 'https://memento-mori.mx/en/credits'
+            : 'https://memento-mori.mx/credits'
+      }
+    ]
+  })
+)
+useHead({ script: [{ type: 'application/ld+json', children: creditsBreadcrumb }] })
+
 const credits = ref<HTMLElement | null>(null)
 const { $locomotiveScroll } = useNuxtApp()
 

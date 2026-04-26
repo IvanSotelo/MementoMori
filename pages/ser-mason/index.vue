@@ -173,12 +173,41 @@ const organizationJsonLd = computed(() => ({
   }
 }))
 
+const serMasonBreadcrumb = computed(() =>
+  JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: locale.value === 'en' ? 'Home' : 'Inicio',
+        item: locale.value === 'en' ? 'https://memento-mori.mx/en' : 'https://memento-mori.mx/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: locale.value === 'en' ? 'Becoming a Freemason' : 'Ser Masón',
+        item:
+          locale.value === 'en'
+            ? 'https://memento-mori.mx/en/ser-mason'
+            : 'https://memento-mori.mx/ser-mason'
+      }
+    ]
+  })
+)
+
 useHead({
   script: computed(() => [
     {
       key: 'jsonld-memento-mori-org',
       type: 'application/ld+json',
       children: JSON.stringify(organizationJsonLd.value)
+    },
+    {
+      key: 'jsonld-breadcrumb',
+      type: 'application/ld+json',
+      children: serMasonBreadcrumb.value
     }
   ])
 })

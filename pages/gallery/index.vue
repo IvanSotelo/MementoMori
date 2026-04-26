@@ -89,6 +89,31 @@ useSeoMeta({
   ogDescription: galleryDescription
 })
 
+const galleryBreadcrumb = computed(() =>
+  JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: locale.value === 'en' ? 'Home' : 'Inicio',
+        item: locale.value === 'en' ? 'https://memento-mori.mx/en' : 'https://memento-mori.mx/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: locale.value === 'en' ? 'Gallery' : 'Galería',
+        item:
+          locale.value === 'en'
+            ? 'https://memento-mori.mx/en/gallery'
+            : 'https://memento-mori.mx/gallery'
+      }
+    ]
+  })
+)
+useHead({ script: [{ type: 'application/ld+json', children: galleryBreadcrumb }] })
+
 const { $locomotiveScroll } = useNuxtApp()
 const gallery = ref<HTMLElement | null>(null)
 const gridContainer = ref<HTMLElement | null>(null)
