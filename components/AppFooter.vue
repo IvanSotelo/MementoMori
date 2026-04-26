@@ -4,7 +4,7 @@
       <div class="vertical-align">
         <div class="vertical-align-item">
           <div class="device-content">
-            <nuxt-img src="/Fundacion.svg" alt="Fundación 2025" />
+            <img src="/Fundacion.svg" alt="Fundación 2025" />
             <nuxt-link class="footer__archive" :to="localePath('history')">
               {{ $t('footer.history') }}
             </nuxt-link>

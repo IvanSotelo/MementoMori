@@ -6,19 +6,13 @@
     <div class="_col site-menu__item" role="listitem" @click="menuStore.toggleMenu">
       <nuxt-link :to="localePath('history')">
         <p class="site-menu__item--title">{{ $t('site-menu.item-history') }}</p>
-        <div
-          class="site-menu__item--bg"
-          style="background-image: url('/.netlify/images?url=%2F1.jpeg&fm=webp&q=80')"
-        />
+        <div class="site-menu__item--bg" style="background-image: url('/1.jpeg')" />
       </nuxt-link>
     </div>
     <div class="_col site-menu__item" role="listitem" @click="menuStore.toggleMenu">
       <nuxt-link :to="localePath('message')">
         <p class="site-menu__item--title">{{ $t('site-menu.item-message') }}</p>
-        <div
-          class="site-menu__item--bg"
-          style="background-image: url('/.netlify/images?url=%2F2.jpeg&fm=webp&q=80')"
-        />
+        <div class="site-menu__item--bg" style="background-image: url('/2.jpeg')" />
       </nuxt-link>
     </div>
     <div class="_col site-menu__item" role="listitem" @click="menuStore.toggleMenu">
@@ -26,10 +20,7 @@
         <p class="site-menu__item--title">
           {{ $t('site-menu.item-moral-code') }}
         </p>
-        <div
-          class="site-menu__item--bg"
-          style="background-image: url('/.netlify/images?url=%2F3.jpeg&fm=webp&q=80')"
-        />
+        <div class="site-menu__item--bg" style="background-image: url('/3.jpeg')" />
       </nuxt-link>
     </div>
     <div class="_col site-menu__item" role="listitem" @click="menuStore.toggleMenu">
@@ -37,19 +28,13 @@
         <p class="site-menu__item--title">
           {{ $t('site-menu.item-becoming-freemason') }}
         </p>
-        <div
-          class="site-menu__item--bg"
-          style="background-image: url('/.netlify/images?url=%2F4.jpeg&fm=webp&q=80')"
-        />
+        <div class="site-menu__item--bg" style="background-image: url('/4.jpeg')" />
       </nuxt-link>
     </div>
     <div class="_col site-menu__item" role="listitem" @click="menuStore.toggleMenu">
       <nuxt-link :to="localePath('gallery')">
         <p class="site-menu__item--title">{{ $t('site-menu.item-galery') }}</p>
-        <div
-          class="site-menu__item--bg"
-          style="background-image: url('/.netlify/images?url=%2F5.jpeg&fm=webp&q=80')"
-        />
+        <div class="site-menu__item--bg" style="background-image: url('/5.jpeg')" />
       </nuxt-link>
     </div>
   </aside>
