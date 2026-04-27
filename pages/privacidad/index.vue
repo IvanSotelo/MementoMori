@@ -6,13 +6,20 @@
           <div class="device-content">
             <template v-if="locale === 'en'">
               <h1 class="privacy__title">Privacy Notice</h1>
-              <p class="privacy__updated">Last updated: April 26, 2026</p>
+              <p class="privacy__updated">Last updated: April 27, 2026</p>
 
               <h2>Responsible party</h2>
               <p>
                 Respetable Logia Simbólica Memento Mori N.° 107, affiliated with the Gran Logia
-                Cosmos del Estado de Chihuahua. Contact:
+                Cosmos del Estado de Chihuahua. Postal address: Libertad #1004, Col. Centro,
+                Chihuahua, Chihuahua, Mexico. Contact:
                 <a href="mailto:secretaria@memento-mori.mx">secretaria@memento-mori.mx</a>
+              </p>
+
+              <h2>Scope</h2>
+              <p>
+                This notice applies only to the website memento-mori.mx and any subdomains we may
+                operate.
               </p>
 
               <h2>Data collected</h2>
@@ -40,6 +47,13 @@
                 outside the lodge's administrative management.
               </p>
 
+              <h2>Consent and legal basis</h2>
+              <p>
+                Processing of the personal data you provide is based on your consent when you
+                voluntarily submit a membership inquiry using your own email client after using the
+                application form on this site.
+              </p>
+
               <h2>Data retention</h2>
               <p>
                 Data received by email is retained only for the duration necessary to process the
@@ -49,9 +63,55 @@
 
               <h2>Your rights</h2>
               <p>
-                You may request access to, correction, or deletion of your personal data at any time
-                by writing to
-                <a href="mailto:secretaria@memento-mori.mx">secretaria@memento-mori.mx</a>.
+                You may request access, rectification, cancellation, or object to processing (ARCO
+                rights under Mexican law where applicable) by writing to
+                <a href="mailto:secretaria@memento-mori.mx">secretaria@memento-mori.mx</a>. Where
+                possible, use the same email address you provided in your application and describe
+                your request clearly; we may ask for reasonable identification.
+              </p>
+              <p>
+                We will respond within the time limits set by applicable Mexican law (ordinarily up
+                to 20 business days, with one possible extension of the same length when justified).
+              </p>
+              <p>
+                If you reside in Mexico and consider that your rights have been infringed, you may
+                file a complaint with the National Institute of Transparency, Access to Information
+                and Protection of Personal Data (INAI):
+                <a href="https://www.inai.org.mx" target="_blank" rel="noopener noreferrer"
+                  >inai.org.mx</a
+                >.
+              </p>
+
+              <h2>International transfers</h2>
+              <p>
+                We do not sell or rent your personal data. Membership application data is not
+                internationally transferred by the lodge through this website; it is delivered only
+                to the secretary's mailbox via the email path chosen on your device.
+              </p>
+
+              <h2>Security</h2>
+              <p>
+                The site is served over HTTPS. Application content leaves your device through your
+                own mail program; we recommend a secure connection and keeping your software
+                updated.
+              </p>
+
+              <h2>Minors</h2>
+              <p>
+                This site is not aimed at children under 18. Membership procedures assume adult
+                eligibility; do not submit minors' data unless you have lawful authority to do so.
+              </p>
+
+              <h2>Service providers</h2>
+              <p>
+                Google Analytics (Google LLC) processes aggregated usage statistics under its own
+                policies. Further information:
+                <a
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Google Privacy Policy</a
+                >.
               </p>
 
               <h2>Cookies and tracking</h2>
@@ -67,17 +127,30 @@
                   >Google Analytics opt-out add-on</a
                 >.
               </p>
+
+              <h2>Changes to this notice</h2>
+              <p>
+                We may update this notice for legal or operational reasons. The date at the top
+                reflects the latest version.
+              </p>
             </template>
 
             <template v-else>
               <h1 class="privacy__title">Aviso de Privacidad</h1>
-              <p class="privacy__updated">Última actualización: 26 de abril de 2026</p>
+              <p class="privacy__updated">Última actualización: 27 de abril de 2026</p>
 
               <h2>Responsable</h2>
               <p>
                 Respetable Logia Simbólica Memento Mori N.° 107, jurisdiccionada a la Gran Logia
-                Cosmos del Estado de Chihuahua. Contacto:
+                Cosmos del Estado de Chihuahua. Domicilio: Libertad #1004, Col. Centro, Chihuahua,
+                Chihuahua, México. Contacto:
                 <a href="mailto:secretaria@memento-mori.mx">secretaria@memento-mori.mx</a>
+              </p>
+
+              <h2>Alcance</h2>
+              <p>
+                Este aviso aplica únicamente al sitio web memento-mori.mx y a los subdominios que,
+                en su caso, operemos.
               </p>
 
               <h2>Datos recabados</h2>
@@ -105,6 +178,13 @@
                 terceros ni se transfieren fuera de la gestión administrativa de la logia.
               </p>
 
+              <h2>Consentimiento y base jurídica</h2>
+              <p>
+                El tratamiento de los datos personales se fundamenta en el consentimiento que usted
+                otorga al enviar voluntariamente la solicitud mediante su propio cliente de correo,
+                después de utilizar el formulario de ingreso en este sitio.
+              </p>
+
               <h2>Conservación</h2>
               <p>
                 Los datos recibidos por correo electrónico se conservan únicamente durante el tiempo
@@ -115,9 +195,58 @@
               <h2>Derechos ARCO</h2>
               <p>
                 Conforme a la Ley Federal de Protección de Datos Personales en Posesión de los
-                Particulares (LFPDPPP), usted puede ejercer sus derechos de Acceso, Rectificación,
-                Cancelación u Oposición escribiendo a
-                <a href="mailto:secretaria@memento-mori.mx">secretaria@memento-mori.mx</a>.
+                Particulares (LFPDPPP), usted puede ejercer los derechos de Acceso, Rectificación,
+                Cancelación y Oposición escribiendo a
+                <a href="mailto:secretaria@memento-mori.mx">secretaria@memento-mori.mx</a>. De ser
+                posible, use el mismo correo con el que envió su solicitud y describa con claridad
+                su petición; podremos solicitar identificación razonable.
+              </p>
+              <p>
+                Daremos respuesta en los plazos que establece la normativa aplicable (ordinariamente
+                hasta 20 días hábiles, prorrogables una sola vez por un periodo igual cuando resulte
+                justificado).
+              </p>
+              <p>
+                Si considera que sus derechos han sido vulnerados, puede presentar una denuncia ante
+                el Instituto Nacional de Transparencia, Acceso a la Información y Protección de
+                Datos Personales (INAI):
+                <a href="https://www.inai.org.mx" target="_blank" rel="noopener noreferrer"
+                  >inai.org.mx</a
+                >.
+              </p>
+
+              <h2>Transferencias internacionales</h2>
+              <p>
+                No vendemos ni arrendamos sus datos personales. La información de la solicitud de
+                ingreso no es transferida internacionalmente por la logia a través de este sitio;
+                únicamente se envía al buzón de la secretaría por la ruta de correo que usted
+                utilice en su equipo.
+              </p>
+
+              <h2>Medidas de seguridad</h2>
+              <p>
+                El sitio se publica mediante HTTPS. Los datos de la solicitud salen de su
+                dispositivo a través de su propia aplicación de correo; recomendamos usar una
+                conexión segura y mantener sus programas y equipo actualizados.
+              </p>
+
+              <h2>Menores de edad</h2>
+              <p>
+                Este sitio no está dirigido a menores de 18 años. Los trámites de ingreso suponen
+                elegibilidad de personas adultas; no proporcione datos de menores salvo que cuente
+                con la representación legal correspondiente.
+              </p>
+
+              <h2>Encargados y proveedores</h2>
+              <p>
+                Google Analytics (Google LLC) trata estadísticas agregadas de uso conforme a sus
+                propias políticas. Más información en la
+                <a
+                  href="https://policies.google.com/privacy?hl=es"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Política de Privacidad de Google</a
+                >.
               </p>
 
               <h2>Cookies y analítica</h2>
@@ -132,6 +261,12 @@
                   rel="noopener noreferrer"
                   >complemento de inhabilitación de Google Analytics</a
                 >.
+              </p>
+
+              <h2>Modificaciones al aviso</h2>
+              <p>
+                Podemos actualizar este aviso por cambios legales u operativos. La fecha indicada al
+                inicio corresponde a la versión más reciente.
               </p>
             </template>
           </div>

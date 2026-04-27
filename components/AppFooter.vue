@@ -12,12 +12,6 @@
               <nuxt-link :to="localePath('message')">
                 {{ $t('footer.message') }}
               </nuxt-link>
-              <nuxt-link :to="localePath('contact')">
-                {{ $t('footer.contact') }}
-              </nuxt-link>
-              <nuxt-link :to="localePath('privacidad')">
-                {{ $t('footer.privacy') }}
-              </nuxt-link>
               <nuxt-link :to="localePath('credits')">
                 {{ $t('footer.credits') }}
               </nuxt-link>

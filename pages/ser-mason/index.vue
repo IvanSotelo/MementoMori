@@ -1,63 +1,69 @@
 <template lang="pug">
 main(ref="serMason")
-  section#page-ser-mason.page.page-ser-mason
-    .vertical-align
-      .vertical-align-item
-        h2.page-ser-mason__title {{ copy.title }}
-        p.page-ser-mason__intro {{ copy.intro }}
+  smooth-scroll
+    section#page-ser-mason.page.page-ser-mason(data-scroll-section)
+      .vertical-align
+        .vertical-align-item
+          h2.page-ser-mason__title {{ copy.title }}
+          p.page-ser-mason__intro {{ copy.intro }}
 
-        form.page-ser-mason__form(
-          @submit.prevent="handleSubmit"
-          novalidate
-        )
-          .form-group
-            label(for="nombre") {{ copy.fields.name }} *
-            input#nombre(
-              v-model="form.nombre"
-              type="text"
-              name="nombre"
-              required
-              :placeholder="copy.placeholders.name"
-            )
-            span.form-error(v-if="errors.nombre") {{ errors.nombre }}
+          form.page-ser-mason__form(
+            @submit.prevent="handleSubmit"
+            novalidate
+          )
+            .form-group
+              label(for="nombre") {{ copy.fields.name }} *
+              input#nombre(
+                v-model="form.nombre"
+                type="text"
+                name="nombre"
+                required
+                :placeholder="copy.placeholders.name"
+              )
+              span.form-error(v-if="errors.nombre") {{ errors.nombre }}
 
-          .form-group
-            label(for="email") {{ copy.fields.email }} *
-            input#email(
-              v-model="form.email"
-              type="email"
-              name="email"
-              required
-              :placeholder="copy.placeholders.email"
-            )
-            span.form-error(v-if="errors.email") {{ errors.email }}
+            .form-group
+              label(for="email") {{ copy.fields.email }} *
+              input#email(
+                v-model="form.email"
+                type="email"
+                name="email"
+                required
+                :placeholder="copy.placeholders.email"
+              )
+              span.form-error(v-if="errors.email") {{ errors.email }}
 
-          .form-group
-            label(for="telefono") {{ copy.fields.phone }}
-            input#telefono(
-              v-model="form.telefono"
-              type="tel"
-              name="telefono"
-              :placeholder="copy.placeholders.phone"
-            )
+            .form-group
+              label(for="telefono") {{ copy.fields.phone }}
+              input#telefono(
+                v-model="form.telefono"
+                type="tel"
+                name="telefono"
+                :placeholder="copy.placeholders.phone"
+              )
 
-          .form-group
-            label(for="mensaje") {{ copy.fields.message }} *
-            textarea#mensaje(
-              v-model="form.mensaje"
-              name="mensaje"
-              rows="5"
-              required
-              :placeholder="copy.placeholders.message"
-            )
-            span.form-error(v-if="errors.mensaje") {{ errors.mensaje }}
+            .form-group
+              label(for="mensaje") {{ copy.fields.message }} *
+              textarea#mensaje(
+                v-model="form.mensaje"
+                name="mensaje"
+                rows="5"
+                required
+                :placeholder="copy.placeholders.message"
+              )
+              span.form-error(v-if="errors.mensaje") {{ errors.mensaje }}
 
-          .form-actions
-            button.page-ser-mason__submit(type="submit" :disabled="sending")
-              template(v-if="sending") {{ copy.sending }}
-              template(v-else) {{ copy.submit }}
+            .form-actions
+              button.page-ser-mason__submit(type="submit" :disabled="sending")
+                template(v-if="sending") {{ copy.sending }}
+                template(v-else) {{ copy.submit }}
 
-        p.page-ser-mason__note {{ copy.noteBefore }}@{{ copy.noteAfter }}
+          p.page-ser-mason__note {{ copy.noteBefore }}@{{ copy.noteAfter }}
+
+          p.page-ser-mason__privacy
+            | {{ copy.privacyPrefix }}
+            nuxt-link.page-ser-mason__privacy-link(:to="localePath('privacidad')") {{ copy.privacyLink }}
+            | {{ copy.privacySuffix }}
 </template>
 
 <script setup lang="ts">
@@ -89,7 +95,10 @@ const SER_MASON_COPY = {
     submit: 'Enviar solicitud',
     sending: 'Enviando...',
     noteBefore: 'Al enviar se abrirá su cliente de correo con la dirección secretaria',
-    noteAfter: 'memento-mori.mx. Envíe el mensaje para completar la solicitud.'
+    noteAfter: 'memento-mori.mx. Envíe el mensaje para completar la solicitud.',
+    privacyPrefix: 'Consulte el ',
+    privacyLink: 'aviso de privacidad',
+    privacySuffix: ' para conocer cómo tratamos sus datos personales.'
   },
   en: {
     title: 'Membership application',
@@ -116,11 +125,15 @@ const SER_MASON_COPY = {
     submit: 'Submit application',
     sending: 'Sending...',
     noteBefore: 'Submitting will open your email client with secretaria',
-    noteAfter: 'memento-mori.mx. Send the message to complete your application.'
+    noteAfter: 'memento-mori.mx. Send the message to complete your application.',
+    privacyPrefix: 'Read our ',
+    privacyLink: 'privacy notice',
+    privacySuffix: ' to learn how we handle your personal data.'
   }
 } as const
 
 const { locale } = useI18n()
+const localePath = useLocalePath()
 const copy = computed(
   () => SER_MASON_COPY[locale.value as keyof typeof SER_MASON_COPY] ?? SER_MASON_COPY.es
 )
@@ -227,6 +240,7 @@ const errors = reactive<Record<string, string>>({
 
 const sending = ref(false)
 const serMason = ref<HTMLElement | null>(null)
+const { $locomotiveScroll } = useNuxtApp()
 
 function validate(): boolean {
   errors.nombre = ''
@@ -286,11 +300,17 @@ function handleSubmit() {
 }
 
 onMounted(() => {
+  const scroll = $locomotiveScroll(
+    serMason.value?.querySelector('[data-scroll-container]') || undefined
+  )
   useGsap.to(serMason.value?.querySelector('.page'), {
     autoAlpha: 1,
     duration: 1,
-    delay: 0.6,
+    delay: 0.5,
     ease: 'easeInOut'
+  })
+  onUnmounted(() => {
+    scroll.destroy()
   })
 })
 </script>
@@ -420,6 +440,25 @@ onMounted(() => {
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
+  }
+
+  &__privacy {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  &__privacy-link {
+    color: #978268;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #fff;
+    }
   }
 }
 </style>
