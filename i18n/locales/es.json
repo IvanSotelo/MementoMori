@@ -10,7 +10,8 @@
     "index_es5": "Logias",
     "index_es6": "Gran Logia",
     "credits___es": "Créditos",
-    "contact___es": "Contacto"
+    "contact___es": "Contacto",
+    "privacidad___es": "Aviso de Privacidad"
   },
   "loader": {
     "loader-message": {
@@ -36,7 +37,8 @@
     "history": "Historia",
     "message": "Mensaje",
     "credits": "Créditos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "privacy": "Privacidad"
   },
   "contact-page": {
     "lodge": "Logia",

@@ -128,6 +128,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/contact"/>
   </url>
 
+  <!-- Privacy / Privacidad -->
+  <url>
+    <loc>https://memento-mori.mx/privacidad</loc>
+    <lastmod>2026-04-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/privacidad"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/privacidad"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/privacidad"/>
+  </url>
+
+  <!-- Privacy EN -->
+  <url>
+    <loc>https://memento-mori.mx/en/privacidad</loc>
+    <lastmod>2026-04-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/privacidad"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/privacidad"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/privacidad"/>
+  </url>
+
   <!-- Credits / Créditos -->
   <url>
     <loc>https://memento-mori.mx/credits</loc>

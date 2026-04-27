@@ -10,7 +10,8 @@
     "index_es5": "Lodges",
     "index_es6": "Grand Lodge",
     "credits___en": "Credits",
-    "contact___en": "Contact"
+    "contact___en": "Contact",
+    "privacidad___en": "Privacy Notice"
   },
   "loader": {
     "loader-message": {
@@ -36,7 +37,8 @@
     "history": "History",
     "message": "Message",
     "credits": "Credits",
-    "contact": "Contact"
+    "contact": "Contact",
+    "privacy": "Privacy"
   },
   "contact-page": {
     "lodge": "Lodge",
