@@ -18,7 +18,7 @@
                 <p>{{ $t('contact-page.location') }}</p>
               </div>
               <div class="col-6">
-                <!-- TODO: agregar dirección física del salón de sesiones -->
+                <p>Libertad #1004, Col. Centro</p>
                 <p>Chihuahua, Chihuahua, México</p>
               </div>
             </div>
