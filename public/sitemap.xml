@@ -110,6 +110,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/gallery"/>
   </url>
 
+  <!-- Contact / Contacto -->
+  <url>
+    <loc>https://memento-mori.mx/contact</loc>
+    <lastmod>2026-04-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/contact"/>
+  </url>
+
+  <!-- Contact EN -->
+  <url>
+    <loc>https://memento-mori.mx/en/contact</loc>
+    <lastmod>2026-04-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/contact"/>
+  </url>
+
   <!-- Credits / Créditos -->
   <url>
     <loc>https://memento-mori.mx/credits</loc>

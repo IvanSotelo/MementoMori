@@ -9,7 +9,8 @@
     "gallery-slug___en": "Gallery",
     "index_es5": "Lodges",
     "index_es6": "Grand Lodge",
-    "credits___en": "Credits"
+    "credits___en": "Credits",
+    "contact___en": "Contact"
   },
   "loader": {
     "loader-message": {
@@ -34,7 +35,16 @@
   "footer": {
     "history": "History",
     "message": "Message",
-    "credits": "Credits"
+    "credits": "Credits",
+    "contact": "Contact"
+  },
+  "contact-page": {
+    "lodge": "Lodge",
+    "grand-lodge": "Grand Lodge Cosmos of the State of Chihuahua",
+    "location": "Location",
+    "email": "Email",
+    "membership": "Membership",
+    "membership-link": "Membership application →"
   },
   "moral-code": [
     "Worship the Great Architect of the Universe.",
