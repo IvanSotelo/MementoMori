@@ -29,6 +29,15 @@
     "item-becoming-freemason": "Ser Masón",
     "item-galery": "Galería"
   },
+  "home-intro": {
+    "heading": "Sobre esta logia",
+    "paragraphs": [
+      "La Respetable Logia Simbólica Memento Mori N.° 107 es una logia de antiguos, libres y aceptados masones radicada en la ciudad de Chihuahua, capital del estado homónimo en el norte de México. Opera con regularidad simbólica bajo la jurisdicción de la Noble, Leal y Centenaria Gran Logia \"Cosmos\" del Estado de Chihuahua, con la cual sostiene el compromiso de preservar las tradiciones del arte real, la dignidad del ritual y el trabajo filosófico característico de la masonería simbólica en el país.",
+      "Nuestra misión es ofrecer un espacio sobrio de encuentro entre hombres de probidad que desean cultivar la fraternidad universal, el estudio de los símbolos y el perfeccionamiento moral mediante la reflexión conjunta y la práctica ordenada del oficio. Las sesiones se llevan a cabo en un ambiente de respeto mutuo y discreción, sin fines de lucro ni actividades proselitistas al margen de los usos reconocidos por la Gran Logia matriz.",
+      "Entre los valores que guían el taller figuran la tolerancia, la solidaridad efectiva, la lealtad a las instituciones regulares y la responsabilidad ciudadana en Chihuahua. Consideramos que la masonería contribuye al bien común cuando sus miembros trabajan sobre sí mismos con humildad y sirven de ejemplo en sus familias, profesiones y comunidad.",
+      "Quienes habiten en la ciudad de Chihuahua o su entorno y busquen información seria sobre el proceso de aproximación a la orden pueden dirigirse por los canales indicados en estas páginas. La solicitud de ingreso es confidencial y gradual; está destinada a personas adultas, libres de imposiciones externas y conscientes de que el compromiso masónico solo puede comprenderse plenamente dentro del trabajo propio de la logia. Este sitio resume nuestra identidad institucional y el vínculo con la Gran Logia Cosmos sin reemplazar la vivencia ritual que corresponde exclusivamente al templo. Mantenemos abierto el canal de comunicación con quienes, desde la reflexión personal, desean acercarse a nuestra comunidad en Chihuahua."
+    ]
+  },
   "navigation": {
     "home": "Inicio",
     "sound": "Sonido"

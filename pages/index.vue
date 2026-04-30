@@ -23,10 +23,20 @@ main(role="main" ref="root")
             h1.page-home__title Memento Mori N.° 107
           .page-home__cta
             nuxt-link(to="https://granlogiacosmos.mx/") Jurisdiccionada a la Noble, Leal y Centenaria Gran Logia "Cosmos" del Estado de Chihuahua
+      aside.page-home__intro(aria-labelledby="page-home-intro-heading")
+        h2#page-home-intro-heading.page-home__intro-heading {{ introHeading }}
+        p.page-home__intro-p(v-for="(paragraph, idx) in introParagraphs" :key="idx") {{ paragraph }}
   </template>
 
 <script setup>
-const { locale } = useI18n()
+const { locale, t, tm } = useI18n()
+
+const introHeading = computed(() => t('home-intro.heading'))
+
+const introParagraphs = computed(() => {
+  const raw = tm('home-intro.paragraphs')
+  return Array.isArray(raw) ? raw : []
+})
 
 const heroAlt = computed(() =>
   locale.value === 'en'
@@ -460,6 +470,65 @@ onMounted(() => {
           }
         }
       }
+    }
+  }
+
+  .page-home__intro {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 105;
+    box-sizing: border-box;
+    max-width: 46rem;
+    max-height: min(42vh, 19rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.75rem min(6vw, 2.5rem) calc(4.25rem + env(safe-area-inset-bottom, 0));
+    overflow-y: auto;
+    text-align: left;
+    font-weight: 300;
+    font-size: clamp(0.66rem, 1.05vw, 0.8rem);
+    line-height: 1.55;
+    color: rgb(255 255 255 / 88%);
+    background: linear-gradient(
+      to top,
+      rgb(26 26 31 / 94%) 0%,
+      rgb(26 26 31 / 72%) 52%,
+      rgb(26 26 31 / 0%) 100%
+    );
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 2px;
+    }
+
+    .page-home__intro-heading {
+      margin: 0 0 0.45rem;
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: rgb(255 255 255 / 72%);
+    }
+
+    .page-home__intro-p {
+      margin: 0 0 0.55rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media only screen and (width <= 768px) {
+      max-height: min(38vh, 15.5rem);
+      font-size: clamp(0.62rem, 2.8vw, 0.72rem);
+      padding-bottom: calc(3.75rem + env(safe-area-inset-bottom, 0));
     }
   }
 }

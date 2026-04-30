@@ -29,6 +29,15 @@
     "item-becoming-freemason": "Becoming a freemason",
     "item-galery": "Gallery"
   },
+  "home-intro": {
+    "heading": "About this lodge",
+    "paragraphs": [
+      "The Respectable Symbolic Lodge Memento Mori No. 107 is a lodge of ancient, free and accepted Masons based in Chihuahua City, capital of the state of the same name in northern Mexico. It works in symbolic regularity under the jurisdiction of the Noble, Loyal and Centenary Grand Lodge \"Cosmos\" of the State of Chihuahua, with which it shares a commitment to preserve the traditions of the craft, the dignity of ritual and the philosophical work characteristic of symbolic Freemasonry in the country.",
+      "Our mission is to provide a restrained meeting place for men of integrity who wish to cultivate universal fraternity, the study of symbols and moral improvement through shared reflection and the orderly practice of the craft. Meetings take place in an atmosphere of mutual respect and discretion, without profit motive or proselytizing beyond what is recognized by the mother Grand Lodge. Voluntary association and confidentiality remain central at every stage.",
+      "Values that guide the lodge include tolerance, practical solidarity, loyalty to regular institutions and civic responsibility in Chihuahua. We believe Freemasonry contributes to the common good when members work on themselves with humility and set an example in their families, professions and communities.",
+      "Those who live in Chihuahua City or the surrounding area and seek reliable information on how to approach the Fraternity may use the channels indicated on this site. Membership inquiries are confidential and gradual; they are intended for adults who are free from external coercion and understand that Masonic commitment can only be fully grasped through the lodge’s own work. This website summarizes our institutional identity and our bond with Grand Lodge Cosmos; it does not replace the ritual experience that belongs exclusively to the temple. We welcome sincere correspondence from anyone who, after careful reflection, wishes to draw nearer to our community in Chihuahua."
+    ]
+  },
   "navigation": {
     "home": "Home",
     "sound": "Sound"
@@ -94,11 +103,11 @@
     "noteBefore": "Submitting will open your email client with secretaria",
     "noteAfter": "memento-mori.mx. Send the message to complete your application."
   },
-  "contact": {
-    "contact-us": "Contact us",
-    "archive-materials": "Archive materials",
+  "credits": {
+    "contact_us": "Contact us",
+    "archive_materials": "Archive materials",
     "music": "Music",
-    "development-design": "Development & Design",
+    "development_design": "Development & Design",
     "warning": "This site is a passion/side project that was built in collaboration with Ivan Sotelo and Memento Mori N.° 107.  It is a non-commercial site, and we do not make any profits. We do not claim any document accuracy on this site, there may potentially be inaccurate text.  Most of the text that are in english were translated from Spanish via Google Translate, so there may be grammatical/spelling errors."
   }
 }
