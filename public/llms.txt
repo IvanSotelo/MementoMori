@@ -57,12 +57,15 @@ Website: https://granlogiacosmos.mx/
 - Worshipful Master's Message / Mensaje: https://memento-mori.mx/message
 - Masonic Moral Code / Código Moral: https://memento-mori.mx/moral-code
 - Contact / Contacto: https://memento-mori.mx/contact
-- Membership / Ser Masón: https://memento-mori.mx/ser-mason
+- Membership / Ser Masón (application form): https://memento-mori.mx/ser-mason
+- Membership information / Información de ingreso (requirements, process, FAQ): https://memento-mori.mx/informacion-ingreso
 - Gallery / Galería: https://memento-mori.mx/gallery
 
 ## Membership
 
-Prospective members in Chihuahua, Mexico may submit a membership application at:
+Prospective members in Chihuahua, Mexico may read requirements, admission process and FAQ at:
+https://memento-mori.mx/informacion-ingreso
+and submit a membership application at:
 https://memento-mori.mx/ser-mason
 Contact: secretaria@memento-mori.mx · +52 636 697 6926
 

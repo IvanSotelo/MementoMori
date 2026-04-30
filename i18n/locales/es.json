@@ -11,7 +11,8 @@
     "index_es6": "Gran Logia",
     "credits___es": "Créditos",
     "contact___es": "Contacto",
-    "privacidad___es": "Aviso de Privacidad"
+    "privacidad___es": "Aviso de Privacidad",
+    "informacion-ingreso___es": "Información de ingreso"
   },
   "loader": {
     "loader-message": {
@@ -87,61 +88,8 @@
   ],
   "ser-mason": {
     "title": "Solicitud de ingreso",
-    "lead": "Si reside en Chihuahua o piensa radicarse en la ciudad y desea una primera orientación sobre la masonería simbólica regular, aquí encontrará qué hace la logia en la comunidad, qué se suele esperar de un aspirante y cómo iniciar un contacto confidencial con la secretaría de la Respetable Logia Simbólica Memento Mori N.° 107.",
-    "intro": "Complete el formulario cuando esté listo para enviar su solicitud; la secretaría revisará su información y se pondrá en contacto.",
-    "content-sections": [
-      {
-        "heading": "Identidad y trabajo en Chihuahua",
-        "body": "La Respetable Logia Simbólica Memento Mori N.° 107 es una logia de masones antiguos, libres y aceptados que trabaja en la ciudad de Chihuahua bajo la jurisdicción de la Noble, Leal y Centenaria Gran Logia \"Cosmos\" del Estado de Chihuahua. Nos reunimos para cultivar la fraternidad, el estudio simbólico y el perfeccionamiento moral mediante el ritual, la reflexión filosófica y la convivencia ordenada propia del oficio. En el contexto local, la logia forma parte de una red de obreros regulares que mantienen vínculos de confianza mutua y responsabilidad cívica discreta, siempre dentro del marco normativo de la Gran Logia matriz y sin fines lucrativos ni proselitismo ajeno a las prácticas reconocidas por la institución."
-      },
-      {
-        "heading": "Qué hacemos en la ciudad",
-        "body": "Las tenidas ordinarias se celebran los martes por la noche en horario que la secretaría confirma a los miembros y que coincide con lo publicado en la página de contacto de este sitio. En ellas se desarrollan trabajos ritualísticos y formativos propios de una logia simbólica: memoria del ritual cuando corresponde, conferencias breves y debate culto en torno a principios éticos universales y al legado del arte real. Fuera del templo los masones no \"reclutan\" como campaña comercial; las aproximaciones surgen de la curiosidad informada, la edad madura y las recomendaciones dentro del marco reglamentario. Esta página sirve solo para orientar y canalizar el primer contacto; la vivencia plena del proceso pertenece al trabajo interno de la logia."
-      }
-    ],
-    "requirements-heading": "Requisitos habituales (orientativos)",
-    "requirements-intro": "Cada aspirante es valorado en su singularidad. Lo siguiente resume expectativas usuales en la masonería regular mexicana y en nuestra jurisdicción; no sustituye los reglamentos internos ni las decisiones soberanas de la logia.",
-    "requirements-items": [
-      "Ser hombre mayor de edad, gozar de buena fama y tomar la decisión de solicitud de manera libre y reflexiva.",
-      "Profesar creencia en un Principio Creador (Gran Arquitecto del Universo), conforme a la declaración que exige la orden regular.",
-      "Contar con disponibilidad real para asistir con puntualidad a las reuniones en Chihuahua y cumplir los trabajos y cuotas que determine la logia.",
-      "No tener impedimentos graves de orden moral o jurídico según la legislación mexicana y las normas de la Gran Logia Cosmos.",
-      "Acercarse por motivaciones de estudio, honestidad y servicio, no por lucro material, influencia política ni prestigio superficial.",
-      "Aceptar la disciplina interna y el respeto al ámbito reservado propio del oficio, sin confundir discreción con falta de ética pública.",
-      "Entender que el envío del formulario no otorga derecho a ingreso: la admisión es facultad exclusiva de la logia y se decide en votación secreta."
-    ],
-    "process-heading": "Proceso general de aproximación",
-    "process-steps": [
-      "Leer con calma la información pública de este sitio y la página de contacto; reflexionar si la masonería simbólica regular encaja con sus valores personales.",
-      "Establecer primer contacto mediante este formulario, el correo de secretaría o el teléfono indicados en Contacto, exponiendo con sobriedad su motivación y disponibilidad en la ciudad.",
-      "Atender entrevistas o encuentros preliminares que organicen la secretaría u otros oficiales; puede solicitársele tiempo de mutuo conocimiento o referencias.",
-      "En su caso, cursar el periodo de observación o instrucción previa conforme al ritual y reglamentos vigentes bajo Gran Logia Cosmos.",
-      "Si la logia lo estima conveniente, proceder a votación secreta de los obreros presentes; solo un resultado favorable permite continuar hacia los trabajos iniciáticos formales."
-    ],
-    "closing": "La solicitud por internet es confidencial y sirve únicamente para abrir correspondencia seria con la secretaría. No iniciamos grados ni ritual por correo; todo trabajo posterior ocurre presencialmente en Chihuahua según las normas de la Gran Logia. Si vive fuera de la ciudad pero puede comprometer asistencia regular, explíquelo en su mensaje para valorar si conviene derivarlo a otra logia regular más cercana.",
-    "faq-heading": "Preguntas frecuentes",
-    "faq": [
-      {
-        "question": "¿Puedo ser masón solo completando el formulario?",
-        "answer": "No. El formulario abre el canal con la secretaría; el ingreso depende de entrevistas, tiempos de conocimiento mutuo y votación conforme al reglamento. Jamás se garantiza admisión por mensaje electrónico."
-      },
-      {
-        "question": "¿Hay cuotas o obligaciones económicas?",
-        "answer": "Las logias regulares suelen tener cuotas para mantener el templo, materiales y cargos administrativos. Los montos y forma de pago se informan con transparencia durante el proceso y están regulados por la Gran Logia."
-      },
-      {
-        "question": "¿Debo conocer a un masón para solicitar ingreso?",
-        "answer": "No siempre es indispensable conocer de antemano a un miembro; muchos procesos comienzan por contacto directo con la secretaría. No obstante, la recomendación fraternal puede facilitar el conocimiento mutuo cuando existe."
-      },
-      {
-        "question": "¿La masonería es una religión?",
-        "answer": "No es una religión ni sustituye la fe personal. Se exige creencia en el Gran Arquitecto del Universo; las creencias confesionales concretas son asunto privado del individuo, dentro del respeto a la pluralidad del taller."
-      },
-      {
-        "question": "¿Puedo visitar el templo antes de ingresar?",
-        "answer": "Los espacios de trabajo ritual son reservados a obreros y candidatos en las etapas reglamentarias. La información general se atiende por los medios públicos indicados; cualquier visita protocolaria depende de lo que disponga la secretaría y la logia."
-      }
-    ],
+    "lead": "Envíe aquí su solicitud confidencial a la secretaría. Para saber qué hace la logia en Chihuahua, requisitos, proceso de ingreso y preguntas frecuentes, use la página de información.",
+    "intro": "Complete los campos; al enviar se abrirá su correo para confirmar el mensaje a secretaría@memento-mori.mx.",
     "fields": {
       "name": "Nombre completo",
       "email": "Correo electrónico",
@@ -172,7 +120,66 @@
       "email": "Correo",
       "phone": "Teléfono",
       "message": "Mensaje"
-    }
+    },
+    "link-guide": "Información: labor en Chihuahua, requisitos, proceso y FAQ →"
+  },
+  "membership-guide": {
+    "title": "Información sobre el ingreso",
+    "lead": "Si reside en Chihuahua o piensa radicarse en la ciudad y desea una primera orientación sobre la masonería simbólica regular, esta página amplía qué hace la logia en la comunidad, qué se suele esperar de un aspirante y cómo iniciar un contacto confidencial con la secretaría de la Respetable Logia Simbólica Memento Mori N.° 107.",
+    "back-to-form": "Ir al formulario de solicitud →",
+    "content-sections": [
+      {
+        "heading": "Identidad y trabajo en Chihuahua",
+        "body": "La Respetable Logia Simbólica Memento Mori N.° 107 es una logia de masones antiguos, libres y aceptados que trabaja en la ciudad de Chihuahua bajo la jurisdicción de la Noble, Leal y Centenaria Gran Logia \"Cosmos\" del Estado de Chihuahua. Nos reunimos para cultivar la fraternidad, el estudio simbólico y el perfeccionamiento moral mediante el ritual, la reflexión filosófica y la convivencia ordenada propia del oficio. En el contexto local, la logia forma parte de una red de obreros regulares que mantienen vínculos de confianza mutua y responsabilidad cívica discreta, siempre dentro del marco normativo de la Gran Logia matriz y sin fines lucrativos ni proselitismo ajeno a las prácticas reconocidas por la institución."
+      },
+      {
+        "heading": "Qué hacemos en la ciudad",
+        "body": "Las tenidas ordinarias se celebran los martes por la noche en horario que la secretaría confirma a los miembros y que coincide con lo publicado en la página de contacto de este sitio. En ellas se desarrollan trabajos ritualísticos y formativos propios de una logia simbólica: memoria del ritual cuando corresponde, conferencias breves y debate culto en torno a principios éticos universales y al legado del arte real. Fuera del templo los masones no \"reclutan\" como campaña comercial; las aproximaciones surgen de la curiosidad informada, la edad madura y las recomendaciones dentro del marco reglamentario. Este sitio sirve solo para orientar y canalizar el primer contacto; la vivencia plena del proceso pertenece al trabajo interno de la logia."
+      }
+    ],
+    "requirements-heading": "Requisitos habituales (orientativos)",
+    "requirements-intro": "Cada aspirante es valorado en su singularidad. Lo siguiente resume expectativas usuales en la masonería regular mexicana y en nuestra jurisdicción; no sustituye los reglamentos internos ni las decisiones soberanas de la logia.",
+    "requirements-items": [
+      "Ser hombre mayor de edad, gozar de buena fama y tomar la decisión de solicitud de manera libre y reflexiva.",
+      "Profesar creencia en un Principio Creador (Gran Arquitecto del Universo), conforme a la declaración que exige la orden regular.",
+      "Contar con disponibilidad real para asistir con puntualidad a las reuniones en Chihuahua y cumplir los trabajos y cuotas que determine la logia.",
+      "No tener impedimentos graves de orden moral o jurídico según la legislación mexicana y las normas de la Gran Logia Cosmos.",
+      "Acercarse por motivaciones de estudio, honestidad y servicio, no por lucro material, influencia política ni prestigio superficial.",
+      "Aceptar la disciplina interna y el respeto al ámbito reservado propio del oficio, sin confundir discreción con falta de ética pública.",
+      "Entender que el envío del formulario no otorga derecho a ingreso: la admisión es facultad exclusiva de la logia y se decide en votación secreta."
+    ],
+    "process-heading": "Proceso general de aproximación",
+    "process-steps": [
+      "Leer con calma la información pública de este sitio y la página de contacto; reflexionar si la masonería simbólica regular encaja con sus valores personales.",
+      "Establecer primer contacto mediante el formulario en la página Ser Masón, el correo de secretaría o el teléfono indicados en Contacto, exponiendo con sobriedad su motivación y disponibilidad en la ciudad.",
+      "Atender entrevistas o encuentros preliminares que organicen la secretaría u otros oficiales; puede solicitársele tiempo de mutuo conocimiento o referencias.",
+      "En su caso, cursar el periodo de observación o instrucción previa conforme al ritual y reglamentos vigentes bajo Gran Logia Cosmos.",
+      "Si la logia lo estima conveniente, proceder a votación secreta de los obreros presentes; solo un resultado favorable permite continuar hacia los trabajos iniciáticos formales."
+    ],
+    "closing": "La solicitud por internet es confidencial y sirve únicamente para abrir correspondencia seria con la secretaría. No iniciamos grados ni ritual por correo; todo trabajo posterior ocurre presencialmente en Chihuahua según las normas de la Gran Logia. Si vive fuera de la ciudad pero puede comprometer asistencia regular, explíquelo en su mensaje para valorar si conviene derivarlo a otra logia regular más cercana.",
+    "faq-heading": "Preguntas frecuentes",
+    "faq": [
+      {
+        "question": "¿Puedo ser masón solo completando el formulario?",
+        "answer": "No. El formulario abre el canal con la secretaría; el ingreso depende de entrevistas, tiempos de conocimiento mutuo y votación conforme al reglamento. Jamás se garantiza admisión por mensaje electrónico."
+      },
+      {
+        "question": "¿Hay cuotas o obligaciones económicas?",
+        "answer": "Las logias regulares suelen tener cuotas para mantener el templo, materiales y cargos administrativos. Los montos y forma de pago se informan con transparencia durante el proceso y están regulados por la Gran Logia."
+      },
+      {
+        "question": "¿Debo conocer a un masón para solicitar ingreso?",
+        "answer": "No siempre es indispensable conocer de antemano a un miembro; muchos procesos comienzan por contacto directo con la secretaría. No obstante, la recomendación fraternal puede facilitar el conocimiento mutuo cuando existe."
+      },
+      {
+        "question": "¿La masonería es una religión?",
+        "answer": "No es una religión ni sustituye la fe personal. Se exige creencia en el Gran Arquitecto del Universo; las creencias confesionales concretas son asunto privado del individuo, dentro del respeto a la pluralidad del taller."
+      },
+      {
+        "question": "¿Puedo visitar el templo antes de ingresar?",
+        "answer": "Los espacios de trabajo ritual son reservados a obreros y candidatos en las etapas reglamentarias. La información general se atiende por los medios públicos indicados; cualquier visita protocolaria depende de lo que disponga la secretaría y la logia."
+      }
+    ]
   },
   "credits": {
     "contact_us": "Contáctanos",

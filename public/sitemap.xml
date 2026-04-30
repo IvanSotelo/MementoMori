@@ -92,6 +92,23 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/ser-mason"/>
   </url>
 
+  <!-- Información de ingreso / Membership information -->
+  <url>
+    <loc>https://memento-mori.mx/informacion-ingreso</loc>
+    <lastmod>2026-04-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/informacion-ingreso"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/informacion-ingreso"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/informacion-ingreso"/>
+  </url>
+
+  <url>
+    <loc>https://memento-mori.mx/en/informacion-ingreso</loc>
+    <lastmod>2026-04-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://memento-mori.mx/informacion-ingreso"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://memento-mori.mx/en/informacion-ingreso"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://memento-mori.mx/informacion-ingreso"/>
+  </url>
+
   <!-- Gallery / Galería -->
   <url>
     <loc>https://memento-mori.mx/gallery</loc>
