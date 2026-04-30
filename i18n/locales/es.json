@@ -89,7 +89,7 @@
   "ser-mason": {
     "title": "Solicitud de ingreso",
     "lead": "Envíe aquí su solicitud confidencial a la secretaría. Para saber qué hace la logia en Chihuahua, requisitos, proceso de ingreso y preguntas frecuentes, use la página de información.",
-    "intro": "Complete los campos; al enviar se abrirá su correo para confirmar el mensaje a secretaría@memento-mori.mx.",
+    "intro": "Complete los campos; al enviar se abrirá su correo para confirmar el mensaje a secretaría{'@'}memento-mori.mx.",
     "fields": {
       "name": "Nombre completo",
       "email": "Correo electrónico",

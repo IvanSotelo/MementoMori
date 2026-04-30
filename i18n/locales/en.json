@@ -89,7 +89,7 @@
   "ser-mason": {
     "title": "Membership application",
     "lead": "Submit a confidential inquiry to the secretary using this form. For what we do in Chihuahua, membership requirements, admission steps and FAQ, open the information page.",
-    "intro": "Fill in the fields; submitting opens your email client to send the message to secretaria@memento-mori.mx.",
+    "intro": "Fill in the fields; submitting opens your email client to send the message to secretaria{'@'}memento-mori.mx.",
     "fields": {
       "name": "Full name",
       "email": "Email",
