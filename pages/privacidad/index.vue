@@ -11,8 +11,8 @@
               <h2>Responsible party</h2>
               <p>
                 Respetable Logia Simbólica Memento Mori N.° 107, affiliated with the Gran Logia
-                Cosmos del Estado de Chihuahua. Postal address: Libertad #1004, Col. Centro,
-                Chihuahua, Chihuahua, Mexico. Contact:
+                Cosmos del Estado de Chihuahua. Postal address: Calle Libertad 1004, Zona Centro,
+                31000 Chihuahua, Chih., Mexico. Contact:
                 <a href="mailto:secretaria@memento-mori.mx">secretaria@memento-mori.mx</a>
               </p>
 
@@ -142,8 +142,8 @@
               <h2>Responsable</h2>
               <p>
                 Respetable Logia Simbólica Memento Mori N.° 107, jurisdiccionada a la Gran Logia
-                Cosmos del Estado de Chihuahua. Domicilio: Libertad #1004, Col. Centro, Chihuahua,
-                Chihuahua, México. Contacto:
+                Cosmos del Estado de Chihuahua. Domicilio: C. Libertad 1004, Zona Centro, 31000
+                Chihuahua, Chih., México. Contacto:
                 <a href="mailto:secretaria@memento-mori.mx">secretaria@memento-mori.mx</a>
               </p>
 

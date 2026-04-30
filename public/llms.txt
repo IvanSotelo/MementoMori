@@ -6,7 +6,7 @@
 - **Short name:** Memento Mori N.° 107
 - **Type:** Masonic Lodge (Symbolic / Blue Lodge)
 - **Founded:** 2025
-- **Location:** Libertad #1004, Col. Centro, Chihuahua, Chihuahua, México
+- **Location:** C. Libertad 1004, Zona Centro, 31000 Chihuahua, Chih., México
 - **Jurisdiction:** Noble, Leal y Centenaria Gran Logia Cosmos del Estado de Chihuahua
 - **Contact:** secretaria@memento-mori.mx
 - **Website:** https://memento-mori.mx
@@ -55,6 +55,7 @@ Website: https://granlogiacosmos.mx/
 - History / Historia: https://memento-mori.mx/history
 - Worshipful Master's Message / Mensaje: https://memento-mori.mx/message
 - Masonic Moral Code / Código Moral: https://memento-mori.mx/moral-code
+- Contact / Contacto: https://memento-mori.mx/contact
 - Membership / Ser Masón: https://memento-mori.mx/ser-mason
 - Gallery / Galería: https://memento-mori.mx/gallery
 

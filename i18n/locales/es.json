@@ -47,12 +47,15 @@
     "message": "Mensaje",
     "credits": "Créditos",
     "contact": "Contacto",
-    "privacy": "Privacidad"
+    "privacy": "Privacidad",
+    "address": "C. Libertad 1004, Zona Centro · 31000 Chihuahua, Chih., México"
   },
   "contact-page": {
     "lodge": "Logia",
     "grand-lodge": "Gran Logia Cosmos del Estado de Chihuahua",
     "location": "Domicilio",
+    "address-line1": "C. Libertad 1004, Zona Centro",
+    "address-line2": "31000 Chihuahua, Chih., México",
     "email": "Correo electrónico",
     "membership": "Membresía",
     "membership-link": "Solicitud de ingreso →"

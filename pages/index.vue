@@ -91,7 +91,7 @@ const organizationJsonLd = computed(() =>
         : 'Respetable Logia Simbólica Memento Mori N.° 107 en Chihuahua, México. Jurisdiccionada a la Gran Logia Cosmos. Fraternidad masónica dedicada a la reflexión filosófica, el conocimiento y el perfeccionamiento moral.',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Libertad #1004, Col. Centro',
+      streetAddress: 'Calle Libertad 1004, Zona Centro',
       addressLocality: 'Chihuahua',
       addressRegion: 'Chihuahua',
       postalCode: '31000',

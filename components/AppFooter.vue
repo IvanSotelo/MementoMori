@@ -16,6 +16,7 @@
                 {{ $t('footer.credits') }}
               </nuxt-link>
             </div>
+            <p class="footer__nap">{{ $t('footer.address') }}</p>
           </div>
         </div>
       </div>
@@ -75,7 +76,8 @@ onUpdated(() => animateIn())
 }
 .footer {
   width: 100%;
-  height: 50px;
+  min-height: 50px;
+  height: auto;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -152,6 +154,20 @@ onUpdated(() => animateIn())
   }
   .router-link-active {
     color: #a1907f;
+  }
+
+  .footer__nap {
+    clear: both;
+    margin: 0.35rem 0 0;
+    padding: 0 min(4vw, 1rem);
+    font-size: clamp(0.45rem, 0.85vw, 0.55rem);
+    line-height: 1.35;
+    letter-spacing: 0.04em;
+    color: #7a7a7a;
+    text-transform: none;
+    font-weight: 400;
+    text-align: center;
+    pointer-events: none;
   }
 }
 </style>

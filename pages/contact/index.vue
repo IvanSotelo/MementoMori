@@ -18,8 +18,8 @@
                 <p>{{ $t('contact-page.location') }}</p>
               </div>
               <div class="col-6">
-                <p>Libertad #1004, Col. Centro</p>
-                <p>Chihuahua, Chihuahua, México</p>
+                <p>{{ $t('contact-page.address-line1') }}</p>
+                <p>{{ $t('contact-page.address-line2') }}</p>
               </div>
             </div>
             <div class="row">

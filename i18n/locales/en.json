@@ -47,12 +47,15 @@
     "message": "Message",
     "credits": "Credits",
     "contact": "Contact",
-    "privacy": "Privacy"
+    "privacy": "Privacy",
+    "address": "Calle Libertad 1004, Zona Centro · 31000 Chihuahua, Chih., Mexico"
   },
   "contact-page": {
     "lodge": "Lodge",
     "grand-lodge": "Grand Lodge Cosmos of the State of Chihuahua",
     "location": "Address",
+    "address-line1": "Calle Libertad 1004, Zona Centro",
+    "address-line2": "31000 Chihuahua, Chih., Mexico",
     "email": "Email",
     "membership": "Membership",
     "membership-link": "Membership application →"
