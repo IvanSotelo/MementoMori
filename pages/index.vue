@@ -13,7 +13,19 @@ main(role="main" ref="root")
           nuxt-img.page-home__chapter-background--image(provider="cloudinary" format="webp" cover src="v1661278333/perseverancia/bg_mb6eok.png" fit="fill" :alt="heroAlt")
       .page-home__transition
         canvas.page-home__transition-main
-        img.page-home__transition-sprite(src="/sprite_test5.png" data-src="/sprite_test5.png" alt="")
+        //- WebP max dimension 16383px; sheet is 22080×810 → two tiles (23 cols each × 480px wide).
+        img.page-home__transition-sprite.page-home__transition-sprite--a(
+          src="/sprite_test5-1.webp"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        )
+        img.page-home__transition-sprite.page-home__transition-sprite--b(
+          src="/sprite_test5-2.webp"
+          alt=""
+          loading="lazy"
+          decoding="async"
+        )
         canvas.page-home__transition-temp
       .vertical-align
         .vertical-align-item
@@ -81,7 +93,7 @@ const organizationJsonLd = computed(() =>
     name: 'Respetable Logia Simbólica Memento Mori N.° 107',
     alternateName: ['Memento Mori No. 107', 'R∴L∴S∴ Memento Mori 107'],
     url: 'https://memento-mori.mx',
-    logo: 'https://memento-mori.mx/favicon.png',
+    logo: 'https://memento-mori.mx/logo-organization.png',
     image: 'https://memento-mori.mx/og.png',
     foundingDate: '2025',
     email: 'secretaria@memento-mori.mx',
@@ -143,12 +155,16 @@ const bgFrameWidth = 480
 const bgFrameHeight = 270
 const bgSpriteFrames = 137
 const bgSpriteCol = 46
+/** First WebP tile covers this many columns (23 × 480px = 11040px width). */
+const bgSpriteColsFirstTile = 23
+const bgSpriteSplitX = bgFrameWidth * bgSpriteColsFirstTile
 const bgSpriteRate = 1
 let bgMainCanvas = null
 let bgTempCanvas = null
 let bgMainContext = null
 let bgTempContext = null
-let bgSprite = null
+let bgSpriteA = null
+let bgSpriteB = null
 let bgSpriteX = 0
 let bgSpriteY = 0
 let bgSpriteFrame = 1
@@ -157,7 +173,16 @@ let bgNextImage = null
 let bgCurrentImage = null
 let bgCanvasRenderStop = false
 
-const canvasInit = () => {
+function spriteSheetReady(img) {
+  if (!img) return Promise.resolve()
+  if (img.complete && img.naturalWidth > 0) return Promise.resolve()
+  return new Promise((resolve) => {
+    img.addEventListener('load', () => resolve(), { once: true })
+    img.addEventListener('error', () => resolve(), { once: true })
+  })
+}
+
+const canvasInit = async () => {
   bgMainCanvas = root.value.querySelector('.page-home__transition-main')
   bgMainContext = bgMainCanvas.getContext('2d')
   bgTempCanvas = root.value.querySelector('.page-home__transition-temp')
@@ -166,7 +191,9 @@ const canvasInit = () => {
   bgTempContext.webkitImageSmoothingEnabled = false
   bgTempContext.msImageSmoothingEnabled = false
   bgTempContext.imageSmoothingEnabled = false
-  bgSprite = root.value.querySelector('.page-home__transition-sprite')
+  bgSpriteA = root.value.querySelector('.page-home__transition-sprite--a')
+  bgSpriteB = root.value.querySelector('.page-home__transition-sprite--b')
+  await Promise.all([spriteSheetReady(bgSpriteA), spriteSheetReady(bgSpriteB)])
   canvasTransition()
 }
 
@@ -205,10 +232,14 @@ const bgCanvasRender = (t) => {
     (bgMainContext.globalCompositeOperation = 'source-over'),
     t)
   ) {
+    const sx = bgFrameWidth * bgSpriteX
+    const sy = bgFrameHeight * bgSpriteY
+    const sheet = sx >= bgSpriteSplitX ? bgSpriteB : bgSpriteA
+    const srcX = sx >= bgSpriteSplitX ? sx - bgSpriteSplitX : sx
     bgTempContext.drawImage(
-      bgSprite,
-      bgFrameWidth * bgSpriteX,
-      bgFrameHeight * bgSpriteY,
+      sheet,
+      srcX,
+      sy,
       bgFrameWidth,
       bgFrameHeight,
       0,
@@ -317,7 +348,7 @@ const onEnter = () => {
   })
 }
 onMounted(() => {
-  canvasInit()
+  void canvasInit()
   onEnter()
   window.addEventListener('resize', imageRetina)
   imageRetina()
