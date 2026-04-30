@@ -4,143 +4,114 @@ main(ref="serMason")
     section#page-ser-mason.page.page-ser-mason(data-scroll-section)
       .vertical-align
         .vertical-align-item
-          h2.page-ser-mason__title {{ copy.title }}
-          p.page-ser-mason__intro {{ copy.intro }}
+          h2.page-ser-mason__title {{ $t('ser-mason.title') }}
+
+          article.page-ser-mason__article
+            p.page-ser-mason__lead {{ $t('ser-mason.lead') }}
+
+            section.page-ser-mason__block(
+              v-for="(block, idx) in contentSections"
+              :key="'sec-' + idx"
+            )
+              h3.page-ser-mason__block-heading {{ block.heading }}
+              p.page-ser-mason__block-body {{ block.body }}
+
+            section.page-ser-mason__block
+              h3.page-ser-mason__block-heading {{ $t('ser-mason.requirements-heading') }}
+              p.page-ser-mason__block-body {{ $t('ser-mason.requirements-intro') }}
+              ul.page-ser-mason__list
+                li(v-for="(item, idx) in requirementItems" :key="'req-' + idx") {{ item }}
+
+            section.page-ser-mason__block
+              h3.page-ser-mason__block-heading {{ $t('ser-mason.process-heading') }}
+              ol.page-ser-mason__list.page-ser-mason__list--numbered
+                li(v-for="(step, idx) in processSteps" :key="'step-' + idx") {{ step }}
+
+            p.page-ser-mason__closing {{ $t('ser-mason.closing') }}
+
+            section.page-ser-mason__faq(v-if="faqItems.length")
+              h3.page-ser-mason__block-heading {{ $t('ser-mason.faq-heading') }}
+              details.page-ser-mason__faq-item(v-for="(item, idx) in faqItems" :key="'faq-' + idx")
+                summary.page-ser-mason__faq-q {{ item.question }}
+                p.page-ser-mason__faq-a {{ item.answer }}
+
+          p.page-ser-mason__intro {{ $t('ser-mason.intro') }}
 
           p.page-ser-mason__contact-phone
             span.page-ser-mason__contact-phone-label {{ $t('contact-page.phone-label') }}:
             a.page-ser-mason__contact-phone-link(:href="'tel:' + $t('contact-page.phone-uri')") {{ $t('contact-page.phone-display') }}
 
-          form.page-ser-mason__form(
-            @submit.prevent="handleSubmit"
-            novalidate
-          )
+          form.page-ser-mason__form(@submit.prevent="handleSubmit" novalidate)
             .form-group
-              label(for="nombre") {{ copy.fields.name }} *
+              label(for="nombre") {{ $t('ser-mason.fields.name') }} *
               input#nombre(
                 v-model="form.nombre"
                 type="text"
                 name="nombre"
                 required
-                :placeholder="copy.placeholders.name"
+                :placeholder="$t('ser-mason.placeholders.name')"
               )
               span.form-error(v-if="errors.nombre") {{ errors.nombre }}
 
             .form-group
-              label(for="email") {{ copy.fields.email }} *
+              label(for="email") {{ $t('ser-mason.fields.email') }} *
               input#email(
                 v-model="form.email"
                 type="email"
                 name="email"
                 required
-                :placeholder="copy.placeholders.email"
+                :placeholder="$t('ser-mason.placeholders.email')"
               )
               span.form-error(v-if="errors.email") {{ errors.email }}
 
             .form-group
-              label(for="telefono") {{ copy.fields.phone }}
+              label(for="telefono") {{ $t('ser-mason.fields.phone') }}
               input#telefono(
                 v-model="form.telefono"
                 type="tel"
                 name="telefono"
-                :placeholder="copy.placeholders.phone"
+                :placeholder="$t('ser-mason.placeholders.phone')"
               )
 
             .form-group
-              label(for="mensaje") {{ copy.fields.message }} *
+              label(for="mensaje") {{ $t('ser-mason.fields.message') }} *
               textarea#mensaje(
                 v-model="form.mensaje"
                 name="mensaje"
                 rows="5"
                 required
-                :placeholder="copy.placeholders.message"
+                :placeholder="$t('ser-mason.placeholders.message')"
               )
               span.form-error(v-if="errors.mensaje") {{ errors.mensaje }}
 
             .form-actions
               button.page-ser-mason__submit(type="submit" :disabled="sending")
-                template(v-if="sending") {{ copy.sending }}
-                template(v-else) {{ copy.submit }}
+                template(v-if="sending") {{ $t('ser-mason.sending') }}
+                template(v-else) {{ $t('ser-mason.submit') }}
 
-          p.page-ser-mason__note {{ copy.noteBefore }}@{{ copy.noteAfter }}
+          p.page-ser-mason__note {{ $t('ser-mason.noteBefore') }}@{{ $t('ser-mason.noteAfter') }}
 
           p.page-ser-mason__privacy
-            | {{ copy.privacyPrefix }}
-            nuxt-link.page-ser-mason__privacy-link(:to="localePath('privacidad')") {{ copy.privacyLink }}
-            | {{ copy.privacySuffix }}
+            | {{ $t('ser-mason.privacy-prefix') }}
+            nuxt-link.page-ser-mason__privacy-link(:to="localePath('privacidad')") {{ $t('ser-mason.privacy-link') }}
+            | {{ $t('ser-mason.privacy-suffix') }}
 </template>
 
 <script setup lang="ts">
+import type LocomotiveScroll from 'locomotive-scroll'
+
 const EMAIL_TO = 'secretaria@memento-mori.mx'
 
-const SER_MASON_COPY = {
-  es: {
-    title: 'Solicitud de ingreso',
-    intro:
-      'Si vive en Chihuahua o desea iniciar su camino en la ciudad de Chihuahua, complete el formulario para enviar su solicitud a la Respetable Logia Simbólica Memento Mori N.° 107. La secretaría revisará su información y se pondrá en contacto.',
-    fields: {
-      name: 'Nombre completo',
-      email: 'Correo electrónico',
-      phone: 'Teléfono',
-      message: 'Mensaje o motivo de su solicitud'
-    },
-    placeholders: {
-      name: 'Su nombre',
-      email: 'ejemplo: nombre en dominio.com',
-      phone: 'Opcional',
-      message: 'Escriba aquí su mensaje...'
-    },
-    validation: {
-      nameRequired: 'El nombre es obligatorio',
-      emailRequired: 'El correo es obligatorio',
-      emailInvalid: 'Introduzca un correo válido',
-      messageRequired: 'El mensaje es obligatorio'
-    },
-    submit: 'Enviar solicitud',
-    sending: 'Enviando...',
-    noteBefore: 'Al enviar se abrirá su cliente de correo con la dirección secretaria',
-    noteAfter: 'memento-mori.mx. Envíe el mensaje para completar la solicitud.',
-    privacyPrefix: 'Consulte el ',
-    privacyLink: 'aviso de privacidad',
-    privacySuffix: ' para conocer cómo tratamos sus datos personales.'
-  },
-  en: {
-    title: 'Membership application',
-    intro:
-      'If you live in Chihuahua or wish to begin your journey in Chihuahua City, fill out the form to submit your application to the Respectable Symbolic Lodge Memento Mori No. 107. The secretary will review your information and get in touch.',
-    fields: {
-      name: 'Full name',
-      email: 'Email',
-      phone: 'Phone',
-      message: 'Message or reason for your application'
-    },
-    placeholders: {
-      name: 'Your name',
-      email: 'e.g. name at domain.com',
-      phone: 'Optional',
-      message: 'Write your message here...'
-    },
-    validation: {
-      nameRequired: 'Name is required',
-      emailRequired: 'Email is required',
-      emailInvalid: 'Please enter a valid email',
-      messageRequired: 'Message is required'
-    },
-    submit: 'Submit application',
-    sending: 'Sending...',
-    noteBefore: 'Submitting will open your email client with secretaria',
-    noteAfter: 'memento-mori.mx. Send the message to complete your application.',
-    privacyPrefix: 'Read our ',
-    privacyLink: 'privacy notice',
-    privacySuffix: ' to learn how we handle your personal data.'
-  }
-} as const
-
-const { locale } = useI18n()
+const { locale, t, tm } = useI18n()
 const localePath = useLocalePath()
-const copy = computed(
-  () => SER_MASON_COPY[locale.value as keyof typeof SER_MASON_COPY] ?? SER_MASON_COPY.es
-)
+
+type SectionBlock = { heading: string; body: string }
+type FaqItem = { question: string; answer: string }
+
+const contentSections = computed(() => tm('ser-mason.content-sections') as SectionBlock[])
+const requirementItems = computed(() => tm('ser-mason.requirements-items') as string[])
+const processSteps = computed(() => tm('ser-mason.process-steps') as string[])
+const faqItems = computed(() => tm('ser-mason.faq') as FaqItem[])
 
 const pageTitle = computed(() =>
   locale.value === 'en'
@@ -156,8 +127,8 @@ const pageOgTitle = computed(() =>
 
 const pageDescription = computed(() =>
   locale.value === 'en'
-    ? 'Apply to the Respectable Symbolic Lodge Memento Mori No. 107 in Chihuahua City, Mexico (Grand Lodge Cosmos). The secretary receives requests from prospective members in Chihuahua and the region.'
-    : 'Solicite su ingreso a la Respetable Logia Simbólica Memento Mori N.° 107 en la ciudad de Chihuahua, México (Gran Logia Cosmos). La secretaría atiende solicitudes de aspirantes en Chihuahua y la región.'
+    ? 'Requirements and admission process for Respectable Symbolic Lodge Memento Mori No. 107 in Chihuahua (Grand Lodge Cosmos): meetings on Tuesdays, FAQ, and confidential membership application to the secretary.'
+    : 'Requisitos y proceso de ingreso a la Respetable Logia Simbólica Memento Mori N.° 107 en Chihuahua (Gran Logia Cosmos): tenidas, preguntas frecuentes y solicitud confidencial a la secretaría.'
 )
 
 useSeoMeta({
@@ -221,6 +192,19 @@ const serMasonBreadcrumb = computed(() =>
   })
 )
 
+const faqJsonLd = computed(() => ({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.value.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer
+    }
+  }))
+}))
+
 useHead({
   script: computed(() => [
     {
@@ -232,6 +216,11 @@ useHead({
       key: 'jsonld-breadcrumb',
       type: 'application/ld+json',
       children: serMasonBreadcrumb.value
+    },
+    {
+      key: 'jsonld-ser-mason-faq',
+      type: 'application/ld+json',
+      children: JSON.stringify(faqJsonLd.value)
     }
   ])
 })
@@ -253,29 +242,30 @@ const sending = ref(false)
 const serMason = ref<HTMLElement | null>(null)
 const { $locomotiveScroll } = useNuxtApp()
 
+let locomotiveScrollInstance: LocomotiveScroll | null = null
+
 function validate(): boolean {
   errors.nombre = ''
   errors.email = ''
   errors.mensaje = ''
 
-  const c = copy.value
   let valid = true
 
   if (!form.nombre?.trim()) {
-    errors.nombre = c.validation.nameRequired
+    errors.nombre = t('ser-mason.validation.name-required')
     valid = false
   }
 
   if (!form.email?.trim()) {
-    errors.email = c.validation.emailRequired
+    errors.email = t('ser-mason.validation.email-required')
     valid = false
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
-    errors.email = c.validation.emailInvalid
+    errors.email = t('ser-mason.validation.email-invalid')
     valid = false
   }
 
   if (!form.mensaje?.trim()) {
-    errors.mensaje = c.validation.messageRequired
+    errors.mensaje = t('ser-mason.validation.message-required')
     valid = false
   }
 
@@ -284,11 +274,11 @@ function validate(): boolean {
 
 function buildMailtoBody(): string {
   const lines = [
-    `Nombre: ${form.nombre.trim()}`,
-    `Email: ${form.email.trim()}`,
-    form.telefono?.trim() ? `Teléfono: ${form.telefono.trim()}` : null,
+    `${t('ser-mason.mailto.name')}: ${form.nombre.trim()}`,
+    `${t('ser-mason.mailto.email')}: ${form.email.trim()}`,
+    form.telefono?.trim() ? `${t('ser-mason.mailto.phone')}: ${form.telefono.trim()}` : null,
     '',
-    'Mensaje:',
+    `${t('ser-mason.mailto.message')}:`,
     form.mensaje.trim()
   ].filter(Boolean)
   return lines.join('\n')
@@ -299,7 +289,11 @@ function handleSubmit() {
 
   sending.value = true
 
-  const subject = encodeURIComponent(`[Memento Mori] Solicitud de ingreso - ${form.nombre.trim()}`)
+  const subjectLead =
+    locale.value === 'en'
+      ? '[Memento Mori] Membership application'
+      : '[Memento Mori] Solicitud de ingreso'
+  const subject = encodeURIComponent(`${subjectLead} — ${form.nombre.trim()}`)
   const body = encodeURIComponent(buildMailtoBody())
   const mailto = `mailto:${EMAIL_TO}?subject=${subject}&body=${body}`
 
@@ -310,19 +304,28 @@ function handleSubmit() {
   }, 500)
 }
 
+function bumpLocomotive() {
+  locomotiveScrollInstance?.update()
+}
+
 onMounted(() => {
-  const scroll = $locomotiveScroll(
-    serMason.value?.querySelector('[data-scroll-container]') || undefined
-  )
+  const scrollRoot = serMason.value?.querySelector('[data-scroll-container]') as HTMLElement | null
+  locomotiveScrollInstance = scrollRoot ? $locomotiveScroll(scrollRoot) : null
   useGsap.to(serMason.value?.querySelector('.page'), {
     autoAlpha: 1,
     duration: 1,
     delay: 0.5,
     ease: 'easeInOut'
   })
-  onUnmounted(() => {
-    scroll.destroy()
+  nextTick(() => {
+    setTimeout(() => bumpLocomotive(), 400)
+    setTimeout(() => bumpLocomotive(), 1200)
   })
+})
+
+onUnmounted(() => {
+  locomotiveScrollInstance?.destroy()
+  locomotiveScrollInstance = null
 })
 </script>
 
@@ -334,18 +337,18 @@ onMounted(() => {
   z-index: 0;
 
   .vertical-align {
-    padding: 12vh 5vw 14vh;
-    max-width: 640px;
+    padding: 10vh 5vw 14vh;
+    max-width: 720px;
     margin: 0 auto;
 
     @media only screen and (max-width: 768px) {
-      padding: 10vh 5vw 12vh;
+      padding: 9vh 5vw 12vh;
     }
   }
 
   &__title {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     font-family: 'Playfair Display', serif;
     font-size: 1.75rem;
     letter-spacing: 0.1em;
@@ -356,11 +359,103 @@ onMounted(() => {
     }
   }
 
+  &__article {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  &__lead {
+    color: #c9c9d4;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin: 0 0 1.5rem;
+  }
+
+  &__block {
+    margin-bottom: 1.35rem;
+
+    &-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+      color: #ececf2;
+      margin: 0 0 0.5rem;
+      font-weight: 600;
+    }
+
+    &-body {
+      margin: 0;
+      color: #9898a8;
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+  }
+
+  &__list {
+    margin: 0.6rem 0 0;
+    padding-left: 1.15rem;
+    color: #9898a8;
+    font-size: 0.88rem;
+    line-height: 1.6;
+
+    li + li {
+      margin-top: 0.45rem;
+    }
+
+    &--numbered {
+      list-style-type: decimal;
+    }
+  }
+
+  &__closing {
+    margin: 1.25rem 0 0;
+    color: #a8a8b6;
+    font-size: 0.88rem;
+    line-height: 1.65;
+  }
+
+  &__faq {
+    margin-top: 1.75rem;
+    padding-top: 0.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  &__faq-item {
+    margin-top: 0.65rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    padding: 0.35rem 0.65rem;
+    background: rgba(0, 0, 0, 0.15);
+
+    &[open] {
+      border-color: rgba(151, 130, 104, 0.35);
+    }
+  }
+
+  &__faq-q {
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #dddde6;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  &__faq-a {
+    margin: 0.5rem 0 0.35rem;
+    font-size: 0.82rem;
+    line-height: 1.55;
+    color: #9595a3;
+  }
+
   &__intro {
     text-align: center;
     color: #8e8e9e;
     font-size: 0.95rem;
-    line-height: 1.5;
+    line-height: 1.55;
     margin-bottom: 1.25rem;
   }
 

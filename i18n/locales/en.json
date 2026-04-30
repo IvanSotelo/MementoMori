@@ -87,7 +87,61 @@
   ],
   "ser-mason": {
     "title": "Membership application",
-    "intro": "If you live in Chihuahua or wish to begin your journey in Chihuahua City, fill out the form to submit your application to the Respectable Symbolic Lodge Memento Mori No. 107. The secretary will review your information and get in touch.",
+    "lead": "If you live in Chihuahua City or plan to settle here and want an honest overview of symbolic Freemasonry under regular obedience, this page explains what our lodge does locally, what is commonly expected of a petitioner, and how to begin a confidential conversation with the secretary of Respectable Symbolic Lodge Memento Mori No. 107.",
+    "intro": "When you are ready, use the form below to submit your inquiry; the secretary will review your details and respond.",
+    "content-sections": [
+      {
+        "heading": "Who we are and how we work",
+        "body": "Respectable Symbolic Lodge Memento Mori No. 107 is a lodge of ancient, free and accepted Masons meeting in Chihuahua City under the jurisdiction of the Noble, Loyal and Centenary Grand Lodge \"Cosmos\" of the State of Chihuahua. We gather to cultivate fraternity, symbolic study and moral improvement through ritual, philosophical reflection and the orderly fellowship that defines the craft. Locally, the lodge belongs to a network of regular Masons who uphold mutual trust and discreet civic responsibility, always within the bylaws of the Grand Lodge and without profit motive or proselytizing outside practices recognized by the institution."
+      },
+      {
+        "heading": "What we do in Chihuahua",
+        "body": "Regular meetings (tenidas) are held on Tuesday evenings at times confirmed by the secretary to members and reflected on this site’s contact page. They include ritual and educational work typical of a symbolic lodge: proficiency exercises when appropriate, short talks and respectful discussion of universal ethical principles and the heritage of the craft. Outside the lodge room we do not recruit like a sales campaign; inquiries grow from informed curiosity, maturity and introductions within the regulatory framework. This website only orientates and routes first contact—the fuller experience belongs to the lodge’s internal labor."
+      }
+    ],
+    "requirements-heading": "Typical expectations (for guidance only)",
+    "requirements-intro": "Each petitioner is considered individually. The points below summarize usual expectations in Mexican regular Freemasonry and in our jurisdiction; they do not replace internal regulations or the sovereign decisions of the lodge.",
+    "requirements-items": [
+      "Be an adult man of good reputation who chooses to petition freely after reflection.",
+      "Profess belief in a Supreme Creator (Great Architect of the Universe), as required by regular Freemasonry.",
+      "Have genuine availability to attend meetings in Chihuahua punctually and fulfill duties and dues determined by the lodge.",
+      "Avoid serious moral or legal disqualifications under Mexican law and the statutes of Grand Lodge Cosmos.",
+      "Approach with motives of study, integrity and service—not material gain, political leverage or shallow prestige.",
+      "Accept internal discipline and respect for the discreet sphere proper to the craft, without confusing confidentiality with lack of public ethics.",
+      "Understand that submitting the form creates no right to admission; acceptance rests solely with the lodge by secret ballot."
+    ],
+    "process-heading": "General path of approach",
+    "process-steps": [
+      "Read this site and the contact page carefully; reflect whether symbolic regular Freemasonry aligns with your personal values.",
+      "Open first contact through this form, the secretary’s email or the phone listed on Contact, stating calmly your motivation and availability in the city.",
+      "Participate in interviews or introductory meetings arranged by the secretary or officers; mutual acquaintance or references may be requested.",
+      "Where applicable, complete observation or preparatory instruction according to the ritual and bylaws in force under Grand Lodge Cosmos.",
+      "If the lodge agrees, a secret ballot of qualified Masons present follows; only a favorable outcome advances formal initiatory work."
+    ],
+    "closing": "Online requests are confidential and exist solely to open serious correspondence with the secretary. We do not confer degrees or ritual by email; further work always happens in person in Chihuahua under Grand Lodge rules. If you live elsewhere but can attend regularly, explain this in your message so we can assess whether another closer regular lodge should assist you.",
+    "faq-heading": "Frequently asked questions",
+    "faq": [
+      {
+        "question": "Does filling out the form make me a Mason?",
+        "answer": "No. The form opens communication with the secretary. Admission depends on interviews, periods of mutual acquaintance and balloting under regulations. Electronic mail never guarantees acceptance."
+      },
+      {
+        "question": "Are there dues or financial obligations?",
+        "answer": "Regular lodges normally collect dues for premises, materials and administration. Amounts and procedures are explained transparently during the process and governed by the Grand Lodge."
+      },
+      {
+        "question": "Must I already know a Mason?",
+        "answer": "Not necessarily; many journeys begin with the secretary. A fraternal introduction can help mutual knowledge when it exists, but it is not always required beforehand."
+      },
+      {
+        "question": "Is Freemasonry a religion?",
+        "answer": "It is not a religion and does not replace personal faith. Belief in the Great Architect of the Universe is required; specific denominational beliefs remain private within respect for the lodge’s pluralism."
+      },
+      {
+        "question": "May I visit the lodge room before joining?",
+        "answer": "Ritual spaces are reserved for members and candidates at the proper stages. General questions are handled through the public channels listed here; any courtesy visit depends on arrangements made by the secretary and the lodge."
+      }
+    ],
     "fields": {
       "name": "Full name",
       "email": "Email",
@@ -109,7 +163,16 @@
     "submit": "Submit application",
     "sending": "Sending...",
     "noteBefore": "Submitting will open your email client with secretaria",
-    "noteAfter": "memento-mori.mx. Send the message to complete your application."
+    "noteAfter": "memento-mori.mx. Send the message to complete your application.",
+    "privacy-prefix": "Read our ",
+    "privacy-link": "privacy notice",
+    "privacy-suffix": " to learn how we handle your personal data.",
+    "mailto": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message"
+    }
   },
   "credits": {
     "contact_us": "Contact us",
