@@ -14,6 +14,8 @@
                 Cosmos del Estado de Chihuahua. Postal address: Calle Libertad 1004, Zona Centro,
                 31000 Chihuahua, Chih., Mexico. Contact:
                 <a href="mailto:secretaria@memento-mori.mx">secretaria@memento-mori.mx</a>
+                — Phone:
+                <a href="tel:+526366976926">+52 636 697 6926</a>
               </p>
 
               <h2>Scope</h2>
@@ -145,6 +147,8 @@
                 Cosmos del Estado de Chihuahua. Domicilio: C. Libertad 1004, Zona Centro, 31000
                 Chihuahua, Chih., México. Contacto:
                 <a href="mailto:secretaria@memento-mori.mx">secretaria@memento-mori.mx</a>
+                — Teléfono:
+                <a href="tel:+526366976926">+52 636 697 6926</a>
               </p>
 
               <h2>Alcance</h2>

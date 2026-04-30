@@ -56,6 +56,9 @@
     "location": "Domicilio",
     "address-line1": "C. Libertad 1004, Zona Centro",
     "address-line2": "31000 Chihuahua, Chih., México",
+    "phone-label": "Teléfono",
+    "phone-display": "+52 636 697 6926",
+    "phone-uri": "+526366976926",
     "email": "Correo electrónico",
     "membership": "Membresía",
     "membership-link": "Solicitud de ingreso →"

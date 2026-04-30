@@ -7,6 +7,10 @@ main(ref="serMason")
           h2.page-ser-mason__title {{ copy.title }}
           p.page-ser-mason__intro {{ copy.intro }}
 
+          p.page-ser-mason__contact-phone
+            span.page-ser-mason__contact-phone-label {{ $t('contact-page.phone-label') }}:
+            a.page-ser-mason__contact-phone-link(:href="'tel:' + $t('contact-page.phone-uri')") {{ $t('contact-page.phone-display') }}
+
           form.page-ser-mason__form(
             @submit.prevent="handleSubmit"
             novalidate
@@ -172,6 +176,7 @@ const organizationJsonLd = computed(() => ({
   name: 'Respetable Logia Simbólica Memento Mori N.° 107',
   alternateName: ['Memento Mori No. 107', 'R∴L∴S∴ Memento Mori 107'],
   url: 'https://memento-mori.mx',
+  telephone: '+526366976926',
   description:
     'Logia masónica simbólica en la ciudad de Chihuahua, jurisdiccionada a la Gran Logia Cosmos del estado de Chihuahua.',
   areaServed: {
@@ -350,7 +355,35 @@ onMounted(() => {
     color: #8e8e9e;
     font-size: 0.95rem;
     line-height: 1.5;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  &__contact-phone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.35rem;
+    margin: 0 0 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+
+    &-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #b8b8c4;
+    }
+
+    &-link {
+      color: #e8e8ee;
+      letter-spacing: 0.06em;
+      transition: color 0.2s;
+
+      &:hover {
+        color: #978268;
+      }
+    }
   }
 
   &__form {

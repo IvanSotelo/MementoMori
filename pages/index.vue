@@ -97,11 +97,13 @@ const organizationJsonLd = computed(() =>
       postalCode: '31000',
       addressCountry: 'MX'
     },
+    telephone: '+526366976926',
     areaServed: { '@type': 'City', name: 'Chihuahua' },
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'membership',
       email: 'secretaria@memento-mori.mx',
+      telephone: '+526366976926',
       url: 'https://memento-mori.mx/ser-mason'
     },
     parentOrganization: {

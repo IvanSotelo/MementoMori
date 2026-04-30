@@ -24,6 +24,18 @@
             </div>
             <div class="row">
               <div class="col-6">
+                <p>{{ $t('contact-page.phone-label') }}</p>
+              </div>
+              <div class="col-6">
+                <p>
+                  <a :href="'tel:' + $t('contact-page.phone-uri')">{{
+                    $t('contact-page.phone-display')
+                  }}</a>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
                 <p>{{ $t('contact-page.email') }}</p>
               </div>
               <div class="col-6">
