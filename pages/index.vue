@@ -23,9 +23,10 @@ main(role="main" ref="root")
             h1.page-home__title Memento Mori N.° 107
           .page-home__cta
             nuxt-link(to="https://granlogiacosmos.mx/") Jurisdiccionada a la Noble, Leal y Centenaria Gran Logia "Cosmos" del Estado de Chihuahua
-      aside.page-home__intro(aria-labelledby="page-home-intro-heading")
-        h2#page-home-intro-heading.page-home__intro-heading {{ introHeading }}
-        p.page-home__intro-p(v-for="(paragraph, idx) in introParagraphs" :key="idx") {{ paragraph }}
+      details.page-home__intro(aria-labelledby="page-home-intro-summary")
+        summary#page-home-intro-summary.page-home__intro-summary {{ introHeading }}
+        .page-home__intro-inner
+          p.page-home__intro-p(v-for="(paragraph, idx) in introParagraphs" :key="idx") {{ paragraph }}
   </template>
 
 <script setup>
@@ -480,45 +481,91 @@ onMounted(() => {
     bottom: 0;
     z-index: 105;
     box-sizing: border-box;
-    max-width: 46rem;
-    max-height: min(42vh, 19rem);
+    width: min(42rem, calc(100vw - 2rem));
     margin-left: auto;
     margin-right: auto;
-    padding: 0.75rem min(6vw, 2.5rem) calc(4.25rem + env(safe-area-inset-bottom, 0));
-    overflow-y: auto;
-    text-align: left;
-    font-weight: 300;
-    font-size: clamp(0.66rem, 1.05vw, 0.8rem);
-    line-height: 1.55;
-    color: rgb(255 255 255 / 88%);
-    background: linear-gradient(
-      to top,
-      rgb(26 26 31 / 94%) 0%,
-      rgb(26 26 31 / 72%) 52%,
-      rgb(26 26 31 / 0%) 100%
-    );
-    -webkit-overflow-scrolling: touch;
+    padding: 0 min(5vw, 1.75rem) calc(4rem + env(safe-area-inset-bottom, 0));
+    border: 0;
+    text-align: center;
 
-    &::-webkit-scrollbar {
-      width: 4px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: rgb(255 255 255 / 25%);
-      border-radius: 2px;
-    }
-
-    .page-home__intro-heading {
-      margin: 0 0 0.45rem;
-      font-size: 0.62rem;
+    .page-home__intro-summary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35em;
+      margin: 0 auto;
+      padding: 0.35rem 0;
+      list-style: none;
+      cursor: pointer;
       font-weight: 400;
-      letter-spacing: 0.28em;
+      font-size: clamp(0.58rem, 1vw, 0.68rem);
+      letter-spacing: 0.32em;
       text-transform: uppercase;
-      color: rgb(255 255 255 / 72%);
+      color: rgb(255 255 255 / 52%);
+      text-shadow: 0 1px 12px rgb(0 0 0 / 55%);
+      transition: color 0.35s ease;
+
+      &::after {
+        content: '';
+        flex-shrink: 0;
+        width: 0.28em;
+        height: 0.28em;
+        margin-left: 0.05em;
+        border-right: 1px solid currentcolor;
+        border-bottom: 1px solid currentcolor;
+        transform: rotate(45deg) translateY(-0.12em);
+        opacity: 0.65;
+        transition: transform 0.25s ease;
+      }
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &:hover {
+        color: #a1907f;
+      }
+    }
+
+    &[open] .page-home__intro-summary {
+      color: rgb(255 255 255 / 78%);
+
+      &::after {
+        transform: rotate(225deg) translateY(0.08em);
+      }
+    }
+
+    .page-home__intro-inner {
+      margin-top: 0.65rem;
+      padding-top: 0.65rem;
+      border-top: 1px solid rgb(255 255 255 / 12%);
+      max-height: min(46vh, 17.5rem);
+      overflow-x: hidden;
+      overflow-y: auto;
+      text-align: left;
+      font-weight: 300;
+      font-size: clamp(0.64rem, 1.05vw, 0.78rem);
+      line-height: 1.58;
+      color: rgb(255 255 255 / 86%);
+      text-shadow:
+        0 0 1px rgb(0 0 0 / 85%),
+        0 1px 14px rgb(0 0 0 / 55%);
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      scrollbar-color: rgb(255 255 255 / 22%) transparent;
+
+      &::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: rgb(255 255 255 / 22%);
+        border-radius: 2px;
+      }
     }
 
     .page-home__intro-p {
-      margin: 0 0 0.55rem;
+      margin: 0 0 0.5rem;
 
       &:last-child {
         margin-bottom: 0;
@@ -526,9 +573,18 @@ onMounted(() => {
     }
 
     @media only screen and (width <= 768px) {
-      max-height: min(38vh, 15.5rem);
-      font-size: clamp(0.62rem, 2.8vw, 0.72rem);
-      padding-bottom: calc(3.75rem + env(safe-area-inset-bottom, 0));
+      width: min(100vw - 1.25rem, 36rem);
+      padding-bottom: calc(3.6rem + env(safe-area-inset-bottom, 0));
+
+      .page-home__intro-summary {
+        font-size: clamp(0.54rem, 2.5vw, 0.64rem);
+        letter-spacing: 0.22em;
+      }
+
+      .page-home__intro-inner {
+        max-height: min(42vh, 14rem);
+        font-size: clamp(0.6rem, 2.75vw, 0.72rem);
+      }
     }
   }
 }
