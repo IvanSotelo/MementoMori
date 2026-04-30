@@ -60,7 +60,10 @@
     "phone-uri": "+526366976926",
     "email": "Email",
     "membership": "Membership",
-    "membership-link": "Membership application →"
+    "membership-link": "Membership application →",
+    "hours-label": "Meetings and schedule",
+    "hours-body": "Because Masonic work is discreet by nature, specific meeting days and times are not published openly online. Those who begin a serious approach will receive guidance through the secretary’s official email or phone.",
+    "map-title": "Approximate map location"
   },
   "moral-code": [
     "Worship the Great Architect of the Universe.",

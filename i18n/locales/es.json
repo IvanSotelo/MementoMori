@@ -60,7 +60,10 @@
     "phone-uri": "+526366976926",
     "email": "Correo electrónico",
     "membership": "Membresía",
-    "membership-link": "Solicitud de ingreso →"
+    "membership-link": "Solicitud de ingreso →",
+    "hours-label": "Tenidas y horario",
+    "hours-body": "Por la naturaleza discreta del trabajo masónico, los días y horarios de sesión no se publican abiertamente en internet. Quienes inicien un trámite serio de aproximación recibirán orientación por correo o teléfono de la secretaría.",
+    "map-title": "Ubicación aproximada en mapa"
   },
   "moral-code": [
     "Venera al Gran Arquitecto del Universo.",

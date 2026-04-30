@@ -54,6 +54,28 @@
                 </nuxt-link>
               </div>
             </div>
+            <div class="row">
+              <div class="col-6">
+                <p>{{ $t('contact-page.hours-label') }}</p>
+              </div>
+              <div class="col-6 contact__hours-body">
+                <p>{{ $t('contact-page.hours-body') }}</p>
+              </div>
+            </div>
+            <div class="contact__map row">
+              <div class="contact__map-inner">
+                <p class="contact__map-heading">{{ $t('contact-page.map-title') }}</p>
+                <div class="contact__map-frame">
+                  <iframe
+                    :title="$t('contact-page.map-title')"
+                    :src="mapEmbedSrc"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -70,9 +92,18 @@ const contactTitle = computed(() =>
 )
 const contactDescription = computed(() =>
   locale.value === 'en'
-    ? 'Contact Respectable Symbolic Lodge Memento Mori No. 107 in Chihuahua, Mexico. Write to us at secretaria@memento-mori.mx or submit a membership application.'
-    : 'Contacta a la Respetable Logia Simbólica Memento Mori N.° 107 en Chihuahua, México. Escríbenos a secretaria@memento-mori.mx o envía una solicitud de ingreso.'
+    ? 'Contact Respectable Symbolic Lodge Memento Mori No. 107 in Chihuahua, Mexico: address on Calle Libertad, phone, email, map and membership application.'
+    : 'Contacto Respetable Logia Simbólica Memento Mori N.° 107 en Chihuahua: domicilio en Calle Libertad, teléfono, correo, mapa y solicitud de ingreso.'
 )
+
+const mapEmbedSrc = computed(() => {
+  const addr =
+    locale.value === 'en'
+      ? 'Calle Libertad 1004, Zona Centro, 31000 Chihuahua, Chihuahua, Mexico'
+      : 'Calle Libertad 1004, Zona Centro, 31000 Chihuahua, Chihuahua, México'
+  const hl = locale.value === 'en' ? 'en' : 'es'
+  return `https://maps.google.com/maps?q=${encodeURIComponent(addr)}&hl=${hl}&z=17&output=embed`
+})
 useSeoMeta({
   title: contactTitle,
   description: contactDescription,
@@ -133,8 +164,69 @@ onMounted(() => {
 .contact {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 6vh 0 10vh;
+  box-sizing: border-box;
+
+  .row .col-6.contact__hours-body p {
+    line-height: 1.55;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.88);
+
+    @media only screen and (max-width: 768px) {
+      font-size: 3.6vw;
+    }
+  }
+
+  &__map {
+    width: 80%;
+    margin: 1.5rem auto 0;
+    padding-top: 0.75rem;
+    display: block;
+
+    @media only screen and (max-width: 768px) {
+      width: 90%;
+      margin-top: 2rem;
+    }
+
+    &-inner {
+      width: 100%;
+    }
+
+    &-heading {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1vw;
+      color: rgba(255, 255, 255, 0.72);
+      margin-bottom: 0.65rem;
+      text-align: center;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 4vw;
+      }
+    }
+
+    &-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      max-height: 340px;
+      overflow: hidden;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(0, 0, 0, 0.2);
+
+      iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    }
+  }
+
   .row {
     width: 80%;
     padding: 0.4vw 0;
@@ -178,9 +270,6 @@ onMounted(() => {
         width: 100%;
       }
     }
-  }
-  @media only screen and (max-width: 768px) {
-    height: 90vh;
   }
 }
 </style>
