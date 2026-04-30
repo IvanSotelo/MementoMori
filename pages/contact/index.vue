@@ -92,8 +92,8 @@ const contactTitle = computed(() =>
 )
 const contactDescription = computed(() =>
   locale.value === 'en'
-    ? 'Contact Respectable Symbolic Lodge Memento Mori No. 107 in Chihuahua, Mexico: address on Calle Libertad, phone, email, map and membership application.'
-    : 'Contacto Respetable Logia Simbólica Memento Mori N.° 107 en Chihuahua: domicilio en Calle Libertad, teléfono, correo, mapa y solicitud de ingreso.'
+    ? 'Contact Respectable Symbolic Lodge Memento Mori No. 107 in Chihuahua, Mexico: Calle Libertad address, Tuesdays 8 p.m. meetings (tenidas), phone, email, map and membership.'
+    : 'Contacto Respetable Logia Simbólica Memento Mori N.° 107 en Chihuahua: domicilio en Calle Libertad, tenidas martes 20:00 h, teléfono, correo, mapa y solicitud de ingreso.'
 )
 
 const mapEmbedSrc = computed(() => {

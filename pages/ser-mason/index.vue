@@ -177,6 +177,12 @@ const organizationJsonLd = computed(() => ({
   alternateName: ['Memento Mori No. 107', 'R∴L∴S∴ Memento Mori 107'],
   url: 'https://memento-mori.mx',
   telephone: '+526366976926',
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: 'https://schema.org/Tuesday',
+    opens: '20:00',
+    closes: '23:00'
+  },
   description:
     'Logia masónica simbólica en la ciudad de Chihuahua, jurisdiccionada a la Gran Logia Cosmos del estado de Chihuahua.',
   areaServed: {

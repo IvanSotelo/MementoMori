@@ -98,6 +98,12 @@ const organizationJsonLd = computed(() =>
       addressCountry: 'MX'
     },
     telephone: '+526366976926',
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'https://schema.org/Tuesday',
+      opens: '20:00',
+      closes: '23:00'
+    },
     areaServed: { '@type': 'City', name: 'Chihuahua' },
     contactPoint: {
       '@type': 'ContactPoint',
