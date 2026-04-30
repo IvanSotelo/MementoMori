@@ -40,7 +40,8 @@ export default defineNuxtConfig({
     ],
     lazy: true,
     defaultLocale: 'es',
-    experimental: { strictSeo: true }
+    experimental: { strictSeo: true },
+    compilation: { strictMessage: false }
   },
   gtag: {
     id: 'G-YKQFLLP785'

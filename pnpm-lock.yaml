@@ -78,6 +78,9 @@ importers:
       lint-staged:
         specifier: ^16.4.0
         version: 16.4.0
+      prettier:
+        specifier: ^3.4.2
+        version: 3.4.2
       pug:
         specifier: ^3.0.4
         version: 3.0.4
