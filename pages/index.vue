@@ -35,6 +35,8 @@ main(role="main" ref="root")
             h1.page-home__title Memento Mori N.° 107
           .page-home__cta
             nuxt-link(to="https://granlogiacosmos.mx/") Jurisdiccionada a la Noble, Leal y Centenaria Gran Logia "Cosmos" del Estado de Chihuahua
+          .page-home__join
+            nuxt-link(:to="localePath('ser-mason')") {{ $t('home-cta') }}
       details.page-home__intro(aria-labelledby="page-home-intro-summary")
         summary#page-home-intro-summary.page-home__intro-summary {{ introHeading }}
         .page-home__intro-inner
@@ -43,6 +45,7 @@ main(role="main" ref="root")
 
 <script setup>
 const { locale, t, tm } = useI18n()
+const localePath = useLocalePath()
 
 const introHeading = computed(() => t('home-intro.heading'))
 
@@ -88,12 +91,12 @@ useSeoMeta({
 const organizationJsonLd = computed(() =>
   JSON.stringify({
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    '@type': ['LocalBusiness', 'CivicStructure'],
     '@id': 'https://memento-mori.mx/#organization',
     name: 'Respetable Logia Simbólica Memento Mori N.° 107',
     alternateName: ['Memento Mori No. 107', 'R∴L∴S∴ Memento Mori 107'],
     url: 'https://memento-mori.mx',
-    logo: 'https://memento-mori.mx/logo-organization.png',
+    logo: { '@type': 'ImageObject', url: 'https://memento-mori.mx/logo-organization.png' },
     image: 'https://memento-mori.mx/og.png',
     foundingDate: '2025',
     email: 'secretaria@memento-mori.mx',
@@ -116,7 +119,7 @@ const organizationJsonLd = computed(() =>
       opens: '20:00',
       closes: '23:00'
     },
-    areaServed: { '@type': 'City', name: 'Chihuahua' },
+    areaServed: { '@type': 'AdministrativeArea', name: 'Chihuahua' },
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'membership',
@@ -128,7 +131,8 @@ const organizationJsonLd = computed(() =>
       '@type': 'Organization',
       '@id': 'https://granlogiacosmos.mx/#organization',
       name: 'Gran Logia Cosmos del Estado de Chihuahua',
-      url: 'https://granlogiacosmos.mx/'
+      url: 'https://granlogiacosmos.mx/',
+      foundingDate: '1893'
     }
   })
 )
@@ -346,6 +350,10 @@ const onEnter = () => {
     autoAlpha: 1,
     delay: 1.5
   })
+  useGsap.to(root.value.querySelector('.page-home__join'), 2, {
+    autoAlpha: 1,
+    delay: 1.8
+  })
 }
 onMounted(() => {
   void canvasInit()
@@ -507,6 +515,40 @@ onMounted(() => {
           transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
           &:hover {
             color: #a1907f;
+          }
+        }
+      }
+      .page-home__join {
+        display: block;
+        padding-top: 1.5vw;
+        opacity: 0;
+        @media only screen and (max-width: 768px) {
+          position: relative;
+          top: 35vw;
+          padding-top: 5vw;
+        }
+        a {
+          display: inline-block;
+          padding: 0.55em 1.6em;
+          border: 1px solid rgba(255, 255, 255, 0.45);
+          color: rgba(255, 255, 255, 0.9);
+          text-transform: uppercase;
+          letter-spacing: 0.22em;
+          font-size: 0.7em;
+          transition:
+            border-color 0.6s cubic-bezier(0.19, 1, 0.22, 1),
+            color 0.6s cubic-bezier(0.19, 1, 0.22, 1),
+            background 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+          &:hover {
+            border-color: #a1907f;
+            color: #a1907f;
+          }
+          @media only screen and (max-width: 768px) {
+            font-size: 2.8vw;
+            padding: 0.6em 1.8em;
+            min-height: 48px;
+            display: inline-flex;
+            align-items: center;
           }
         }
       }

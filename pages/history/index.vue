@@ -9,7 +9,7 @@
       >
         <div class="history__aside-container">
           <div class="history__aside-filter">
-            <p class="history__aside-filter--title">Capitulos</p>
+            <p class="history__aside-filter--title">{{ $t('history.chapter-label') }}</p>
             <ul>
               <li
                 v-for="chapter in chapters"
@@ -40,13 +40,9 @@
             <div id="born" class="history__item" data-scroll-section>
               <div class="history__item-wrapper space">
                 <div class="history__item-text">
-                  <p class="history__item-text--date">1893</p>
-                  <p class="history__item-text--title">Fundación de la Gran Logia Cosmos</p>
-                  <p class="history__item-text--text">
-                    En 1893 se fundó en la ciudad de Chihuahua la “Gran Logia Cosmos”, con
-                    jurisdicción sobre las logias existentes en el estado, quedando como su primer
-                    Gran Maestro el Coronel Miguel Ahumada, Gobernador del Estado.
-                  </p>
+                  <p class="”history__item-text--date”">{{ $t('history.born.date') }}</p>
+                  <p class="”history__item-text--title”">{{ $t('history.born.title') }}</p>
+                  <p class="”history__item-text--text”">{{ $t('history.born.text') }}</p>
                 </div>
                 <div class="history__item-aside--right bottom-10">
                   <nuxt-img
@@ -58,8 +54,8 @@
                     loading="lazy"
                   />
                   <span>
-                    <p>Miguel Ahumada</p>
-                    <p>1845 - 1917</p>
+                    <p>{{ $t('history.born.caption-name') }}</p>
+                    <p>{{ $t('history.born.caption-years') }}</p>
                   </span>
                 </div>
               </div>
@@ -67,33 +63,10 @@
             <div id="ciclo2025" class="history__item margin-0" data-scroll-section>
               <div class="history__item-wrapper space">
                 <div class="history__item-text">
-                  <p class="history__item-text--date">2025</p>
-                  <p class="history__item-text--title">Ciclo masónico 2025</p>
-                  <p class="history__item-text--text">
-                    En el espíritu de la fraternidad y el compromiso con los valores masónicos se
-                    constituyó la <b>Respetable Logia Simbólica Memento Mori</b> N.º 107, taller
-                    dedicado a la búsqueda del conocimiento, la reflexión filosófica y el
-                    perfeccionamiento del individuo dentro de los principios de la masonería.
-                    <br />
-                    <br />
-                    Bajo la dirección del <b>Venerable Maestro Salomón Dozal Suárez</b>, con el
-                    <b>Primer Vigilante Jesús Iván Sotelo Vargas</b> y el
-                    <b>Segundo Vigilante Heriberto Solis Rivas</b>. El Secretario
-                    <b>Aquilino Ramírez Lorenzo</b>, el Orador <b>Jesús Nevárez Rascón</b>, el
-                    Tesorero <b>Zahid Daniel Vela Juárez</b>, el Maestro de Ceremonias
-                    <b>José Ángel Salas Granados</b>, el Hospitalario <b>Rafael González Jurado</b>,
-                    el Primer Experto <b>Héctor Felipe Moreno Nevárez</b>, el Segundo Experto
-                    <b>Diego Alejandro Balderrama Gallegos</b>, el Guarda Templo Interior
-                    <b>Raúl Palacios Perches</b> y el Ecónomo <b>Rafael Alberto Márquez Pérez</b>
-                    integraron el cuadro fundador.
-                  </p>
-                  <p class="history__item-text--text">
-                    La fundación de <b>Memento Mori</b> representa el nacimiento de un espacio de
-                    estudio y reflexión, el compromiso de sus miembros con la transmisión del
-                    conocimiento y el fortalecimiento de los lazos fraternos. Como recuerda su
-                    nombre, la logia invita a la humildad, a la trascendencia de la vida y a obrar
-                    con virtud en cada acción.
-                  </p>
+                  <p class="history__item-text--date">{{ $t('history.cycle-2025.date') }}</p>
+                  <p class="history__item-text--title">{{ $t('history.cycle-2025.title') }}</p>
+                  <p class="history__item-text--text" v-html="$t('history.cycle-2025.text1')" />
+                  <p class="history__item-text--text" v-html="$t('history.cycle-2025.text2')" />
                 </div>
               </div>
             </div>
@@ -109,8 +82,8 @@
                     loading="lazy"
                   />
                   <span>
-                    <p>Salomón Dozal Suárez</p>
-                    <p>Venerable Maestro 2025</p>
+                    <p>{{ $t('history.cycle-2025.caption-name') }}</p>
+                    <p>{{ $t('history.cycle-2025.caption-role') }}</p>
                   </span>
                 </div>
               </div>
@@ -118,20 +91,10 @@
             <div id="ciclo2026" class="history__item" data-scroll-section>
               <div class="history__item-wrapper space">
                 <div class="history__item-text">
-                  <p class="history__item-text--date">2026</p>
-                  <p class="history__item-text--title">Ciclo masónico 2026</p>
-                  <p class="history__item-text--text">
-                    Bajo la dirección del <b>Venerable Maestro Jesús Iván Sotelo Vargas</b>, con el
-                    <b>Primer Vigilante Aquilino Ramírez Lorenzo</b> y el
-                    <b>Segundo Vigilante Jesús Nevárez Rascón</b>. El Secretario
-                    <b>José Ángel Salas Granados</b>, el Orador <b>Rafael Alberto Márquez Pérez</b>,
-                    el Maestro de Ceremonias <b>Diego Alejandro Balderrama Gallegos</b> y el
-                    Hospitalario <b>Daniel Trevizo</b> integran el cuadro de oficiales.
-                  </p>
-                  <p class="history__item-text--text">
-                    El ciclo 2026 continúa la labor de estudio y reflexión de la logia, reafirmando
-                    el compromiso con los principios que dan sentido a <b>Memento Mori</b>.
-                  </p>
+                  <p class="history__item-text--date">{{ $t('history.cycle-2026.date') }}</p>
+                  <p class="history__item-text--title">{{ $t('history.cycle-2026.title') }}</p>
+                  <p class="history__item-text--text" v-html="$t('history.cycle-2026.text1')" />
+                  <p class="history__item-text--text" v-html="$t('history.cycle-2026.text2')" />
                 </div>
               </div>
             </div>
@@ -147,8 +110,8 @@
                     loading="lazy"
                   />
                   <span>
-                    <p>Jesús Iván Sotelo Vargas</p>
-                    <p>Venerable Maestro 2026</p>
+                    <p>{{ $t('history.cycle-2026.caption-name') }}</p>
+                    <p>{{ $t('history.cycle-2026.caption-role') }}</p>
                   </span>
                 </div>
               </div>
@@ -293,7 +256,7 @@
 </template>
 
 <script setup>
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const historyTitle = computed(() =>
   locale.value === 'en' ? 'History | Memento Mori No. 107' : 'Historia | Memento Mori N.° 107'
@@ -350,21 +313,21 @@ if (typeof window !== 'undefined' && typeof navigator !== 'undefined') {
   )
 }
 
-const chapters = ref([
+const chapters = computed(() => [
   {
     title: '#born',
-    text: 'Nacimiento',
-    mobile: 'I'
+    text: t('history.chapters.born-text'),
+    mobile: t('history.chapters.born-mobile')
   },
   {
     title: '#ciclo2025',
-    text: 'Ciclo masónico 2025',
-    mobile: 'II'
+    text: t('history.chapters.cycle-2025-text'),
+    mobile: t('history.chapters.cycle-2025-mobile')
   },
   {
     title: '#ciclo2026',
-    text: 'Ciclo masónico 2026',
-    mobile: 'III'
+    text: t('history.chapters.cycle-2026-text'),
+    mobile: t('history.chapters.cycle-2026-mobile')
   }
 ])
 

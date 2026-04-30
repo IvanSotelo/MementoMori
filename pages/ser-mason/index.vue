@@ -109,32 +109,27 @@ useSeoMeta({
   twitterDescription: pageDescription
 })
 
-const organizationJsonLd = computed(() => ({
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'Respetable Logia Simbólica Memento Mori N.° 107',
-  alternateName: ['Memento Mori No. 107', 'R∴L∴S∴ Memento Mori 107'],
-  url: 'https://memento-mori.mx',
-  telephone: '+526366976926',
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: 'https://schema.org/Tuesday',
-    opens: '20:00',
-    closes: '23:00'
-  },
-  description:
-    'Logia masónica simbólica en la ciudad de Chihuahua, jurisdiccionada a la Gran Logia Cosmos del estado de Chihuahua.',
-  areaServed: {
-    '@type': 'Place',
-    name: 'Ciudad de Chihuahua',
-    description: 'Capital del estado de Chihuahua, México'
-  },
-  parentOrganization: {
-    '@type': 'Organization',
-    name: 'Gran Logia Cosmos del Estado de Chihuahua',
-    url: 'https://granlogiacosmos.mx/'
-  }
-}))
+const webpageJsonLd = computed(() =>
+  JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id':
+      locale.value === 'en'
+        ? 'https://memento-mori.mx/en/ser-mason#webpage'
+        : 'https://memento-mori.mx/ser-mason#webpage',
+    url:
+      locale.value === 'en'
+        ? 'https://memento-mori.mx/en/ser-mason'
+        : 'https://memento-mori.mx/ser-mason',
+    name:
+      locale.value === 'en'
+        ? 'Join Freemasonry in Chihuahua — membership application'
+        : 'Ser masón en Chihuahua — solicitud de ingreso',
+    isPartOf: { '@id': 'https://memento-mori.mx/#website' },
+    about: { '@id': 'https://memento-mori.mx/#organization' },
+    inLanguage: locale.value === 'en' ? 'en' : 'es-MX'
+  })
+)
 
 const serMasonBreadcrumb = computed(() =>
   JSON.stringify({
@@ -163,9 +158,9 @@ const serMasonBreadcrumb = computed(() =>
 useHead({
   script: computed(() => [
     {
-      key: 'jsonld-memento-mori-org',
+      key: 'jsonld-webpage',
       type: 'application/ld+json',
-      children: JSON.stringify(organizationJsonLd.value)
+      children: webpageJsonLd.value
     },
     {
       key: 'jsonld-breadcrumb',

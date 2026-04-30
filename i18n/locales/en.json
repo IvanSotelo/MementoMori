@@ -187,5 +187,40 @@
     "music": "Music",
     "development_design": "Development & Design",
     "warning": "This site is a passion/side project that was built in collaboration with Ivan Sotelo and Memento Mori N.° 107.  It is a non-commercial site, and we do not make any profits. We do not claim any document accuracy on this site, there may potentially be inaccurate text.  Most of the text that are in english were translated from Spanish via Google Translate, so there may be grammatical/spelling errors."
+  },
+  "home-cta": "Membership application",
+  "history": {
+    "chapter-label": "Chapters",
+    "born": {
+      "date": "1893",
+      "title": "Founding of Gran Logia Cosmos",
+      "text": "In 1893, the \"Gran Logia Cosmos\" was founded in the city of Chihuahua, with jurisdiction over the lodges in the state, with Colonel Miguel Ahumada, Governor of the State, as its first Grand Master.",
+      "caption-name": "Miguel Ahumada",
+      "caption-years": "1845 - 1917"
+    },
+    "cycle-2025": {
+      "date": "2025",
+      "title": "Masonic cycle 2025",
+      "text1": "In the spirit of fraternity and commitment to Masonic values, the <b>Respectable Symbolic Lodge Memento Mori</b> No. 107 was constituted, a workshop dedicated to the pursuit of knowledge, philosophical reflection and the moral improvement of the individual within the principles of Freemasonry.<br /><br />Under the direction of <b>Worshipful Master Salomón Dozal Suárez</b>, with <b>Senior Warden Jesús Iván Sotelo Vargas</b> and <b>Junior Warden Heriberto Solis Rivas</b>. Secretary <b>Aquilino Ramírez Lorenzo</b>, Orator <b>Jesús Nevárez Rascón</b>, Treasurer <b>Zahid Daniel Vela Juárez</b>, Master of Ceremonies <b>José Ángel Salas Granados</b>, Almoner <b>Rafael González Jurado</b>, First Expert <b>Héctor Felipe Moreno Nevárez</b>, Second Expert <b>Diego Alejandro Balderrama Gallegos</b>, Inner Guard <b>Raúl Palacios Perches</b> and Steward <b>Rafael Alberto Márquez Pérez</b> formed the founding officers.",
+      "text2": "The founding of <b>Memento Mori</b> represents the birth of a space of study and reflection, the commitment of its members to the transmission of knowledge and the strengthening of fraternal bonds. As its name recalls, the lodge invites humility, transcendence of life and virtuous action in every deed.",
+      "caption-name": "Salomón Dozal Suárez",
+      "caption-role": "Worshipful Master 2025"
+    },
+    "cycle-2026": {
+      "date": "2026",
+      "title": "Masonic cycle 2026",
+      "text1": "Under the direction of <b>Worshipful Master Jesús Iván Sotelo Vargas</b>, with <b>Senior Warden Aquilino Ramírez Lorenzo</b> and <b>Junior Warden Jesús Nevárez Rascón</b>. Secretary <b>José Ángel Salas Granados</b>, Orator <b>Rafael Alberto Márquez Pérez</b>, Master of Ceremonies <b>Diego Alejandro Balderrama Gallegos</b> and Almoner <b>Daniel Trevizo</b> form the officers.",
+      "text2": "The 2026 cycle continues the lodge's work of study and reflection, reaffirming the commitment to the principles that give meaning to <b>Memento Mori</b>.",
+      "caption-name": "Jesús Iván Sotelo Vargas",
+      "caption-role": "Worshipful Master 2026"
+    },
+    "chapters": {
+      "born-text": "Founding",
+      "born-mobile": "I",
+      "cycle-2025-text": "Masonic cycle 2025",
+      "cycle-2025-mobile": "II",
+      "cycle-2026-text": "Masonic cycle 2026",
+      "cycle-2026-mobile": "III"
+    }
   }
 }

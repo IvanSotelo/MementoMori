@@ -187,5 +187,40 @@
     "music": "Música",
     "development_design": "Diseño & Desarrollo",
     "warning": "Este sitio es un proyecto que se construyó en colaboración con Ivan Sotelo y Memento Mori N.° 107. Es un sitio no comercial y no generamos ganancias. No reclamamos la precisión de ningún documento en este sitio, es posible que haya texto inexacto. La mayoría del texto que está en inglés se tradujo del español a través de Google Translate, por lo que puede haber errores gramaticales/ortográficos."
+  },
+  "home-cta": "Solicitud de ingreso",
+  "history": {
+    "chapter-label": "Capítulos",
+    "born": {
+      "date": "1893",
+      "title": "Fundación de la Gran Logia Cosmos",
+      "text": "En 1893 se fundó en la ciudad de Chihuahua la \"Gran Logia Cosmos\", con jurisdicción sobre las logias existentes en el estado, quedando como su primer Gran Maestro el Coronel Miguel Ahumada, Gobernador del Estado.",
+      "caption-name": "Miguel Ahumada",
+      "caption-years": "1845 - 1917"
+    },
+    "cycle-2025": {
+      "date": "2025",
+      "title": "Ciclo masónico 2025",
+      "text1": "En el espíritu de la fraternidad y el compromiso con los valores masónicos se constituyó la <b>Respetable Logia Simbólica Memento Mori</b> N.º 107, taller dedicado a la búsqueda del conocimiento, la reflexión filosófica y el perfeccionamiento del individuo dentro de los principios de la masonería.<br /><br />Bajo la dirección del <b>Venerable Maestro Salomón Dozal Suárez</b>, con el <b>Primer Vigilante Jesús Iván Sotelo Vargas</b> y el <b>Segundo Vigilante Heriberto Solis Rivas</b>. El Secretario <b>Aquilino Ramírez Lorenzo</b>, el Orador <b>Jesús Nevárez Rascón</b>, el Tesorero <b>Zahid Daniel Vela Juárez</b>, el Maestro de Ceremonias <b>José Ángel Salas Granados</b>, el Hospitalario <b>Rafael González Jurado</b>, el Primer Experto <b>Héctor Felipe Moreno Nevárez</b>, el Segundo Experto <b>Diego Alejandro Balderrama Gallegos</b>, el Guarda Templo Interior <b>Raúl Palacios Perches</b> y el Ecónomo <b>Rafael Alberto Márquez Pérez</b> integraron el cuadro fundador.",
+      "text2": "La fundación de <b>Memento Mori</b> representa el nacimiento de un espacio de estudio y reflexión, el compromiso de sus miembros con la transmisión del conocimiento y el fortalecimiento de los lazos fraternos. Como recuerda su nombre, la logia invita a la humildad, a la trascendencia de la vida y a obrar con virtud en cada acción.",
+      "caption-name": "Salomón Dozal Suárez",
+      "caption-role": "Venerable Maestro 2025"
+    },
+    "cycle-2026": {
+      "date": "2026",
+      "title": "Ciclo masónico 2026",
+      "text1": "Bajo la dirección del <b>Venerable Maestro Jesús Iván Sotelo Vargas</b>, con el <b>Primer Vigilante Aquilino Ramírez Lorenzo</b> y el <b>Segundo Vigilante Jesús Nevárez Rascón</b>. El Secretario <b>José Ángel Salas Granados</b>, el Orador <b>Rafael Alberto Márquez Pérez</b>, el Maestro de Ceremonias <b>Diego Alejandro Balderrama Gallegos</b> y el Hospitalario <b>Daniel Trevizo</b> integran el cuadro de oficiales.",
+      "text2": "El ciclo 2026 continúa la labor de estudio y reflexión de la logia, reafirmando el compromiso con los principios que dan sentido a <b>Memento Mori</b>.",
+      "caption-name": "Jesús Iván Sotelo Vargas",
+      "caption-role": "Venerable Maestro 2026"
+    },
+    "chapters": {
+      "born-text": "Nacimiento",
+      "born-mobile": "I",
+      "cycle-2025-text": "Ciclo masónico 2025",
+      "cycle-2025-mobile": "II",
+      "cycle-2026-text": "Ciclo masónico 2026",
+      "cycle-2026-mobile": "III"
+    }
   }
 }
