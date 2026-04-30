@@ -72,6 +72,7 @@
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                     allowfullscreen
+                    @load="bumpLocomotive"
                   />
                 </div>
               </div>
@@ -84,6 +85,8 @@
 </template>
 
 <script setup lang="ts">
+import type LocomotiveScroll from 'locomotive-scroll'
+
 const { locale } = useI18n()
 const localePath = useLocalePath()
 
@@ -139,10 +142,15 @@ useHead({ script: [{ type: 'application/ld+json', children: contactBreadcrumb }]
 const contact = ref<HTMLElement | null>(null)
 const { $locomotiveScroll } = useNuxtApp()
 
+let locomotiveScrollInstance: LocomotiveScroll | null = null
+
+function bumpLocomotive() {
+  locomotiveScrollInstance?.update()
+}
+
 onMounted(() => {
-  const scroll = $locomotiveScroll(
-    contact.value?.querySelector('[data-scroll-container]') || undefined
-  )
+  const scrollRoot = contact.value?.querySelector('[data-scroll-container]') as HTMLElement | null
+  locomotiveScrollInstance = scrollRoot ? $locomotiveScroll(scrollRoot) : null
   useGsap.to(contact.value?.querySelector('.page'), {
     autoAlpha: 1,
     duration: 1,
@@ -154,9 +162,15 @@ onMounted(() => {
     ease: 'easeInOut',
     stagger: 0.1
   })
-  onUnmounted(() => {
-    scroll.destroy()
+  nextTick(() => {
+    setTimeout(() => bumpLocomotive(), 400)
+    setTimeout(() => bumpLocomotive(), 1400)
   })
+})
+
+onUnmounted(() => {
+  locomotiveScrollInstance?.destroy()
+  locomotiveScrollInstance = null
 })
 </script>
 

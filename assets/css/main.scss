@@ -293,6 +293,12 @@ main {
     text-align: center;
     will-change: transform;
   }
+
+  .page.page-contact,
+  .page.page-privacy {
+    height: auto;
+    min-height: 100%;
+  }
 }
 
 .container {
