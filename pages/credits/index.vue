@@ -18,6 +18,15 @@
             </div>
             <div class="row">
               <div class="col-6">
+                <p>{{ $t('contact-page.location') }}</p>
+              </div>
+              <div class="col-6">
+                <p>{{ $t('contact-page.address-line1') }}</p>
+                <p>{{ $t('contact-page.address-line2') }}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
                 <p>{{ $t('credits.archive_materials') }}</p>
               </div>
               <div class="col-6">

@@ -16,7 +16,6 @@
                 {{ $t('footer.credits') }}
               </nuxt-link>
             </div>
-            <p class="footer__nap">{{ $t('footer.address') }}</p>
             <p class="footer__phone">
               <a class="footer__phone-link" :href="'tel:' + $t('contact-page.phone-uri')">{{
                 $t('contact-page.phone-display')
@@ -83,6 +82,7 @@ onUpdated(() => animateIn())
   width: 100%;
   min-height: 50px;
   height: auto;
+  padding-bottom: 0.2rem;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -161,23 +161,9 @@ onUpdated(() => animateIn())
     color: #a1907f;
   }
 
-  .footer__nap {
-    clear: both;
-    margin: 0.35rem 0 0;
-    padding: 0 min(4vw, 1rem);
-    font-size: clamp(0.45rem, 0.85vw, 0.55rem);
-    line-height: 1.35;
-    letter-spacing: 0.04em;
-    color: #7a7a7a;
-    text-transform: none;
-    font-weight: 400;
-    text-align: center;
-    pointer-events: none;
-  }
-
   .footer__phone {
     clear: both;
-    margin: 0.2rem 0 0;
+    margin: 0.15rem 0 0;
     padding: 0 min(4vw, 1rem);
     font-size: clamp(0.45rem, 0.85vw, 0.55rem);
     line-height: 1.35;
