@@ -16,11 +16,6 @@
                 {{ $t('footer.credits') }}
               </nuxt-link>
             </div>
-            <p class="footer__phone">
-              <a class="footer__phone-link" :href="'tel:' + $t('contact-page.phone-uri')">{{
-                $t('contact-page.phone-display')
-              }}</a>
-            </p>
           </div>
         </div>
       </div>
@@ -80,9 +75,7 @@ onUpdated(() => animateIn())
 }
 .footer {
   width: 100%;
-  min-height: 50px;
-  height: auto;
-  padding-bottom: 0.2rem;
+  height: 50px;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -159,25 +152,6 @@ onUpdated(() => animateIn())
   }
   .router-link-active {
     color: #a1907f;
-  }
-
-  .footer__phone {
-    clear: both;
-    margin: 0.15rem 0 0;
-    padding: 0 min(4vw, 1rem);
-    font-size: clamp(0.45rem, 0.85vw, 0.55rem);
-    line-height: 1.35;
-    text-align: center;
-
-    &-link {
-      color: #5c5c5c;
-      letter-spacing: 0.06em;
-      transition: color 0.35s ease;
-
-      &:hover {
-        color: #a1907f;
-      }
-    }
   }
 }
 </style>
