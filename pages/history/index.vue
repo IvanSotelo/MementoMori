@@ -40,9 +40,9 @@
             <div id="born" class="history__item" data-scroll-section>
               <div class="history__item-wrapper space">
                 <div class="history__item-text">
-                  <p class="”history__item-text--date”">{{ $t('history.born.date') }}</p>
-                  <p class="”history__item-text--title”">{{ $t('history.born.title') }}</p>
-                  <p class="”history__item-text--text”">{{ $t('history.born.text') }}</p>
+                  <p class="history__item-text--date">{{ $t('history.born.date') }}</p>
+                  <p class="history__item-text--title">{{ $t('history.born.title') }}</p>
+                  <p class="history__item-text--text">{{ $t('history.born.text') }}</p>
                 </div>
                 <div class="history__item-aside--right bottom-10">
                   <nuxt-img
