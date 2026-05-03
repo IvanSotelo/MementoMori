@@ -79,8 +79,8 @@ importers:
         specifier: ^16.4.0
         version: 16.4.0
       prettier:
-        specifier: ^3.4.2
-        version: 3.4.2
+        specifier: ^3.8.3
+        version: 3.8.3
       pug:
         specifier: ^3.0.4
         version: 3.0.4
@@ -98,7 +98,7 @@ importers:
         version: 39.0.1(stylelint@16.26.1(typescript@5.8.3))
       stylelint-prettier:
         specifier: ^5.0.3
-        version: 5.0.3(prettier@3.4.2)(stylelint@16.26.1(typescript@5.8.3))
+        version: 5.0.3(prettier@3.8.3)(stylelint@16.26.1(typescript@5.8.3))
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -6717,8 +6717,8 @@ packages:
     resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
     engines: {node: '>=6.0.0'}
 
-  prettier@3.4.2:
-    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
+  prettier@3.8.3:
+    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -16352,7 +16352,7 @@ snapshots:
     dependencies:
       fast-diff: 1.3.0
 
-  prettier@3.4.2: {}
+  prettier@3.8.3: {}
 
   pretty-bytes@6.1.1: {}
 
@@ -17213,9 +17213,9 @@ snapshots:
       stylelint: 16.26.1(typescript@5.8.3)
       stylelint-config-recommended: 17.0.0(stylelint@16.26.1(typescript@5.8.3))
 
-  stylelint-prettier@5.0.3(prettier@3.4.2)(stylelint@16.26.1(typescript@5.8.3)):
+  stylelint-prettier@5.0.3(prettier@3.8.3)(stylelint@16.26.1(typescript@5.8.3)):
     dependencies:
-      prettier: 3.4.2
+      prettier: 3.8.3
       prettier-linter-helpers: 1.0.0
       stylelint: 16.26.1(typescript@5.8.3)
 
