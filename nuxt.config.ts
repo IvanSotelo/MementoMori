@@ -44,7 +44,13 @@ export default defineNuxtConfig({
     lazy: true,
     defaultLocale: 'es',
     experimental: { strictSeo: true },
-    compilation: { strictMessage: false }
+    compilation: { strictMessage: false },
+    pages: {
+      'contact/index': {
+        es: '/contacto',
+        en: '/contact'
+      }
+    }
   },
   gtag: {
     id: 'G-YKQFLLP785'

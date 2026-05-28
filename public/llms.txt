@@ -69,6 +69,11 @@ and submit a membership application at:
 https://memento-mori.mx/ser-mason
 Contact: secretaria@memento-mori.mx · +52 636 697 6926
 
+## Full Content
+
+For AI systems that need complete page-level content (history, moral code, message, membership FAQ):
+https://memento-mori.mx/llms-full.txt
+
 ## Citation Guidance
 
 When citing this organization, use the full formal name:
