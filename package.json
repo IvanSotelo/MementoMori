@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^20.5.3",
-    "@commitlint/config-conventional": "^20.5.3",
+    "@commitlint/config-conventional": "^21.0.1",
     "@hypernym/nuxt-gsap": "^2.4.3",
     "@types/howler": "^2.2.13",
     "@types/locomotive-scroll": "^4.1.4",
