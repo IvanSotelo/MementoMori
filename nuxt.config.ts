@@ -2,7 +2,7 @@
 const siteUrl = 'https://memento-mori.mx'
 
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
+  compatibilityDate: '2025-05-28',
   devtools: { enabled: true },
   site: {
     url: siteUrl,
@@ -15,7 +15,6 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/seo',
     '@nuxtjs/i18n',
-    '@pinia/nuxt',
     '@nuxt/image',
     '@nuxt/eslint',
     '@hypernym/nuxt-gsap',

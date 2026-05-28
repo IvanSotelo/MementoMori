@@ -137,7 +137,7 @@ const contactBreadcrumb = computed(() =>
     ]
   })
 )
-useHead({ script: [{ type: 'application/ld+json', children: contactBreadcrumb }] })
+useHead({ script: [{ type: 'application/ld+json', innerHTML: contactBreadcrumb }] })
 
 const contact = ref<HTMLElement | null>(null)
 const { $locomotiveScroll } = useNuxtApp()

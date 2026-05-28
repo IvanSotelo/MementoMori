@@ -7,23 +7,23 @@ main(role="main" ref="root")
         .js-overlay.page-home__overlay--first
       .page-home__chapter.is-active
         .page-home__chapter-background
-          nuxt-img.page-home__chapter-background--image2(provider="cloudinary" format="webp" cover src="v1661278329/perseverancia/blue_y3u5at.jpg" fit="fill" :alt="heroAlt" preload fetchpriority="high" width="1920" height="1080" sizes="100vw")
+          nuxt-img.page-home__chapter-background--image2(provider="cloudinary" format="webp" cover src="v1661278329/perseverancia/blue_y3u5at.jpg" fit="fill" :alt="heroAlt" preload fetchpriority="high" crossorigin="anonymous")
       .page-home__chapter
         .page-home__chapter-background
-          nuxt-img.page-home__chapter-background--image(provider="cloudinary" format="webp" cover src="v1661278333/perseverancia/bg_mb6eok.png" fit="fill" :alt="heroAlt" width="1920" height="1080" sizes="100vw")
+          nuxt-img.page-home__chapter-background--image(provider="cloudinary" format="webp" cover src="v1661278333/perseverancia/bg_mb6eok.png" fit="fill" :alt="heroAlt" crossorigin="anonymous")
       .page-home__transition
         canvas.page-home__transition-main
         //- WebP max dimension 16383px; sheet is 22080×810 → two tiles (23 cols each × 480px wide).
         img.page-home__transition-sprite.page-home__transition-sprite--a(
           src="/sprite_test5-1.webp"
           alt=""
-          loading="lazy"
+          loading="eager"
           decoding="async"
         )
         img.page-home__transition-sprite.page-home__transition-sprite--b(
           src="/sprite_test5-2.webp"
           alt=""
-          loading="lazy"
+          loading="eager"
           decoding="async"
         )
         canvas.page-home__transition-temp
@@ -149,8 +149,8 @@ const websiteJsonLd = JSON.stringify({
 
 useHead({
   script: [
-    { type: 'application/ld+json', children: organizationJsonLd },
-    { type: 'application/ld+json', children: websiteJsonLd }
+    { type: 'application/ld+json', innerHTML: organizationJsonLd },
+    { type: 'application/ld+json', innerHTML: websiteJsonLd }
   ]
 })
 
@@ -177,7 +177,7 @@ let bgNextImage = null
 let bgCurrentImage = null
 let bgCanvasRenderStop = false
 
-function spriteSheetReady(img) {
+function imageReady(img) {
   if (!img) return Promise.resolve()
   if (img.complete && img.naturalWidth > 0) return Promise.resolve()
   return new Promise((resolve) => {
@@ -197,7 +197,14 @@ const canvasInit = async () => {
   bgTempContext.imageSmoothingEnabled = false
   bgSpriteA = root.value.querySelector('.page-home__transition-sprite--a')
   bgSpriteB = root.value.querySelector('.page-home__transition-sprite--b')
-  await Promise.all([spriteSheetReady(bgSpriteA), spriteSheetReady(bgSpriteB)])
+  const heroImages = root.value.querySelectorAll(
+    '.page-home__chapter-background--image2, .page-home__chapter-background--image'
+  )
+  await Promise.all([
+    ...Array.from(heroImages, imageReady),
+    imageReady(bgSpriteA),
+    imageReady(bgSpriteB)
+  ])
   canvasTransition()
 }
 
@@ -214,7 +221,7 @@ const canvasTransition = () => {
   bgSpriteFrame = 1
   bgCanvasRenderStop = !1
   bgTempContext.rect(0, 0, bgTempCanvas.width, bgTempCanvas.height)
-  bgTempContext.fillStyle = bgNextImage.dataset.background
+  bgTempContext.fillStyle = bgNextImage.dataset.background || '#282830'
   bgTempContext.fill()
   setTimeout(() => {
     i.style.zIndex = 4

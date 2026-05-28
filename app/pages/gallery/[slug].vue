@@ -38,7 +38,7 @@ interface Image {
 const swiper: Ref<Swiper | null> = ref(null)
 const sliderOpen = ref(false)
 const boxOpen = ref(false)
-const slug = ref(null)
+const slug = ref<HTMLElement | null>(null)
 let isMobile: boolean
 if (typeof window !== 'undefined' && typeof navigator !== 'undefined') {
   isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -93,49 +93,49 @@ const images: Ref<Image[]> = ref([
 const image = computed(() => images.value.find((e) => e.url === (route.params.slug as string)))
 
 const addSwiper = () => {
-  const el = slug.value.querySelector('.slider__container') as HTMLElement
+  const el = slug.value!.querySelector('.slider__container') as HTMLElement
   swiper.value = new Swiper(el, {
     spaceBetween: 0,
     slidesPerView: 'auto',
     freeMode: true,
     grabCursor: true,
-    mousewheelControl: true
+    mousewheel: true
   })
 }
 
 const animateIn = () => {
   if (isMobile) {
-    useGsap.set(slug.value.querySelector('.single__box'), { y: '100%', bottom: 0 })
+    useGsap.set(slug.value!.querySelector('.single__box'), { y: '100%', bottom: 0 })
   } else {
-    useGsap.from(slug.value.querySelector('.single__box'), {
+    useGsap.from(slug.value!.querySelector('.single__box'), {
       x: '100%',
       ease: 'easeInOut',
       duration: 0.7
     })
-    useGsap.from(slug.value.querySelector('.js-year'), {
+    useGsap.from(slug.value!.querySelector('.js-year'), {
       x: '-10%',
       autoAlpha: 0,
       ease: 'easeInOut',
       duration: 1.5
     })
-    useGsap.from(slug.value.querySelector('.js-category'), {
+    useGsap.from(slug.value!.querySelector('.js-category'), {
       x: '-10%',
       autoAlpha: 0,
       ease: 'easeInOut',
       duration: 1.5
     })
-    useGsap.from(slug.value.querySelector('.js-title'), {
+    useGsap.from(slug.value!.querySelector('.js-title'), {
       x: '-10%',
       autoAlpha: 0,
       ease: 'easeInOut',
       duration: 1.5
     })
-    useGsap.from(slug.value.querySelector('.js-line1'), {
+    useGsap.from(slug.value!.querySelector('.js-line1'), {
       height: 0,
       ease: 'easeInOut',
       duration: 1.5
     })
-    useGsap.from(slug.value.querySelector('.js-line2'), {
+    useGsap.from(slug.value!.querySelector('.js-line2'), {
       width: 0,
       ease: 'easeInOut',
       duration: 1.5
@@ -150,7 +150,7 @@ const clickImage = (url: string) => {
 const openSlider = () => {
   const i =
     '-' +
-    (slug.value.querySelector('.slider__container')?.getBoundingClientRect().height ?? 0) +
+    (slug.value!.querySelector('.slider__container')?.getBoundingClientRect().height ?? 0) +
     'px'
   useGsap.to('.js-slider-trigger', { autoAlpha: 0, y: -10, duration: 0.5 })
   useGsap.to('.slider', { y: '0%', duration: 0.5 })
@@ -184,7 +184,7 @@ const closeSlider = () => {
 const sliderHandler = () => (sliderOpen.value ? closeSlider() : openSlider())
 
 const openBox = () => {
-  useGsap.to(slug.value.querySelector('.single__box'), {
+  useGsap.to(slug.value!.querySelector('.single__box'), {
     height: isMobile ? '30%' : '100%',
     width: isMobile ? '100%' : '45%',
     y: isMobile ? '0%' : 0,
@@ -192,14 +192,14 @@ const openBox = () => {
     ease: 'easeInOut',
     duration: 0.8
   })
-  useGsap.to(slug.value.querySelector('.single__box--info'), {
+  useGsap.to(slug.value!.querySelector('.single__box--info'), {
     padding: '0 6vw',
     top: isMobile ? '3%' : '15%',
     ease: 'easeInOut',
     duration: 0.8
   })
-  useGsap.to(slug.value.querySelector('.js-category'), { autoAlpha: 1, duration: 0.8 })
-  useGsap.to(slug.value.querySelector('.js-title'), {
+  useGsap.to(slug.value!.querySelector('.js-category'), { autoAlpha: 1, duration: 0.8 })
+  useGsap.to(slug.value!.querySelector('.js-title'), {
     autoAlpha: 1,
     duration: 1.5,
     onComplete: () => {
@@ -209,10 +209,10 @@ const openBox = () => {
 }
 
 const closeBox = () => {
-  useGsap.to(slug.value.querySelector('.js-category'), { autoAlpha: 0, duration: 0.5 })
-  useGsap.to(slug.value.querySelector('.js-line2'), { autoAlpha: 0, duration: 0.5 })
-  useGsap.to(slug.value.querySelector('.js-title'), { autoAlpha: 0, duration: 0.5 })
-  useGsap.to(slug.value.querySelector('.single__box'), {
+  useGsap.to(slug.value!.querySelector('.js-category'), { autoAlpha: 0, duration: 0.5 })
+  useGsap.to(slug.value!.querySelector('.js-line2'), { autoAlpha: 0, duration: 0.5 })
+  useGsap.to(slug.value!.querySelector('.js-title'), { autoAlpha: 0, duration: 0.5 })
+  useGsap.to(slug.value!.querySelector('.single__box'), {
     height: isMobile ? 0 : '15vw',
     width: isMobile ? '100%' : '30%',
     y: isMobile ? '100%' : 0,
@@ -220,14 +220,14 @@ const closeBox = () => {
     ease: 'easeInOut',
     duration: 0.8
   })
-  useGsap.to(slug.value.querySelector('.single__box--info'), {
+  useGsap.to(slug.value!.querySelector('.single__box--info'), {
     padding: '2vw',
     top: 0,
     ease: 'easeNone',
     duration: 0.8
   })
-  useGsap.to(slug.value.querySelector('.js-category'), { autoAlpha: 1, duration: 1.5 })
-  useGsap.to(slug.value.querySelector('.js-line2'), {
+  useGsap.to(slug.value!.querySelector('.js-category'), { autoAlpha: 1, duration: 1.5 })
+  useGsap.to(slug.value!.querySelector('.js-line2'), {
     autoAlpha: 1,
     duration: 1.5,
     onComplete: () => {
@@ -239,7 +239,7 @@ const closeBox = () => {
 const boxHandler = () => (boxOpen.value ? closeBox() : openBox())
 
 onMounted(() => {
-  useGsap.to(slug.value.querySelector('.page'), {
+  useGsap.to(slug.value!.querySelector('.page'), {
     autoAlpha: 1,
     duration: 1,
     delay: 1,

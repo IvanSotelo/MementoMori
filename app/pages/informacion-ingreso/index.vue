@@ -135,12 +135,12 @@ useHead({
     {
       key: 'jsonld-guide-breadcrumb',
       type: 'application/ld+json',
-      children: guideBreadcrumb.value
+      innerHTML: guideBreadcrumb.value
     },
     {
       key: 'jsonld-guide-faq',
       type: 'application/ld+json',
-      children: JSON.stringify(faqJsonLd.value)
+      innerHTML: JSON.stringify(faqJsonLd.value)
     }
   ])
 })

@@ -52,7 +52,7 @@ const moralCodeBreadcrumb = computed(() =>
     ]
   })
 )
-useHead({ script: [{ type: 'application/ld+json', children: moralCodeBreadcrumb }] })
+useHead({ script: [{ type: 'application/ld+json', innerHTML: moralCodeBreadcrumb }] })
 
 const moral = ref<HTMLElement | null>(null)
 const { $locomotiveScroll } = useNuxtApp()

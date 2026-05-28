@@ -41,8 +41,6 @@
 </template>
 
 <script setup lang="ts">
-import { useMenuStore } from '@/stores/menu'
-
 const localePath = useLocalePath()
 const menuStore = useMenuStore()
 const menuRef = ref<HTMLElement | null>(null)

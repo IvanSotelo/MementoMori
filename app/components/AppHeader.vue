@@ -26,9 +26,6 @@
 </template>
 
 <script setup lang="ts">
-import { useAudioStore } from '@/stores/audio'
-import { useMenuStore } from '@/stores/menu'
-
 const switchLocalePath = useSwitchLocalePath()
 const localePath = useLocalePath()
 const { currentRoute } = useRouter()

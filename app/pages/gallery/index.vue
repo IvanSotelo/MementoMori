@@ -71,7 +71,7 @@
 </template>
 
 <script setup lang="ts">
-import type { LocomotiveScroll } from 'locomotive-scroll'
+import type LocomotiveScroll from 'locomotive-scroll'
 const { locale } = useI18n()
 
 const galleryTitle = computed(() =>
@@ -112,12 +112,14 @@ const galleryBreadcrumb = computed(() =>
     ]
   })
 )
-useHead({ script: [{ type: 'application/ld+json', children: galleryBreadcrumb }] })
+useHead({ script: [{ type: 'application/ld+json', innerHTML: galleryBreadcrumb }] })
 
 const { $locomotiveScroll } = useNuxtApp()
 const gallery = ref<HTMLElement | null>(null)
 const gridContainer = ref<HTMLElement | null>(null)
-let grid: unknown
+import type Isotope from 'isotope-layout'
+
+let grid: Isotope | null = null
 let scroll: LocomotiveScroll
 
 const asideActive = ref(false)
@@ -218,7 +220,7 @@ onMounted(async () => {
   }
 
   setTimeout(() => {
-    grid.arrange()
+    grid?.arrange()
     scroll.update()
   }, 1000)
 

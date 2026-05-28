@@ -296,7 +296,7 @@ const historyBreadcrumb = computed(() =>
     ]
   })
 )
-useHead({ script: [{ type: 'application/ld+json', children: historyBreadcrumb }] })
+useHead({ script: [{ type: 'application/ld+json', innerHTML: historyBreadcrumb }] })
 
 const { $locomotiveScroll, $onScroll } = useNuxtApp()
 const isActive = ref(false)
