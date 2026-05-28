@@ -34,8 +34,17 @@
     "nuxt-gtag": "^4.1.0",
     "pinia": "^3.0.4",
     "swiper": "^12.2.0",
+    "unhead": "^2.1.15",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "@nuxt/schema": "3",
+        "unhead": "2"
+      }
+    }
   },
   "devDependencies": {
     "@commitlint/cli": "^20.5.3",
