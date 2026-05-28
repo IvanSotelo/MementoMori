@@ -64,7 +64,7 @@ const messageBreadcrumb = computed(() =>
     ]
   })
 )
-useHead({ script: [{ type: 'application/ld+json', children: messageBreadcrumb }] })
+useHead({ script: [{ type: 'application/ld+json', innerHTML: messageBreadcrumb }] })
 
 const { $splitText } = useNuxtApp()
 const message = ref(null)

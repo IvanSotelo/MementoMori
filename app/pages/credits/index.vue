@@ -128,7 +128,7 @@ const creditsBreadcrumb = computed(() =>
     ]
   })
 )
-useHead({ script: [{ type: 'application/ld+json', children: creditsBreadcrumb }] })
+useHead({ script: [{ type: 'application/ld+json', innerHTML: creditsBreadcrumb }] })
 
 const credits = ref<HTMLElement | null>(null)
 const { $locomotiveScroll } = useNuxtApp()

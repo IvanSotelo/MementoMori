@@ -325,7 +325,7 @@ const privacyBreadcrumb = computed(() =>
     ]
   })
 )
-useHead({ script: [{ type: 'application/ld+json', children: privacyBreadcrumb }] })
+useHead({ script: [{ type: 'application/ld+json', innerHTML: privacyBreadcrumb }] })
 
 const privacy = ref<HTMLElement | null>(null)
 const { $locomotiveScroll } = useNuxtApp()

@@ -160,12 +160,12 @@ useHead({
     {
       key: 'jsonld-webpage',
       type: 'application/ld+json',
-      children: webpageJsonLd.value
+      innerHTML: webpageJsonLd.value
     },
     {
       key: 'jsonld-breadcrumb',
       type: 'application/ld+json',
-      children: serMasonBreadcrumb.value
+      innerHTML: serMasonBreadcrumb.value
     }
   ])
 })
