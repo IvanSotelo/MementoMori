@@ -119,9 +119,6 @@
             <div id="grancomision2026" class="history__item margin-0" data-scroll-section>
               <div class="history__item-wrapper space">
                 <div class="history__item-text">
-                  <p class="history__item-text--date">
-                    {{ $t('history.grand-commission-2026.date') }}
-                  </p>
                   <p class="history__item-text--title">
                     {{ $t('history.grand-commission-2026.title') }}
                   </p>
