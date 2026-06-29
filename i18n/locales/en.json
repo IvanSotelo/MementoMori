@@ -214,13 +214,20 @@
       "caption-name": "Jesús Iván Sotelo Vargas",
       "caption-role": "Worshipful Master 2026"
     },
+    "grand-commission-2026": {
+      "date": "2026",
+      "title": "Grand Planning Commission",
+      "text": "V:.H:. <b>Jesús Iván Sotelo Vargas</b> is appointed President of the Grand Planning Commission of the Noble, Leal y Centenaria Gran Logia \"Cosmos\" del Estado de Chihuahua."
+    },
     "chapters": {
       "born-text": "Founding",
       "born-mobile": "I",
       "cycle-2025-text": "Masonic cycle 2025",
       "cycle-2025-mobile": "II",
       "cycle-2026-text": "Masonic cycle 2026",
-      "cycle-2026-mobile": "III"
+      "cycle-2026-mobile": "III",
+      "grand-commission-2026-text": "Grand Planning Commission",
+      "grand-commission-2026-mobile": "IV"
     }
   }
 }

@@ -214,13 +214,20 @@
       "caption-name": "Jesús Iván Sotelo Vargas",
       "caption-role": "Venerable Maestro 2026"
     },
+    "grand-commission-2026": {
+      "date": "2026",
+      "title": "Gran Comisión de Planeación",
+      "text": "El <b>V:.H:. Jesús Iván Sotelo Vargas</b> es nombrado Presidente de la Gran Comisión de Planeación de la Noble, Leal y Centenaria Gran Logia \"Cosmos\" del Estado de Chihuahua."
+    },
     "chapters": {
       "born-text": "Nacimiento",
       "born-mobile": "I",
       "cycle-2025-text": "Ciclo masónico 2025",
       "cycle-2025-mobile": "II",
       "cycle-2026-text": "Ciclo masónico 2026",
-      "cycle-2026-mobile": "III"
+      "cycle-2026-mobile": "III",
+      "grand-commission-2026-text": "Gran Comisión de Planeación",
+      "grand-commission-2026-mobile": "IV"
     }
   }
 }
