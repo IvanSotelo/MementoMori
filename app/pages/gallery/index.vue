@@ -72,6 +72,8 @@
 
 <script setup lang="ts">
 import type LocomotiveScroll from 'locomotive-scroll'
+import type Isotope from 'isotope-layout'
+
 const { locale } = useI18n()
 
 const galleryTitle = computed(() =>
@@ -117,7 +119,6 @@ useHead({ script: [{ type: 'application/ld+json', innerHTML: galleryBreadcrumb }
 const { $locomotiveScroll } = useNuxtApp()
 const gallery = ref<HTMLElement | null>(null)
 const gridContainer = ref<HTMLElement | null>(null)
-import type Isotope from 'isotope-layout'
 
 let grid: Isotope | null = null
 let scroll: LocomotiveScroll

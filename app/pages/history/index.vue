@@ -188,7 +188,6 @@
                 </div>
               </div>
             </div>
-            <!---
             <div class="history__item margin-0" data-scroll-section>
               <div class="history__item-wrapper space">
                 <div class="history__item-text">
