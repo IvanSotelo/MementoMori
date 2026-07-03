@@ -3,11 +3,19 @@ import LocomotiveScroll from 'locomotive-scroll'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
 import type { InstanceOptions } from 'locomotive-scroll'
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin(() => {
   let scroll: LocomotiveScroll | null = null
-  nuxtApp.provide('locomotiveScroll', (el: HTMLElement, options: InstanceOptions) => {
+
+  const locomotiveScroll = (
+    el: HTMLElement | undefined,
+    options?: InstanceOptions
+  ): LocomotiveScroll | null => {
+    if (!el) {
+      return null
+    }
+
     scroll = new LocomotiveScroll({
-      el: el,
+      el,
       direction: 'vertical',
       getDirection: true,
       smooth: true,
@@ -32,18 +40,18 @@ export default defineNuxtPlugin((nuxtApp) => {
     })
 
     return scroll
-  })
+  }
 
-  nuxtApp.provide('onScroll', (callback: (event: LocomotiveScroll.OnScrollEvent) => void) => {
+  const onScroll = (callback: (event: LocomotiveScroll.OnScrollEvent) => void): void => {
     if (scroll) {
       scroll.on('scroll', callback)
     }
-  })
-})
-
-declare module '#app' {
-  interface NuxtApp {
-    $locomotiveScroll(el: HTMLElement | undefined, options?: InstanceOptions): LocomotiveScroll
-    $onScroll(callback: (event: LocomotiveScroll.OnScrollEvent) => void): void
   }
-}
+
+  return {
+    provide: {
+      locomotiveScroll,
+      onScroll
+    }
+  }
+})

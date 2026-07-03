@@ -40,7 +40,6 @@ export default defineNuxtConfig({
         file: 'es.json'
       }
     ],
-    lazy: true,
     defaultLocale: 'es',
     experimental: { strictSeo: true },
     compilation: { strictMessage: false },

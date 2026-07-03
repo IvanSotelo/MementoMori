@@ -75,7 +75,7 @@ onMounted(() => {
   })
 
   onUnmounted(() => {
-    scroll.destroy()
+    scroll?.destroy()
   })
 })
 </script>

@@ -149,7 +149,7 @@ onMounted(() => {
     stagger: 0.1
   })
   onUnmounted(() => {
-    scroll.destroy()
+    scroll?.destroy()
   })
 })
 </script>

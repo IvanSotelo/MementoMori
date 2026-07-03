@@ -341,7 +341,7 @@ onMounted(() => {
     ease: 'easeInOut'
   })
   onUnmounted(() => {
-    scroll.destroy()
+    scroll?.destroy()
   })
 })
 </script>

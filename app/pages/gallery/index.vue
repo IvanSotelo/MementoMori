@@ -121,7 +121,7 @@ const gallery = ref<HTMLElement | null>(null)
 const gridContainer = ref<HTMLElement | null>(null)
 
 let grid: Isotope | null = null
-let scroll: LocomotiveScroll
+let scroll: LocomotiveScroll | null = null
 
 const asideActive = ref(false)
 const currentFilter = ref('*')
@@ -216,20 +216,20 @@ onMounted(async () => {
     })
 
     grid.on('arrangeComplete', () => {
-      scroll.update()
+      scroll?.update()
     })
   }
 
   setTimeout(() => {
     grid?.arrange()
-    scroll.update()
+    scroll?.update()
   }, 1000)
 
   scroll = $locomotiveScroll(gallery.value?.querySelector('[data-scroll-container]') || undefined)
 })
 
 onUnmounted(() => {
-  scroll.destroy()
+  scroll?.destroy()
 })
 watch(asideActive, (newVal) => {
   const triggerText = gallery.value?.querySelector('.js-aside-trigger-tex')
