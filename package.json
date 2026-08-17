@@ -33,7 +33,7 @@
     "isotope-layout": "^3.0.6",
     "locomotive-scroll": "^4.1.4",
     "nuxt": "^4.5.2",
-    "nuxt-gtag": "^4.1.0",
+    "nuxt-gtag": "^5.0.0",
     "pinia": "^4.0.3",
     "swiper": "^12.2.0",
     "unhead": "^3.3.2",
