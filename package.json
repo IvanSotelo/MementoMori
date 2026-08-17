@@ -32,11 +32,11 @@
     "howler": "^2.2.4",
     "isotope-layout": "^3.0.6",
     "locomotive-scroll": "^4.1.4",
-    "nuxt": "^4.4.8",
+    "nuxt": "^4.5.2",
     "nuxt-gtag": "^4.1.0",
     "pinia": "^4.0.3",
     "swiper": "^12.2.0",
-    "unhead": "^2.1.15",
+    "unhead": "^3.3.2",
     "vue": "latest",
     "vue-router": "latest"
   },
@@ -44,7 +44,7 @@
     "peerDependencyRules": {
       "allowedVersions": {
         "@nuxt/schema": "4",
-        "unhead": "2"
+        "unhead": "3"
       }
     }
   },
