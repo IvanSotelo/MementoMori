@@ -1,8 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { createRequire } from 'node:module'
+
+const require = createRequire(import.meta.url)
 const siteUrl = 'https://memento-mori.mx'
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-28',
+  nitro: {
+    alias: {
+      // Netlify's Node adapter still creates h3 v1 events. Pin server helpers
+      // to h3@1.15 so they don't call Web Request APIs (headers.get, new URL(path)).
+      h3: require.resolve('h3')
+    }
+  },
   devtools: { enabled: true },
   site: {
     url: siteUrl,
