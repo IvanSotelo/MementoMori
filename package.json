@@ -27,7 +27,7 @@
     "@nuxtjs/seo": "^5.3.12",
     "@pinia/nuxt": "^1.0.1",
     "dom-classes": "^1.0.0",
-    "eslint": "^10.7.0",
+    "eslint": "^10.8.1",
     "h3": "1.15.11",
     "howler": "^2.2.4",
     "isotope-layout": "^3.0.6",
