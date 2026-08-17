@@ -34,7 +34,7 @@
     "locomotive-scroll": "^4.1.4",
     "nuxt": "^4.4.8",
     "nuxt-gtag": "^4.1.0",
-    "pinia": "^4.0.2",
+    "pinia": "^4.0.3",
     "swiper": "^12.2.0",
     "unhead": "^2.1.15",
     "vue": "latest",
