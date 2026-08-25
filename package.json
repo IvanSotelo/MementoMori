@@ -36,7 +36,7 @@
     "nuxt-gtag": "^5.0.0",
     "pinia": "^4.0.3",
     "swiper": "^12.2.0",
-    "unhead": "^3.3.2",
+    "unhead": "^3.4.0",
     "vue": "latest",
     "vue-router": "latest"
   },
