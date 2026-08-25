@@ -51,8 +51,8 @@ importers:
         specifier: ^4.0.3
         version: 4.0.3(@vue/devtools-api@8.1.5)(typescript@6.0.3)(vue@3.5.41(typescript@6.0.3))
       swiper:
-        specifier: ^12.2.0
-        version: 12.2.0
+        specifier: ^14.1.0
+        version: 14.1.0
       unhead:
         specifier: ^3.4.0
         version: 3.4.0(esbuild@0.28.1)(rolldown@1.2.4)(rollup@4.62.2)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.1)(jiti@2.7.0)(sass@1.103.1)(terser@5.48.0)(yaml@2.9.0))
@@ -6043,8 +6043,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  swiper@12.2.0:
-    resolution: {integrity: sha512-K8uXsBZU6ME97Ia3xbBge8IRCnR1lOmIILzvY/jGVic7dSTQ530s3uO8RvXbPUtkkXLWIwmZLRPbtDxRWVAFdg==}
+  swiper@14.1.0:
+    resolution: {integrity: sha512-ppit/AqmGvThKlXy4I1/9N/gEyb9s/BDHWciWNeIxbfteFKUhPQXrYuOMKszomXKd9WiLd+/0vKdPHW+0N0mhA==}
     engines: {node: '>= 4.7.0'}
 
   table@6.9.0:
@@ -13351,7 +13351,7 @@ snapshots:
       picocolors: 1.1.1
       sax: 1.6.0
 
-  swiper@12.2.0: {}
+  swiper@14.1.0: {}
 
   table@6.9.0:
     dependencies:
