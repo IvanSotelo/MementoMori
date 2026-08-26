@@ -41,6 +41,10 @@
     "vue-router": "latest"
   },
   "pnpm": {
+    "overrides": {
+      "unhead": "$unhead",
+      "@unhead/vue": "3.4.0"
+    },
     "peerDependencyRules": {
       "allowedVersions": {
         "@nuxt/schema": "4",
