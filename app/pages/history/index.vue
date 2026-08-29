@@ -95,6 +95,13 @@
                   <p class="history__item-text--title">{{ $t('history.cycle-2026.title') }}</p>
                   <p class="history__item-text--text" v-html="$t('history.cycle-2026.text1')" />
                   <p class="history__item-text--text" v-html="$t('history.cycle-2026.text2')" />
+                  <p class="history__item-text--title">
+                    {{ $t('history.cycle-2026.commission-title') }}
+                  </p>
+                  <p
+                    class="history__item-text--text"
+                    v-html="$t('history.cycle-2026.commission-text')"
+                  />
                 </div>
               </div>
             </div>
@@ -113,19 +120,6 @@
                     <p>{{ $t('history.cycle-2026.caption-name') }}</p>
                     <p>{{ $t('history.cycle-2026.caption-role') }}</p>
                   </span>
-                </div>
-              </div>
-            </div>
-            <div id="grancomision2026" class="history__item margin-0" data-scroll-section>
-              <div class="history__item-wrapper space">
-                <div class="history__item-text">
-                  <p class="history__item-text--title">
-                    {{ $t('history.grand-commission-2026.title') }}
-                  </p>
-                  <p
-                    class="history__item-text--text"
-                    v-html="$t('history.grand-commission-2026.text')"
-                  />
                 </div>
               </div>
             </div>
@@ -340,11 +334,6 @@ const chapters = computed(() => [
     title: '#ciclo2026',
     text: t('history.chapters.cycle-2026-text'),
     mobile: t('history.chapters.cycle-2026-mobile')
-  },
-  {
-    title: '#grancomision2026',
-    text: t('history.chapters.grand-commission-2026-text'),
-    mobile: t('history.chapters.grand-commission-2026-mobile')
   }
 ])
 
@@ -588,6 +577,12 @@ onMounted(() => {
             @media only screen and (max-width: 768px) {
               font-size: 4vw;
               width: 100% !important;
+            }
+          }
+          .history__item-text--text + .history__item-text--title {
+            padding-top: 1.2vw;
+            @media only screen and (max-width: 768px) {
+              padding-top: 4vw;
             }
           }
           .history__item-text--text {

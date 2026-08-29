@@ -211,12 +211,10 @@
       "title": "Ciclo masónico 2026",
       "text1": "Bajo la dirección del <b>Venerable Maestro Jesús Iván Sotelo Vargas</b>, con el <b>Primer Vigilante Aquilino Ramírez Lorenzo</b> y el <b>Segundo Vigilante Jesús Nevárez Rascón</b>. El Secretario <b>José Ángel Salas Granados</b>, el Orador <b>Rafael Alberto Márquez Pérez</b>, el Maestro de Ceremonias <b>Diego Alejandro Balderrama Gallegos</b> y el Hospitalario <b>Daniel Trevizo</b> integran el cuadro de oficiales.",
       "text2": "El ciclo 2026 continúa la labor de estudio y reflexión de la logia, reafirmando el compromiso con los principios que dan sentido a <b>Memento Mori</b>.",
+      "commission-title": "Gran Comisión de Planeación",
+      "commission-text": "El <b>V:.H:. Jesús Iván Sotelo Vargas</b> es nombrado Presidente de la Gran Comisión de Planeación de la Noble, Leal y Centenaria Gran Logia \"Cosmos\" del Estado de Chihuahua.",
       "caption-name": "Jesús Iván Sotelo Vargas",
       "caption-role": "Venerable Maestro 2026"
-    },
-    "grand-commission-2026": {
-      "title": "Gran Comisión de Planeación",
-      "text": "El <b>V:.H:. Jesús Iván Sotelo Vargas</b> es nombrado Presidente de la Gran Comisión de Planeación de la Noble, Leal y Centenaria Gran Logia \"Cosmos\" del Estado de Chihuahua."
     },
     "chapters": {
       "born-text": "Nacimiento",
@@ -224,9 +222,7 @@
       "cycle-2025-text": "Memento Mori N.º 107",
       "cycle-2025-mobile": "II",
       "cycle-2026-text": "Ciclo masónico 2026",
-      "cycle-2026-mobile": "III",
-      "grand-commission-2026-text": "Gran Comisión de Planeación",
-      "grand-commission-2026-mobile": "IV"
+      "cycle-2026-mobile": "III"
     }
   }
 }
