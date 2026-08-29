@@ -25,6 +25,7 @@ main(ref="slug")
 
 <script setup lang="ts">
 import Swiper from 'swiper'
+import { FreeMode, Mousewheel } from 'swiper/modules'
 const route = useRoute()
 const router = useRouter()
 interface Image {
@@ -95,6 +96,7 @@ const image = computed(() => images.value.find((e) => e.url === (route.params.sl
 const addSwiper = () => {
   const el = slug.value!.querySelector('.slider__container') as HTMLElement
   swiper.value = new Swiper(el, {
+    modules: [FreeMode, Mousewheel],
     spaceBetween: 0,
     slidesPerView: 'auto',
     freeMode: true,
