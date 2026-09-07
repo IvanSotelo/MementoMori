@@ -137,6 +137,13 @@ const images: Ref<Image[]> = ref([
     title: 'Nombramiento de Gran comisión de planeación',
     class: 'grandlodge',
     src: 'v1786983828/memento-mori/gran-comision-planeacion.jpg'
+  },
+  {
+    url: 'garante-paz-aquilino-ramirez-carpe-diem',
+    year: '2026',
+    title: 'Garante de paz Aquilino Ramirez - R∴L∴S∴ Carpe Diem N°. 104',
+    class: 'lodge',
+    src: 'v1788807169/garante-paz-aquilino-carpe-diem.jpg'
   }
 ])
 
