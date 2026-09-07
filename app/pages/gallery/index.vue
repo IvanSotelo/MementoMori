@@ -177,6 +177,41 @@ const images = [
     title: 'Solsticio de invierno 2025',
     class: 'sky',
     src: 'v1766432002/memento-mori/solsticio%20de%20invierno%202025.jpg'
+  },
+  {
+    url: 'solsticio-de-verano-2026',
+    year: '2026',
+    title: 'Solsticio de verano 2026',
+    class: 'sky',
+    src: 'v1786983827/memento-mori/solsticio-2026.jpg'
+  },
+  {
+    url: 'garante-paz-ivan-sotelo',
+    year: '2026',
+    title: 'Garante de paz Iván Sotelo - R∴L∴S∴ Plutarco Elias Calles N°. 7',
+    class: 'lodge',
+    src: 'v1786983829/memento-mori/garante-paz-plutarco-2026.jpg'
+  },
+  {
+    url: 'aumento-de-salario-2026',
+    year: '2026',
+    title: 'Aumento de salario 2026',
+    class: 'lodge',
+    src: 'v1786983827/memento-mori/aumento-2026.jpg'
+  },
+  {
+    url: 'garante-paz-2026',
+    year: '2026',
+    title: 'Garante de paz Marco Antonio Harris y Marco Dominguez',
+    class: 'lodge',
+    src: 'v1786983828/memento-mori/garantes-paz-2026.jpg'
+  },
+    {
+    url: 'solsticio-de-verano-interlogial-2026',
+    year: '2026',
+    title: 'Solsticio interlogial de verano 2026',
+    class: 'sky',
+    src: 'v1786983830/memento-mori/solsticio-interlogial-2026.jpg'
   }
 ]
 
