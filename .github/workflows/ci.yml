@@ -17,7 +17,8 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [20]
+        # Nuxt 4.5 + cssnano 8 require Node ^22.19 / ^24.11 (Set.prototype.difference)
+        node: [22]
 
     steps:
       - name: Checkout 🛎

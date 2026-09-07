@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/typescript-node:20
+FROM mcr.microsoft.com/devcontainers/typescript-node:22
 ENV PNPM_HOME=/app/pnpm
 RUN corepack enable pnpm
 COPY . /app
