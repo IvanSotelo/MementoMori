@@ -90,6 +90,13 @@ const images: Ref<Image[]> = ref([
     src: 'v1766432002/memento-mori/solsticio%20de%20invierno%202025.jpg'
   },
   {
+    url: 'consagracion-pasmaster-2026',
+    year: '2026',
+    title: 'Consagración pasmaster 2026',
+    class: 'grandlodge',
+    src: 'v1786983829/memento-mori/consagracion-pasmaster-2026.jpg'
+  },
+  {
     url: 'solsticio-de-verano-2026',
     year: '2026',
     title: 'Solsticio de verano 2026',
@@ -117,12 +124,19 @@ const images: Ref<Image[]> = ref([
     class: 'lodge',
     src: 'v1786983828/memento-mori/garantes-paz-2026.jpg'
   },
-    {
+  {
     url: 'solsticio-de-verano-interlogial-2026',
     year: '2026',
     title: 'Solsticio interlogial de verano 2026',
     class: 'sky',
     src: 'v1786983830/memento-mori/solsticio-interlogial-2026.jpg'
+  },
+  {
+    url: 'gran-comision-planeacion',
+    year: '2026',
+    title: 'Nombramiento de Gran comisión de planeación',
+    class: 'grandlodge',
+    src: 'v1786983828/memento-mori/gran-comision-planeacion.jpg'
   }
 ])
 
